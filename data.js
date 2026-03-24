@@ -52367,5 +52367,1031 @@ const MUSIC_LIBRARY = [
         "duration": "156.3"
       }
     ]
+  },
+  {
+    "id": "japanese-breakfast-soft-sounds-from-another-planet",
+    "artist": "Japanese Breakfast",
+    "album": "Soft Sounds from Another Planet",
+    "year": "2017",
+    "genre": "Alternative",
+    "genre_raw": "Alternativo",
+    "format": "MP3",
+    "youtube": "",
+    "tag": "",
+    "tracks": [
+      {
+        "number": "01",
+        "title": "Diving woman",
+        "duration": "392"
+      },
+      {
+        "number": "02",
+        "title": "Road head",
+        "duration": "195"
+      },
+      {
+        "number": "03",
+        "title": "Machinist",
+        "duration": "217"
+      },
+      {
+        "number": "04",
+        "title": "Planetary ambience",
+        "duration": "77"
+      },
+      {
+        "number": "05",
+        "title": "Soft sounds from another planet",
+        "duration": "200"
+      },
+      {
+        "number": "06",
+        "title": "Boyish",
+        "duration": "213"
+      },
+      {
+        "number": "07",
+        "title": "12 steps",
+        "duration": "156"
+      },
+      {
+        "number": "07",
+        "title": "12 steps",
+        "duration": "156"
+      },
+      {
+        "number": "08",
+        "title": "Jimmy fallon big!",
+        "duration": "155"
+      },
+      {
+        "number": "09",
+        "title": "The body is a blade",
+        "duration": "220"
+      },
+      {
+        "number": "10",
+        "title": "Till death",
+        "duration": "177"
+      },
+      {
+        "number": "11",
+        "title": "This house",
+        "duration": "182"
+      },
+      {
+        "number": "12",
+        "title": "Here come the tubular bells",
+        "duration": "40"
+      }
+    ]
+  },
+  {
+    "id": "slow-pulp-moveys",
+    "artist": "Slow Pulp",
+    "album": "Moveys",
+    "year": "2020",
+    "genre": "Indie-Pop",
+    "genre_raw": "Indie-Pop",
+    "format": "Indie-Rock",
+    "youtube": "MP3",
+    "tag": "",
+    "tracks": [
+      {
+        "number": "Trade It",
+        "title": "MP3",
+        "duration": "02"
+      },
+      {
+        "number": "Idaho",
+        "title": "MP3",
+        "duration": "03"
+      },
+      {
+        "number": "Track",
+        "title": "MP3",
+        "duration": "04"
+      },
+      {
+        "number": "At It Again",
+        "title": "MP3",
+        "duration": "05"
+      },
+      {
+        "number": "Channel 2",
+        "title": "MP3",
+        "duration": "06"
+      },
+      {
+        "number": "Whispers (In The Outfield)",
+        "title": "MP3",
+        "duration": "07"
+      },
+      {
+        "number": "Montana",
+        "title": "MP3",
+        "duration": "09"
+      },
+      {
+        "number": "Movey",
+        "title": "MP3",
+        "duration": "10"
+      },
+      {
+        "number": "10",
+        "title": "MP3",
+        "duration": ""
+      }
+    ]
+  },
+  {
+    "id": "weezer-weezer-blue-album",
+    "artist": "Weezer",
+    "album": "Weezer (Blue Album)",
+    "year": "2004",
+    "genre": "Alternative",
+    "genre_raw": "Alternative",
+    "format": "MP3",
+    "youtube": "",
+    "tag": "",
+    "tracks": [
+      {
+        "number": "01",
+        "title": "My Name Is Jonas",
+        "duration": "203"
+      },
+      {
+        "number": "02",
+        "title": "No One Else",
+        "duration": "185"
+      },
+      {
+        "number": "03",
+        "title": "The World Has Turned And Left Me Here",
+        "duration": "258"
+      },
+      {
+        "number": "04",
+        "title": "Buddy Holly",
+        "duration": "159"
+      },
+      {
+        "number": "05",
+        "title": "Undone - The Sweater Song",
+        "duration": "304"
+      },
+      {
+        "number": "06",
+        "title": "Surf Wax America",
+        "duration": "186"
+      },
+      {
+        "number": "07",
+        "title": "Say It Ain't So",
+        "duration": "258"
+      },
+      {
+        "number": "08",
+        "title": "In The Garage",
+        "duration": "235"
+      },
+      {
+        "number": "09",
+        "title": "Holiday",
+        "duration": "204"
+      },
+      {
+        "number": "10",
+        "title": "Only In Dreams",
+        "duration": "479"
+      }
+    ]
+  },
+  {
+    "id": "slow-pulp-big-day",
+    "artist": "Slow Pulp",
+    "album": "Big Day",
+    "year": "2019",
+    "genre": "Pop",
+    "genre_raw": "Dream Pop",
+    "format": "MP3",
+    "youtube": "",
+    "tag": "",
+    "tracks": [
+      {
+        "number": "01",
+        "title": "Do You Feel It",
+        "duration": "107"
+      },
+      {
+        "number": "02",
+        "title": "New Media",
+        "duration": "191"
+      },
+      {
+        "number": "03",
+        "title": "High",
+        "duration": "152"
+      },
+      {
+        "number": "04",
+        "title": "Young World",
+        "duration": "204"
+      }
+    ]
+  },
+  {
+    "id": "my-bloody-valentine-loveless",
+    "artist": "My Bloody Valentine",
+    "album": "Loveless",
+    "year": "1991",
+    "genre": "Alternative",
+    "genre_raw": "Shoegaze",
+    "format": "FLAC",
+    "youtube": "",
+    "tag": "",
+    "tracks": [
+      {
+        "number": "01",
+        "title": "Only Shallow",
+        "duration": "257"
+      },
+      {
+        "number": "02",
+        "title": "Loomer",
+        "duration": "158"
+      },
+      {
+        "number": "03",
+        "title": "Touched",
+        "duration": "56"
+      },
+      {
+        "number": "04",
+        "title": "To Here Knows When",
+        "duration": "331"
+      },
+      {
+        "number": "05",
+        "title": "When You Sleep",
+        "duration": "251"
+      },
+      {
+        "number": "06",
+        "title": "I Only Said",
+        "duration": "334"
+      },
+      {
+        "number": "07",
+        "title": "Come In Alone",
+        "duration": "238"
+      },
+      {
+        "number": "08",
+        "title": "Sometimes",
+        "duration": "319"
+      },
+      {
+        "number": "09",
+        "title": "Blown a Wish",
+        "duration": "216"
+      },
+      {
+        "number": "10",
+        "title": "What You Want",
+        "duration": "333"
+      },
+      {
+        "number": "11",
+        "title": "Soon",
+        "duration": "418"
+      }
+    ]
+  },
+  {
+    "id": "the-drums-the-drums",
+    "artist": "The Drums",
+    "album": "The Drums",
+    "year": "2010",
+    "genre": "Indie",
+    "genre_raw": "Indie Pop / Indie Rock",
+    "format": "MP3",
+    "youtube": "",
+    "tag": "",
+    "tracks": [
+      {
+        "number": "01",
+        "title": "Best Friend",
+        "duration": "206"
+      },
+      {
+        "number": "02",
+        "title": "Me And The Moon",
+        "duration": "191"
+      },
+      {
+        "number": "3",
+        "title": "Lets Go Surfing",
+        "duration": "174"
+      },
+      {
+        "number": "04",
+        "title": "Book Of Stories",
+        "duration": "217"
+      },
+      {
+        "number": "05",
+        "title": "Skippin' Town",
+        "duration": "202"
+      },
+      {
+        "number": "06",
+        "title": "Forever And Ever Amen",
+        "duration": "264"
+      },
+      {
+        "number": "07",
+        "title": "Down By The Water",
+        "duration": "206"
+      },
+      {
+        "number": "08",
+        "title": "It Will All End In Tears",
+        "duration": "224"
+      },
+      {
+        "number": "09",
+        "title": "We Tried",
+        "duration": "225"
+      },
+      {
+        "number": "10",
+        "title": "I Need Fun In My Life",
+        "duration": "207"
+      },
+      {
+        "number": "11",
+        "title": "I'll Never Drop My Sword",
+        "duration": "226"
+      },
+      {
+        "number": "12",
+        "title": "The Future",
+        "duration": "248"
+      },
+      {
+        "number": "13",
+        "title": "When I Come Home",
+        "duration": "222"
+      }
+    ]
+  },
+  {
+    "id": "title-fight-shed",
+    "artist": "Title Fight",
+    "album": "Shed",
+    "year": "2011",
+    "genre": "Punk",
+    "genre_raw": "Hardcore",
+    "format": "FLAC",
+    "youtube": "",
+    "tag": "",
+    "tracks": [
+      {
+        "number": "01",
+        "title": "Coxton Yard",
+        "duration": "89"
+      },
+      {
+        "number": "02",
+        "title": "Shed",
+        "duration": "136"
+      },
+      {
+        "number": "03",
+        "title": "Flood of '72",
+        "duration": "116"
+      },
+      {
+        "number": "04",
+        "title": "Society",
+        "duration": "83"
+      },
+      {
+        "number": "05",
+        "title": "You Can't Say Kingston Doesn't Love You",
+        "duration": "102"
+      },
+      {
+        "number": "06",
+        "title": "Crescent-Shaped Depression",
+        "duration": "159"
+      },
+      {
+        "number": "07",
+        "title": "Safe in Your Skin",
+        "duration": "154"
+      },
+      {
+        "number": "08",
+        "title": "Where Am I?",
+        "duration": "186"
+      },
+      {
+        "number": "09",
+        "title": "Your Screen Door",
+        "duration": "128"
+      },
+      {
+        "number": "10",
+        "title": "27",
+        "duration": "147"
+      },
+      {
+        "number": "11",
+        "title": "Stab",
+        "duration": "120"
+      },
+      {
+        "number": "12",
+        "title": "GMT (Greenwich Mean Time)",
+        "duration": "217"
+      }
+    ]
+  },
+  {
+    "id": "slowdive-souvlaki",
+    "artist": "Slowdive",
+    "album": "Souvlaki",
+    "year": "1994",
+    "genre": "Alternative",
+    "genre_raw": "Shoegaze",
+    "format": "FLAC",
+    "youtube": "",
+    "tag": "",
+    "tracks": [
+      {
+        "number": "1",
+        "title": "Alison",
+        "duration": "231"
+      },
+      {
+        "number": "2",
+        "title": "Machine Gun",
+        "duration": "268"
+      },
+      {
+        "number": "3",
+        "title": "40 Days",
+        "duration": "196"
+      },
+      {
+        "number": "4",
+        "title": "Sing",
+        "duration": "291"
+      },
+      {
+        "number": "5",
+        "title": "Here She Comes",
+        "duration": "141"
+      },
+      {
+        "number": "6",
+        "title": "Souvlaki Space Station",
+        "duration": "359"
+      },
+      {
+        "number": "7",
+        "title": "When the Sun Hits",
+        "duration": "287"
+      },
+      {
+        "number": "8",
+        "title": "Altogether",
+        "duration": "222"
+      },
+      {
+        "number": "9",
+        "title": "Melon Yellow",
+        "duration": "235"
+      },
+      {
+        "number": "10",
+        "title": "Dagger",
+        "duration": "213"
+      },
+      {
+        "number": "11",
+        "title": "Some Velvet Morning",
+        "duration": "203"
+      },
+      {
+        "number": "12",
+        "title": "Good Day Sunshine",
+        "duration": "308"
+      },
+      {
+        "number": "13",
+        "title": "Missing You",
+        "duration": "255"
+      },
+      {
+        "number": "14",
+        "title": "Country Rain",
+        "duration": "213"
+      }
+    ]
+  },
+  {
+    "id": "moby-go-the-very-best-of",
+    "artist": "Moby",
+    "album": "Go - The Very Best Of",
+    "year": "",
+    "genre": "Electronic",
+    "genre_raw": "Electronica",
+    "format": "MP3",
+    "youtube": "",
+    "tag": "",
+    "tracks": [
+      {
+        "number": "03",
+        "title": "Porcelain",
+        "duration": "212"
+      }
+    ]
+  },
+  {
+    "id": "american-football-american-football",
+    "artist": "American Football",
+    "album": "American Football",
+    "year": "1999",
+    "genre": "Emo",
+    "genre_raw": "Emo",
+    "format": "FLAC",
+    "youtube": "",
+    "tag": "",
+    "tracks": [
+      {
+        "number": "1",
+        "title": "Never Meant",
+        "duration": "264"
+      },
+      {
+        "number": "2",
+        "title": "The Summer Ends",
+        "duration": "285"
+      },
+      {
+        "number": "3",
+        "title": "Honestly?",
+        "duration": "365"
+      },
+      {
+        "number": "4",
+        "title": "For Sure",
+        "duration": "198"
+      },
+      {
+        "number": "5",
+        "title": "You Know I Should Be Leaving Soon",
+        "duration": "221"
+      },
+      {
+        "number": "6",
+        "title": "But the Regrets Are Killing Me",
+        "duration": "232"
+      },
+      {
+        "number": "7",
+        "title": "I’ll See You When We’re Both Not So Emotional",
+        "duration": "220"
+      },
+      {
+        "number": "8",
+        "title": "Stay Home",
+        "duration": "487"
+      },
+      {
+        "number": "9",
+        "title": "The One With the Wurlitzer",
+        "duration": "160"
+      }
+    ]
+  },
+  {
+    "id": "stimming-alpe-lusia",
+    "artist": "Stimming",
+    "album": "Alpe Lusia",
+    "year": "2016",
+    "genre": "Electronic",
+    "genre_raw": "Deep House",
+    "format": "MP3",
+    "youtube": "",
+    "tag": "",
+    "tracks": [
+      {
+        "number": "1",
+        "title": "Prepare (Original Mix)",
+        "duration": "376"
+      }
+    ]
+  },
+  {
+    "id": "cigarettes-after-sex-cigarettes-after-sex",
+    "artist": "Cigarettes After Sex",
+    "album": "Cigarettes After Sex",
+    "year": "2017",
+    "genre": "Pop",
+    "genre_raw": "Dream Pop",
+    "format": "FLAC",
+    "youtube": "",
+    "tag": "",
+    "tracks": [
+      {
+        "number": "01",
+        "title": "K.",
+        "duration": "319"
+      },
+      {
+        "number": "02",
+        "title": "Each Time You Fall In Love",
+        "duration": "290"
+      },
+      {
+        "number": "03",
+        "title": "Sunsetz",
+        "duration": "214"
+      },
+      {
+        "number": "04",
+        "title": "Apocalypse",
+        "duration": "290"
+      },
+      {
+        "number": "05",
+        "title": "Flash",
+        "duration": "274"
+      },
+      {
+        "number": "06",
+        "title": "Sweet",
+        "duration": "291"
+      },
+      {
+        "number": "07",
+        "title": "Opera House",
+        "duration": "364"
+      },
+      {
+        "number": "08",
+        "title": "Truly",
+        "duration": "243"
+      },
+      {
+        "number": "09",
+        "title": "John Wayne",
+        "duration": "258"
+      },
+      {
+        "number": "10",
+        "title": "Young & Dumb",
+        "duration": "273"
+      }
+    ]
+  },
+  {
+    "id": "the-local-train-aalas-ka-pedh",
+    "artist": "The Local Train",
+    "album": "Aalas Ka Pedh",
+    "year": "2015",
+    "genre": "Other",
+    "genre_raw": "",
+    "format": "FLAC",
+    "youtube": "",
+    "tag": "",
+    "tracks": [
+      {
+        "number": "1",
+        "title": "Manzil",
+        "duration": "260"
+      },
+      {
+        "number": "2",
+        "title": "Aaoge Tum Kabhi",
+        "duration": "313"
+      },
+      {
+        "number": "3",
+        "title": "Bandey",
+        "duration": "305"
+      },
+      {
+        "number": "4",
+        "title": "Choo Lo",
+        "duration": "233"
+      },
+      {
+        "number": "5",
+        "title": "Kaisey Jiyun",
+        "duration": "239"
+      },
+      {
+        "number": "6",
+        "title": "Yeh Zindagi Hai",
+        "duration": "249"
+      },
+      {
+        "number": "7",
+        "title": "Dil Mere",
+        "duration": "211"
+      },
+      {
+        "number": "8",
+        "title": "Kaisey Jiyun (Acoustic)",
+        "duration": "219"
+      },
+      {
+        "number": "9",
+        "title": "Yeh Zindagi Hai (Demo)",
+        "duration": "260"
+      }
+    ]
+  },
+  {
+    "id": "ghostpoet-peanut-butter-blues-melancholy-jam",
+    "artist": "Ghostpoet",
+    "album": "Peanut Butter Blues & Melancholy Jam",
+    "year": "2011",
+    "genre": "Hip-Hop",
+    "genre_raw": "Hip Hop",
+    "format": "FLAC",
+    "youtube": "",
+    "tag": "",
+    "tracks": [
+      {
+        "number": "01",
+        "title": "Onetwos",
+        "duration": "39"
+      },
+      {
+        "number": "02",
+        "title": "Run Run Run",
+        "duration": "195"
+      },
+      {
+        "number": "03",
+        "title": "Us Against Whatever Ever",
+        "duration": "265"
+      },
+      {
+        "number": "04",
+        "title": "Finished I Ain't",
+        "duration": "255"
+      },
+      {
+        "number": "05",
+        "title": "Longing For The Night",
+        "duration": "211"
+      },
+      {
+        "number": "06",
+        "title": "Yeah Pause",
+        "duration": "15"
+      },
+      {
+        "number": "07",
+        "title": "I Just Don't Know",
+        "duration": "212"
+      },
+      {
+        "number": "08",
+        "title": "Survive It",
+        "duration": "260"
+      },
+      {
+        "number": "09",
+        "title": "Gaaasp",
+        "duration": "327"
+      },
+      {
+        "number": "10",
+        "title": "Cash And Carry Me Home",
+        "duration": "211"
+      },
+      {
+        "number": "11",
+        "title": "Garden Path",
+        "duration": "166"
+      },
+      {
+        "number": "12",
+        "title": "Liiines",
+        "duration": "285"
+      }
+    ]
+  },
+  {
+    "id": "snail-mail-lush",
+    "artist": "Snail Mail",
+    "album": "Lush",
+    "year": "2018",
+    "genre": "Indie",
+    "genre_raw": "Indie",
+    "format": "FLAC",
+    "youtube": "",
+    "tag": "",
+    "tracks": [
+      {
+        "number": "01",
+        "title": "Intro",
+        "duration": "72"
+      },
+      {
+        "number": "02",
+        "title": "Pristine",
+        "duration": "295"
+      },
+      {
+        "number": "03",
+        "title": "Speaking Terms",
+        "duration": "233"
+      },
+      {
+        "number": "04",
+        "title": "Heat Wave",
+        "duration": "308"
+      },
+      {
+        "number": "05",
+        "title": "Stick",
+        "duration": "313"
+      },
+      {
+        "number": "06",
+        "title": "Let's Find an Out",
+        "duration": "133"
+      },
+      {
+        "number": "07",
+        "title": "Golden Dream",
+        "duration": "207"
+      },
+      {
+        "number": "08",
+        "title": "Full Control",
+        "duration": "175"
+      },
+      {
+        "number": "09",
+        "title": "Deep Sea",
+        "duration": "282"
+      },
+      {
+        "number": "10",
+        "title": "Anytime",
+        "duration": "278"
+      }
+    ]
+  },
+  {
+    "id": "diiv-oshin",
+    "artist": "DIIV",
+    "album": "Oshin",
+    "year": "2012",
+    "genre": "Rock",
+    "genre_raw": "Indie Rock",
+    "format": "FLAC",
+    "youtube": "",
+    "tag": "",
+    "tracks": [
+      {
+        "number": "1",
+        "title": "(Druun)",
+        "duration": "127"
+      },
+      {
+        "number": "2",
+        "title": "Past Lives",
+        "duration": "141"
+      },
+      {
+        "number": "03",
+        "title": "Human",
+        "duration": "177"
+      },
+      {
+        "number": "4",
+        "title": "Air Conditioning",
+        "duration": "270"
+      },
+      {
+        "number": "5",
+        "title": "How Long Have You Known?",
+        "duration": "213"
+      },
+      {
+        "number": "06",
+        "title": "Wait",
+        "duration": "195"
+      },
+      {
+        "number": "07",
+        "title": "Earthboy",
+        "duration": "194"
+      },
+      {
+        "number": "08",
+        "title": "(Druun Pt. II)",
+        "duration": "166"
+      },
+      {
+        "number": "10",
+        "title": "Sometime",
+        "duration": "185"
+      },
+      {
+        "number": "11",
+        "title": "Oshin (Subsume)",
+        "duration": "212"
+      },
+      {
+        "number": "12",
+        "title": "Doused",
+        "duration": "222"
+      },
+      {
+        "number": "13",
+        "title": "Home",
+        "duration": "149"
+      },
+      {
+        "number": "13",
+        "title": "DIIV_Oshin_09_Follow",
+        "duration": "0"
+      }
+    ]
+  },
+  {
+    "id": "diiv-is-the-is-are",
+    "artist": "DIIV",
+    "album": "Is the Is Are",
+    "year": "2016",
+    "genre": "Alternative",
+    "genre_raw": "Alternativo",
+    "format": "MP3",
+    "youtube": "",
+    "tag": "",
+    "tracks": [
+      {
+        "number": "1",
+        "title": "Dopamine",
+        "duration": "234"
+      },
+      {
+        "number": "1",
+        "title": "Out of Mind",
+        "duration": "188"
+      },
+      {
+        "number": "2",
+        "title": "Like Before You Were Born",
+        "duration": "184"
+      },
+      {
+        "number": "2",
+        "title": "Under the Sun",
+        "duration": "227"
+      },
+      {
+        "number": "3",
+        "title": "Bent (Roi's Song)",
+        "duration": "340"
+      },
+      {
+        "number": "3",
+        "title": "Skin Game",
+        "duration": "265"
+      },
+      {
+        "number": "5",
+        "title": "Taker",
+        "duration": "268"
+      },
+      {
+        "number": "9",
+        "title": "Follow",
+        "duration": "165"
+      },
+      {
+        "number": "10",
+        "title": "Sometime",
+        "duration": "185"
+      },
+      {
+        "number": "13",
+        "title": "Healthy Moon",
+        "duration": "251"
+      }
+    ]
   }
 ];
