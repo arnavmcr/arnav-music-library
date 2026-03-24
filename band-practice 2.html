@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Band Practice | Analog Archivist</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Special+Elite&family=Silkscreen:wght@400;700&family=Bungee+Shade&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  :root {
+    --lime: #f3ffca;
+    --lime-dim: #c8e878;
+    --surface: #0a0a0a;
+    --surface-hi: #111;
+    --surface-card: #181818;
+    --on-surface: #ffffff;
+    --muted: #888;
+    --border: #2a2a2a;
+    --border-heavy: #444;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--surface); color: var(--on-surface);
+    font-family: 'Special Elite', serif; min-height: 100vh;
+  }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; display: inline-block; vertical-align: middle; }
+
+  /* Grain overlay */
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 1;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+    background-size: 200px; opacity: 0.06; mix-blend-mode: overlay;
+  }
+
+  header {
+    border-bottom: 4px solid var(--lime);
+    background: var(--surface);
+    position: relative; z-index: 10;
+  }
+
+  .album-card {
+    background: var(--surface-card);
+    border: 2px solid var(--border-heavy);
+    cursor: pointer;
+    transition: transform 0.12s, box-shadow 0.12s, border-color 0.12s;
+    position: relative;
+    /* Slight initial rotation is added via JS for variety */
+  }
+  .sticker-card {
+    box-shadow: 5px 5px 0 var(--lime);
+  }
+  .album-card:hover {
+    transform: translate(-2px, -2px) rotate(0deg) !important;
+    border-color: var(--lime);
+    box-shadow: 7px 7px 0 var(--lime);
+    z-index: 2;
+  }
+  .album-card.open {
+    border-color: var(--lime);
+    box-shadow: 5px 5px 0 var(--lime);
+  }
+  .card-body { padding: 1.25rem; }
+  .artist {
+    font-family: 'Rubik Glitch', cursive;
+    font-size: clamp(0.9rem, 2vw, 1.3rem);
+    color: var(--lime); line-height: 1.15;
+    text-shadow: 2px 0 rgba(255,0,128,0.5), -2px 0 rgba(0,255,255,0.3);
+    word-break: break-word;
+  }
+  .album-title {
+    font-family: 'Special Elite', serif;
+    font-size: 0.85rem; color: #ccc; margin-top: 0.4rem;
+  }
+  .meta {
+    font-family: 'Silkscreen', monospace;
+    font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--muted); margin-top: 0.75rem;
+    display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;
+  }
+  .year-stamp {
+    background: var(--lime); color: var(--surface);
+    font-family: 'Silkscreen', monospace;
+    font-size: 0.55rem; padding: 2px 5px;
+    display: inline-block; font-weight: 700;
+  }
+  .expand-btn {
+    display: flex; align-items: center; gap: 4px;
+    font-family: 'Silkscreen', monospace;
+    font-size: 0.58rem; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--lime-dim); cursor: pointer; border: none; background: none;
+    padding: 0; margin-top: 0.85rem;
+  }
+  .expand-btn .arrow { transition: transform 0.2s; }
+  .album-card.open .expand-btn .arrow { transform: rotate(180deg); }
+  .tracklist {
+    display: none; background: #0d0d0d;
+    border-top: 2px solid var(--lime); padding: 0.75rem 1.25rem;
+  }
+  .album-card.open .tracklist { display: block; }
+  .track-row {
+    display: flex; gap: 0.75rem; align-items: baseline;
+    padding: 0.3rem 0; border-bottom: 1px dashed var(--border-heavy);
+    font-size: 0.75rem;
+  }
+  .track-row:last-child { border-bottom: none; }
+  .track-num { color: var(--lime); font-family: 'Silkscreen', monospace; font-size: 0.6rem; min-width: 1.8rem; }
+  .track-title { color: #ddd; flex: 1; font-family: 'Special Elite', serif; }
+  .track-dur { color: var(--muted); font-family: 'Silkscreen', monospace; font-size: 0.58rem; }
+  .no-tracks { color: var(--muted); font-size: 0.78rem; font-style: italic; }
+
+  /* ── Metronome widget ─────────────────────────── */
+  #metro {
+    position: fixed; bottom: 1.5rem; right: 1.5rem;
+    background: var(--surface-hi);
+    border: 2px solid var(--border-heavy);
+    padding: 0.85rem;
+    width: 148px;
+    z-index: 20;
+    user-select: none;
+  }
+  #metro::before {
+    content: ''; position: absolute; inset: 4px;
+    border: 1px solid var(--border); pointer-events: none;
+  }
+  .m-title {
+    font-family: 'Silkscreen', monospace;
+    font-size: 0.38rem; color: #555;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    text-align: center; margin-bottom: 0.6rem;
+  }
+  .m-dial {
+    width: 52px; height: 52px; border-radius: 50%;
+    border: 2px solid var(--lime);
+    margin: 0 auto 0.5rem;
+    background: radial-gradient(circle at 38% 38%, #2a2a2a, var(--surface));
+    position: relative;
+  }
+  .m-dial.active { box-shadow: 0 0 10px rgba(243,255,202,0.25); }
+  .m-dial-tick {
+    position: absolute; top: 5px; left: 50%;
+    transform: translateX(-50%);
+    width: 2px; height: 10px;
+    background: var(--lime); border-radius: 1px;
+  }
+  .m-bpm {
+    font-family: 'Silkscreen', monospace;
+    font-size: 1.1rem; color: var(--lime);
+    text-align: center; line-height: 1;
+  }
+  .m-unit {
+    font-family: 'Silkscreen', monospace;
+    font-size: 0.38rem; color: #555;
+    text-align: center; letter-spacing: 0.12em;
+    margin-top: 0.15rem; margin-bottom: 0.5rem;
+  }
+  .m-row {
+    display: grid; gap: 4px; margin-bottom: 0.45rem;
+  }
+  .m-row-nudge { grid-template-columns: 1fr 1fr; }
+  .m-row-actions { grid-template-columns: 1fr 1fr; }
+  .m-btn {
+    font-family: 'Silkscreen', monospace;
+    font-size: 0.5rem; padding: 5px 6px;
+    text-align: center; letter-spacing: 0.05em; text-transform: uppercase;
+    border: 1px solid #333; color: #888; background: var(--surface);
+    cursor: pointer; touch-action: manipulation;
+  }
+  .m-btn:hover { border-color: var(--lime-dim); color: var(--lime-dim); }
+  .m-btn:active { background: #2a2a2a; }
+  .m-btn-go {
+    border-color: var(--lime); color: var(--lime);
+  }
+  .m-btn-go:hover { border-color: var(--on-surface); color: var(--on-surface); }
+  .m-leds {
+    display: flex; gap: 5px; justify-content: center;
+  }
+  .m-led {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: #1a1a1a; border: 1px solid #333;
+  }
+  .m-led.beat { background: var(--lime); box-shadow: 0 0 5px var(--lime); }
+
+  /* Beat flash on album cards */
+  .album-card.beat-flash {
+    border-color: #ffffff !important;
+    box-shadow: 7px 7px 0 #ffffff !important;
+    transition: none !important;
+  }
+</style>
+</head>
+<body>
+<header>
+  <div style="max-width:1400px;margin:0 auto;padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
+    <a href="index.html" style="display:flex;align-items:center;gap:0.5rem;text-decoration:none;color:var(--muted);font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;font-family:'Silkscreen',monospace;">
+      <span class="material-symbols-outlined" style="font-size:14px">arrow_back</span>
+      Back
+    </a>
+    <div style="text-align:center;">
+      <div style="font-family:'Rubik Glitch',cursive;font-size:1.4rem;color:var(--lime);text-shadow:3px 0 rgba(255,0,128,0.6),-3px 0 rgba(0,255,255,0.4);letter-spacing:0.05em;">Band Practice</div>
+      <div style="font-family:'Silkscreen',monospace;font-size:0.55rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);">The Noise Archive (Distressed)</div>
+    </div>
+    <div style="text-align:right;">
+      <div style="font-family:'Bungee Shade',cursive;font-size:1.6rem;color:var(--lime);line-height:1;" id="count-display">—</div>
+      <div style="font-family:'Silkscreen',monospace;font-size:0.55rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);">Albums</div>
+    </div>
+  </div>
+</header>
+
+<div style="max-width:1400px;margin:0 auto;padding:0.65rem 1.5rem;border-bottom:2px solid var(--border-heavy);display:flex;align-items:center;gap:1rem;flex-wrap:wrap;position:relative;z-index:10;background:var(--surface);">
+  <span style="font-family:'Silkscreen',monospace;font-size:0.55rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--lime);border:2px solid var(--lime);padding:2px 8px;">band-practice</span>
+  <input id="search" type="text" placeholder="Search artist or album…" style="background:var(--surface-hi);border:1px solid var(--border-heavy);color:var(--on-surface);padding:0.4rem 0.75rem;font-size:0.8rem;font-family:'Special Elite',serif;outline:none;flex:1;max-width:320px;" oninput="renderAlbums()"/>
+  <div style="margin-left:auto;display:flex;gap:0.5rem;align-items:center;">
+    <label style="font-family:'Silkscreen',monospace;font-size:0.6rem;color:var(--muted);letter-spacing:0.1em;text-transform:uppercase;">Sort</label>
+    <select id="sort" onchange="renderAlbums()" style="background:var(--surface-hi);border:1px solid var(--border-heavy);color:var(--on-surface);padding:0.35rem 0.5rem;font-size:0.75rem;font-family:'Special Elite',serif;outline:none;">
+      <option value="artist">Artist A→Z</option>
+      <option value="year-desc">Year (newest)</option>
+      <option value="year-asc">Year (oldest)</option>
+      <option value="album">Album A→Z</option>
+    </select>
+  </div>
+</div>
+
+<main style="max-width:1400px;margin:0 auto;padding:2rem 1.5rem;position:relative;z-index:2;">
+  <div id="album-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;">
+  </div>
+  <div id="empty-msg" style="display:none;padding:4rem;text-align:center;color:var(--muted);font-size:0.9rem;font-style:italic;">No albums found.</div>
+</main>
+
+<script src="data.js"></script>
+<script>
+const TAG = 'band-practice';
+let albums = MUSIC_LIBRARY.filter(a => a.tag === TAG);
+const ROTATIONS = [-1.5, -0.5, 0.5, 1, 1.5, 0, -1];
+
+function sorted(arr) {
+  const s = document.getElementById('sort').value;
+  const q = (document.getElementById('search').value || '').toLowerCase();
+  let res = q ? arr.filter(a => a.artist.toLowerCase().includes(q) || a.album.toLowerCase().includes(q)) : arr;
+  if (s === 'artist') res = [...res].sort((a,b) => a.artist.localeCompare(b.artist));
+  else if (s === 'year-desc') res = [...res].sort((a,b) => (b.year||0)-(a.year||0));
+  else if (s === 'year-asc') res = [...res].sort((a,b) => (a.year||0)-(b.year||0));
+  else if (s === 'album') res = [...res].sort((a,b) => a.album.localeCompare(b.album));
+  return res;
+}
+
+function makeCard(a, idx) {
+  const div = document.createElement('div');
+  div.className = 'album-card sticker-card';
+  const rot = ROTATIONS[idx % ROTATIONS.length];
+  div.style.transform = `rotate(${rot}deg)`;
+  const tracks = a.tracks || [];
+  const trackHTML = tracks.length
+    ? tracks.map(t => `<div class="track-row"><span class="track-num">${String(t.number).padStart(2,'0')}</span><span class="track-title">${t.title}</span><span class="track-dur">${t.duration||''}</span></div>`).join('')
+    : '<p class="no-tracks">Track data unavailable</p>';
+  div.innerHTML = `
+    <div class="card-body">
+      <div class="artist">${a.artist}</div>
+      <div class="album-title">${a.album}</div>
+      <div class="meta">
+        <span class="year-stamp">${a.year||'—'}</span>
+        <span>${a.genre||'—'}</span>
+        <span>${a.format||'—'}</span>
+      </div>
+      <button class="expand-btn" onclick="toggleCard(this.closest('.album-card'))">
+        <span class="material-symbols-outlined arrow" style="font-size:13px">expand_more</span>
+        ${tracks.length} tracks
+      </button>
+    </div>
+    <div class="tracklist">${trackHTML}</div>
+  `;
+  return div;
+}
+
+function toggleCard(card) {
+  card.classList.toggle('open');
+  if (card.classList.contains('open')) {
+    card.style.transform = 'rotate(0deg)';
+  } else {
+    const idx = Array.from(card.parentNode.children).indexOf(card);
+    card.style.transform = `rotate(${ROTATIONS[idx % ROTATIONS.length]}deg)`;
+  }
+}
+
+function renderAlbums() {
+  const grid = document.getElementById('album-grid');
+  const empty = document.getElementById('empty-msg');
+  const res = sorted(albums);
+  document.getElementById('count-display').textContent = res.length;
+  grid.innerHTML = '';
+  if (!res.length) { empty.style.display='block'; return; }
+  empty.style.display = 'none';
+  res.forEach((a, i) => grid.appendChild(makeCard(a, i)));
+}
+
+renderAlbums();
+</script>
+
+<div id="metro">
+  <div class="m-title">Metronome</div>
+  <div class="m-dial" id="m-dial"><div class="m-dial-tick"></div></div>
+  <div class="m-bpm" id="m-bpm">120</div>
+  <div class="m-unit">BPM</div>
+  <div class="m-row m-row-nudge">
+    <button class="m-btn" id="m-dec" aria-label="Decrease BPM">−</button>
+    <button class="m-btn" id="m-inc" aria-label="Increase BPM">+</button>
+  </div>
+  <div class="m-row m-row-actions">
+    <button class="m-btn" id="m-tap">Tap</button>
+    <button class="m-btn m-btn-go" id="m-go">▶ Go</button>
+  </div>
+  <div class="m-leds">
+    <div class="m-led" id="m-led-0"></div>
+    <div class="m-led" id="m-led-1"></div>
+    <div class="m-led" id="m-led-2"></div>
+    <div class="m-led" id="m-led-3"></div>
+  </div>
+</div>
+
+<script>
+(function () {
+  // ── State ─────────────────────────────────────
+  let bpm = 120;
+  let isPlaying = false;
+  let beat = 0;
+  let intervalId = null;
+  let longPressId = { hold: null, repeat: null }; // separate from intervalId
+  let tapTimes = [];
+
+  // ── DOM refs ──────────────────────────────────
+  const elBpm   = document.getElementById('m-bpm');
+  const elDial  = document.getElementById('m-dial');
+  const elGo    = document.getElementById('m-go');
+  const elDec   = document.getElementById('m-dec');
+  const elInc   = document.getElementById('m-inc');
+  const elTap   = document.getElementById('m-tap');
+  const leds    = [0,1,2,3].map(i => document.getElementById('m-led-' + i));
+
+  // ── Helpers ───────────────────────────────────
+  function clamp(v) {
+    if (!isFinite(v)) return bpm;
+    return Math.max(60, Math.min(200, v));
+  }
+
+  function setBpm(v) {
+    bpm = clamp(v);
+    elBpm.textContent = bpm;
+    if (isPlaying) restartInterval();
+  }
+
+  function renderLeds() {
+    leds.forEach((led, i) => {
+      led.classList.toggle('beat', isPlaying && i === beat);
+    });
+  }
+
+  // ── Nudge (+/−) ───────────────────────────────
+  function startLongPress(delta) {
+    stopLongPress();
+    longPressId.hold = setTimeout(function () {
+      longPressId.repeat = setInterval(function () { setBpm(bpm + delta); }, 80);
+    }, 500);
+  }
+
+  function stopLongPress() {
+    clearTimeout(longPressId.hold);
+    clearInterval(longPressId.repeat);
+    longPressId.hold = null;
+    longPressId.repeat = null;
+  }
+
+  ['pointerdown'].forEach(function (ev) {
+    elDec.addEventListener(ev, function () { setBpm(bpm - 1); startLongPress(-1); });
+    elInc.addEventListener(ev, function () { setBpm(bpm + 1); startLongPress(+1); });
+  });
+  ['pointerup', 'pointerleave', 'pointercancel'].forEach(function (ev) {
+    elDec.addEventListener(ev, stopLongPress);
+    elInc.addEventListener(ev, stopLongPress);
+  });
+
+  // ── Tap tempo ─────────────────────────────────
+  elTap.addEventListener('pointerdown', function () {
+    const now = Date.now();
+    // Reset buffer if gap > 2 seconds
+    if (tapTimes.length && now - tapTimes[tapTimes.length - 1] > 2000) {
+      tapTimes = [];
+    }
+    tapTimes.push(now);
+    if (tapTimes.length > 8) tapTimes = tapTimes.slice(-8);
+    // Need 4+ taps to calculate
+    if (tapTimes.length >= 4) {
+      const intervals = [];
+      for (let i = 1; i < tapTimes.length; i++) {
+        intervals.push(tapTimes[i] - tapTimes[i - 1]);
+      }
+      const avg = intervals.reduce(function (a, b) { return a + b; }, 0) / intervals.length;
+      setBpm(Math.round(60000 / avg));
+    }
+  });
+
+  // ── Tick ──────────────────────────────────────
+  function tick() {
+    beat = (beat + 1) % 4;
+    renderLeds();
+    // Beat 0: flash all album cards for 80ms
+    if (beat === 0) {
+      const cards = document.querySelectorAll('.album-card');
+      cards.forEach(function (c) { c.classList.add('beat-flash'); });
+      setTimeout(function () {
+        cards.forEach(function (c) { c.classList.remove('beat-flash'); });
+      }, 80);
+    }
+  }
+
+  function restartInterval() {
+    clearInterval(intervalId);
+    intervalId = setInterval(tick, 60000 / bpm);
+  }
+
+  // ── Go / Stop ─────────────────────────────────
+  elGo.addEventListener('click', function () {
+    if (isPlaying) {
+      // Stop
+      clearInterval(intervalId);
+      intervalId = null;
+      isPlaying = false;
+      beat = 0;
+      renderLeds();
+      document.querySelectorAll('.album-card.beat-flash').forEach(function (c) { c.classList.remove('beat-flash'); });
+      elDial.classList.remove('active');
+      elGo.textContent = '▶ Go';
+    } else {
+      // Start — fire first tick immediately, then continue on interval
+      isPlaying = true;
+      elDial.classList.add('active');
+      elGo.textContent = '■ Stop';
+      tick();
+      restartInterval();
+    }
+  });
+
+  // Initial LED render (all dark)
+  renderLeds();
+})();
+</script>
+
+</body>
+</html>

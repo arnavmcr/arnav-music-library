@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Vault | Analog Archivist</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,700;0,900;1,900&family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  :root {
+    --warm: #8c5000;
+    --warm-light: #c47a30;
+    --gray-accent: #a09080;
+    --surface: #fcf9f8;
+    --surface-hi: #f3eeea;
+    --on-surface: #1c1b1b;
+    --muted: #7a6e67;
+    --border: #d8c3b1;
+    --border-light: #e8ddd5;
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--surface); color: var(--on-surface); font-family: 'Space Grotesk', sans-serif; min-height: 100vh; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; display: inline-block; vertical-align: middle; }
+
+  .noise { position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+    background-size: 200px; opacity: 0.4; }
+
+  header { border-bottom: 1px solid var(--border); background: rgba(252,249,248,0.92); backdrop-filter: blur(8px); position: relative; z-index: 10; }
+
+  /* Genre filter pills */
+  .genre-filters { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+  .genre-btn {
+    font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase;
+    padding: 3px 10px; border: 1px solid var(--border); color: var(--muted);
+    background: transparent; cursor: pointer; font-family: 'Space Grotesk', sans-serif;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+  }
+  .genre-btn:hover, .genre-btn.active {
+    background: var(--warm); color: #fff; border-color: var(--warm);
+  }
+
+  /* Dense list view */
+  #album-list { position: relative; z-index: 10; }
+  .album-row {
+    border-bottom: 1px solid var(--border-light);
+    cursor: pointer; transition: background 0.12s;
+    background: var(--surface);
+  }
+  .album-row:hover { background: var(--surface-hi); }
+  .album-row.open { background: var(--surface-hi); border-bottom-color: var(--border); }
+  .row-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 1rem; align-items: center;
+    padding: 0.8rem 1.5rem;
+  }
+  @media (max-width: 640px) {
+    .row-main { grid-template-columns: 1fr auto; }
+    .row-genre { display: none; }
+  }
+  .artist-name {
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 700; font-size: 0.9rem;
+    color: var(--on-surface); line-height: 1.2;
+  }
+  .album-name {
+    font-weight: 300; font-size: 0.78rem;
+    color: var(--muted); margin-top: 1px;
+  }
+  .row-genre {
+    font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--muted);
+  }
+  .row-meta {
+    display: flex; flex-direction: column; align-items: flex-end; gap: 2px;
+  }
+  .row-year {
+    font-size: 0.72rem; font-weight: 700; color: var(--warm); font-family: 'Epilogue', sans-serif;
+  }
+  .row-tracks {
+    font-size: 0.6rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray-accent);
+  }
+  .tracklist {
+    display: none; padding: 0.75rem 1.5rem 1rem;
+    background: var(--surface-hi); border-top: 1px solid var(--border-light);
+  }
+  .album-row.open .tracklist { display: block; }
+  .track-row {
+    display: flex; gap: 1rem; align-items: baseline;
+    padding: 0.25rem 0; border-bottom: 1px solid var(--border-light);
+    font-size: 0.75rem;
+  }
+  .track-row:last-child { border-bottom: none; }
+  .track-num { color: var(--warm-light); font-weight: 700; min-width: 1.8rem; font-family: 'Epilogue', sans-serif; font-size: 0.68rem; }
+  .track-title { color: var(--on-surface); flex: 1; }
+  .track-dur { color: var(--muted); font-size: 0.65rem; font-variant-numeric: tabular-nums; }
+  .no-tracks { color: var(--muted); font-size: 0.75rem; font-style: italic; }
+
+  /* Sticky table header */
+  .list-header {
+    display: grid; grid-template-columns: 1fr 1fr auto;
+    gap: 1rem; padding: 0.5rem 1.5rem;
+    background: var(--surface-hi); border-bottom: 2px solid var(--border);
+    font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.14em;
+    color: var(--muted); position: sticky; top: 0; z-index: 5;
+  }
+
+  /* Pull from the Crate — spotlight flash */
+  @keyframes spotlightFade {
+    0%   { background: rgba(140, 80, 0, 0.22); border-left-color: var(--warm); box-shadow: 0 0 0 1px rgba(140, 80, 0, 0.2); }
+    100% { background: var(--surface);          border-left-color: transparent; box-shadow: none; }
+  }
+  .album-row.spotlit {
+    animation: spotlightFade 2s ease-out forwards;
+    border-left: 4px solid transparent; /* ensures layout doesn't shift on animate */
+  }
+
+  /* Pull from the Crate — button */
+  #pull-btn {
+    background: var(--warm);
+    color: #fff;
+    border: none;
+    padding: 0.45rem 1.1rem;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.68rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: opacity 0.15s;
+    flex-shrink: 0;
+  }
+  #pull-btn:hover:not(:disabled) { opacity: 0.82; }
+  #pull-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+</style>
+</head>
+<body>
+<div class="noise"></div>
+
+<header>
+  <div style="max-width:1400px;margin:0 auto;padding:1.25rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
+    <a href="index.html" style="display:flex;align-items:center;gap:0.5rem;text-decoration:none;color:var(--muted);font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;font-family:'Space Grotesk',sans-serif;">
+      <span class="material-symbols-outlined" style="font-size:15px">arrow_back</span>
+      Global Archive
+    </a>
+    <div style="text-align:center;">
+      <div style="font-family:'Epilogue',sans-serif;font-weight:900;font-size:1.4rem;text-transform:uppercase;letter-spacing:-0.01em;color:var(--on-surface);">The Vault</div>
+      <div style="font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted);">Unclassified Archive</div>
+    </div>
+    <div style="text-align:right;">
+      <div style="font-family:'Epilogue',sans-serif;font-weight:900;font-size:1.8rem;color:var(--warm);line-height:1;" id="count-display">—</div>
+      <div style="font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);">Albums</div>
+    </div>
+  </div>
+</header>
+
+<!-- Controls -->
+<div style="max-width:1400px;margin:0 auto;padding:0.75rem 1.5rem;border-bottom:1px solid var(--border);position:relative;z-index:10;background:rgba(252,249,248,0.95);">
+  <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:0.65rem;">
+    <span style="font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gray-accent);border:1px solid var(--border);padding:2px 8px;">untagged</span>
+    <button id="pull-btn" onclick="pullFromCrate()">Pull from the Crate</button>
+    <input id="search" type="text" placeholder="Search artist or album…" style="background:var(--surface-hi);border:1px solid var(--border);color:var(--on-surface);padding:0.4rem 0.75rem;font-size:0.8rem;font-family:'Space Grotesk',sans-serif;outline:none;flex:1;max-width:320px;" oninput="renderAlbums()"/>
+    <div style="margin-left:auto;display:flex;gap:0.5rem;align-items:center;">
+      <label style="font-size:0.68rem;color:var(--muted);letter-spacing:0.1em;text-transform:uppercase;">Sort</label>
+      <select id="sort" onchange="renderAlbums()" style="background:var(--surface-hi);border:1px solid var(--border);color:var(--on-surface);padding:0.35rem 0.5rem;font-size:0.75rem;font-family:'Space Grotesk',sans-serif;outline:none;">
+        <option value="artist">Artist A→Z</option>
+        <option value="year-desc">Year (newest)</option>
+        <option value="year-asc">Year (oldest)</option>
+        <option value="album">Album A→Z</option>
+      </select>
+    </div>
+  </div>
+  <!-- Genre filter -->
+  <div class="genre-filters" id="genre-filters"></div>
+</div>
+
+<!-- Album list -->
+<main style="max-width:1400px;margin:0 auto;position:relative;z-index:10;">
+  <div class="list-header">
+    <span>Artist / Album</span>
+    <span>Genre</span>
+    <span style="text-align:right;">Year</span>
+  </div>
+  <div id="album-list"></div>
+  <div id="empty-msg" style="display:none;padding:4rem;text-align:center;color:var(--muted);font-size:0.9rem;font-style:italic;">No albums found.</div>
+</main>
+
+<script src="data.js"></script>
+<script src="basket.js"></script>
+<script>
+const TAG = '';
+let allAlbums = MUSIC_LIBRARY.filter(a => a.tag === TAG);
+let activeGenre = '';
+
+// Build genre list
+const genreCounts = {};
+for (const a of allAlbums) {
+  const g = a.genre || 'Other';
+  genreCounts[g] = (genreCounts[g] || 0) + 1;
+}
+const genres = Object.entries(genreCounts).sort((a,b) => b[1]-a[1]).map(e => e[0]);
+
+const filtersEl = document.getElementById('genre-filters');
+// "All" button
+const allBtn = document.createElement('button');
+allBtn.className = 'genre-btn active';
+allBtn.textContent = `All (${allAlbums.length})`;
+allBtn.onclick = () => { activeGenre = ''; setActiveGenre(allBtn); renderAlbums(); };
+filtersEl.appendChild(allBtn);
+
+genres.forEach(g => {
+  const btn = document.createElement('button');
+  btn.className = 'genre-btn';
+  btn.textContent = `${g} (${genreCounts[g]})`;
+  btn.onclick = () => { activeGenre = g; setActiveGenre(btn); renderAlbums(); };
+  filtersEl.appendChild(btn);
+});
+
+function setActiveGenre(activeBtn) {
+  filtersEl.querySelectorAll('.genre-btn').forEach(b => b.classList.remove('active'));
+  activeBtn.classList.add('active');
+}
+
+function sorted(arr) {
+  const s = document.getElementById('sort').value;
+  const q = (document.getElementById('search').value || '').toLowerCase();
+  let res = arr;
+  if (activeGenre) res = res.filter(a => (a.genre || 'Other') === activeGenre);
+  if (q) res = res.filter(a => a.artist.toLowerCase().includes(q) || a.album.toLowerCase().includes(q));
+  if (s === 'artist') res = [...res].sort((a,b) => a.artist.localeCompare(b.artist));
+  else if (s === 'year-desc') res = [...res].sort((a,b) => (b.year||0)-(a.year||0));
+  else if (s === 'year-asc') res = [...res].sort((a,b) => (a.year||0)-(b.year||0));
+  else if (s === 'album') res = [...res].sort((a,b) => a.album.localeCompare(b.album));
+  return res;
+}
+
+function escAttr(s) {
+  return String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+}
+
+function makeRow(a) {
+  const div = document.createElement('div');
+  div.className = 'album-row';
+  div.dataset.id = a.id;
+  const tracks = a.tracks || [];
+  const trackHTML = tracks.length
+    ? tracks.map(t => `<div class="track-row"><span class="track-num">${String(t.number).padStart(2,'0')}</span><span class="track-title">${t.title}</span><span class="track-dur">${t.duration||''}</span></div>`).join('')
+    : '<p class="no-tracks">Track data unavailable</p>';
+  const inBasket = typeof basketIsBagged === 'function' && basketIsBagged(a.id);
+  const albumData = escAttr(JSON.stringify({ id: a.id, artist: a.artist, album: a.album, year: a.year || '' }));
+  div.innerHTML = `
+    <div class="row-main" onclick="toggleRow(this.closest('.album-row'))">
+      <div>
+        <div class="artist-name">${a.artist}</div>
+        <div class="album-name">${a.album}</div>
+      </div>
+      <div class="row-genre">${a.genre||'—'}</div>
+      <div class="row-meta">
+        <div class="row-year">${a.year||'—'}</div>
+        <div class="row-tracks">${tracks.length}T</div>
+        <button class="crate-btn${inBasket ? ' crate-btn--in' : ''}" onclick="event.stopPropagation(); basketToggle(${albumData})" data-id="${escAttr(a.id)}">${inBasket ? '✓ In crate' : '+ Crate'}</button>
+      </div>
+    </div>
+    <div class="tracklist">${trackHTML}</div>
+  `;
+  return div;
+}
+
+function toggleRow(row) { row.classList.toggle('open'); }
+
+function pullFromCrate() {
+  const results = sorted(allAlbums);
+  if (!results.length) return;
+
+  const idx = Math.floor(Math.random() * results.length);
+
+  // Synchronous full render — bypasses chunked RAF loop
+  const list = document.getElementById('album-list');
+  const empty = document.getElementById('empty-msg');
+  list.innerHTML = '';
+  empty.style.display = 'none';
+  document.getElementById('count-display').textContent = results.length;
+
+  const frag = document.createDocumentFragment();
+  for (let i = 0; i < results.length; i++) frag.appendChild(makeRow(results[i]));
+  list.appendChild(frag);
+
+  // Spotlight and expand the target row
+  const targetRow = list.children[idx];
+  targetRow.classList.add('spotlit', 'open');
+
+  // Scroll after one paint frame for visual smoothness
+  requestAnimationFrame(() => {
+    targetRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+}
+
+function renderAlbums() {
+  const list = document.getElementById('album-list');
+  const empty = document.getElementById('empty-msg');
+  const res = sorted(allAlbums);
+  document.getElementById('count-display').textContent = res.length;
+  const pullBtn = document.getElementById('pull-btn');
+  if (pullBtn) pullBtn.disabled = !res.length;
+  list.innerHTML = '';
+  if (!res.length) { empty.style.display='block'; return; }
+  empty.style.display = 'none';
+  // Render in chunks for performance (988 albums)
+  const CHUNK = 100;
+  let i = 0;
+  function renderChunk() {
+    const end = Math.min(i + CHUNK, res.length);
+    const frag = document.createDocumentFragment();
+    for (; i < end; i++) frag.appendChild(makeRow(res[i]));
+    list.appendChild(frag);
+    if (i < res.length) requestAnimationFrame(renderChunk);
+  }
+  renderChunk();
+}
+
+renderAlbums();
+</script>
+</body>
+</html>

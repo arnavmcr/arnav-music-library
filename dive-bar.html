@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dive Bar Glow | Analog Archivist</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,700;0,900;1,700;1,900&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  :root {
+    --pink: #ff6a9f;
+    --amber: #ffb95a;
+    --lavender: #bdc2ff;
+    --surface: #0e0e13;
+    --surface-hi: #1f1f27;
+    --on-surface: #e6e4f1;
+    --muted: #757480;
+    --border: #474751;
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--surface); color: var(--on-surface); font-family: 'Plus Jakarta Sans', sans-serif; min-height: 100vh; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; display: inline-block; vertical-align: middle; }
+
+  /* bokeh blobs */
+  .blob { position: fixed; border-radius: 50%; filter: blur(120px); pointer-events: none; z-index: 0; }
+
+  header { position: relative; z-index: 10; border-bottom: 1px solid var(--border); background: rgba(14,14,19,0.85); backdrop-filter: blur(12px); }
+
+  .album-card {
+    background: var(--surface-hi);
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    position: relative;
+  }
+  .album-card:hover {
+    border-color: var(--pink);
+    box-shadow: 0 0 24px rgba(255,106,159,0.15);
+  }
+  .album-card .card-body { padding: 1.5rem; }
+  .album-card .artist {
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 900; font-style: italic;
+    font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+    color: var(--on-surface);
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    text-shadow: 0 0 20px rgba(255,106,159,0.3);
+  }
+  .album-card .album-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 300; font-size: 0.95rem;
+    color: var(--lavender); margin-top: 0.25rem;
+  }
+  .album-card .meta {
+    font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--muted); margin-top: 0.75rem;
+    display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;
+  }
+  .album-card .meta span { color: var(--border); }
+  .expand-btn {
+    display: flex; align-items: center; gap: 4px;
+    font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--pink); cursor: pointer; border: none; background: none;
+    padding: 0; margin-top: 1rem; font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+  }
+  .expand-btn .arrow { transition: transform 0.2s; }
+  .album-card.open .expand-btn .arrow { transform: rotate(180deg); }
+  .tracklist {
+    display: none; background: rgba(14,14,19,0.6);
+    border-top: 1px solid var(--border); padding: 1rem 1.5rem;
+  }
+  .album-card.open .tracklist { display: block; }
+  .track-row {
+    display: flex; gap: 1rem; align-items: baseline;
+    padding: 0.35rem 0; border-bottom: 1px solid rgba(71,71,81,0.4);
+    font-size: 0.8rem;
+  }
+  .track-row:last-child { border-bottom: none; }
+  .track-num { color: var(--pink); font-weight: 600; min-width: 1.8rem; font-family: 'Epilogue', monospace; }
+  .track-title { color: var(--on-surface); flex: 1; }
+  .track-dur { color: var(--muted); font-size: 0.7rem; }
+  .no-tracks { color: var(--muted); font-size: 0.8rem; font-style: italic; }
+
+  .tag-pill {
+    display: inline-block; font-size: 0.6rem; letter-spacing: 0.15em;
+    text-transform: uppercase; padding: 2px 8px;
+    background: rgba(255,106,159,0.12); color: var(--pink);
+    border: 1px solid rgba(255,106,159,0.3);
+  }
+
+  /* ── Closing Time Widget ────────────────────────── */
+  #closing-strip {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.55rem 1.1rem;
+    overflow: hidden;
+    background: rgba(0,255,179,0.07);
+    border: 1px solid rgba(0,255,179,0.2);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  #strip-text {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+  }
+  #strip-text strong {
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 900;
+    color: #00ffb3;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+  }
+
+  /* RGB split pseudo-elements — hidden by default, shown only in .closed state */
+  #strip-text::before,
+  #strip-text::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0; top: 0;
+    pointer-events: none;
+    mix-blend-mode: screen;
+    opacity: 0;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  /* Closed state — widget */
+  #closing-strip.closed {
+    background: rgba(30,0,0,0.6);
+    border-color: rgba(120,0,0,0.4);
+  }
+
+  /* Closed state — CLOSED text */
+  #closing-strip.closed #strip-text {
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+    letter-spacing: 0.2em;
+    animation: flicker 0.15s infinite, glitch-color 0.4s infinite;
+  }
+
+  /* Closed state — RGB split layers */
+  #closing-strip.closed #strip-text::before {
+    color: #ff0000;
+    transform: translateX(-3px);
+    opacity: 1;
+  }
+  #closing-strip.closed #strip-text::after {
+    color: #00ffff;
+    transform: translateX(3px);
+    opacity: 1;
+  }
+
+  /* Closed state — scanline overlay */
+  #closing-strip::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    background: repeating-linear-gradient(
+      transparent 0px, transparent 2px,
+      rgba(0,0,0,0.3) 2px, rgba(0,0,0,0.3) 4px
+    );
+    display: none;
+  }
+  #closing-strip.closed::after {
+    display: block;
+    animation: scanlines 4s linear infinite;
+  }
+
+  /* Open state — glow pulse on widget */
+  @keyframes glow-pulse {
+    0%, 100% { box-shadow: 0 0 8px rgba(0,255,179,0.1); }
+    50%       { box-shadow: 0 0 22px rgba(0,255,179,0.4); }
+  }
+  body.bar-open #closing-strip { animation: glow-pulse 3s ease-in-out infinite; }
+
+  /* Closed state keyframes */
+  @keyframes scanlines {
+    from { transform: translateY(0); }
+    to   { transform: translateY(4px); }
+  }
+  @keyframes flicker {
+    0%   { opacity: 1; }
+    15%  { opacity: 0.4; }
+    20%  { opacity: 1; }
+    55%  { opacity: 0.6; }
+    60%  { opacity: 1; }
+    85%  { opacity: 0.3; }
+    90%  { opacity: 1; }
+    100% { opacity: 1; }
+  }
+  @keyframes glitch-color {
+    0%   { color: #00ffb3; }
+    33%  { color: #ff0000; }
+    66%  { color: #ffffff; }
+    100% { color: #00ffb3; }
+  }
+</style>
+</head>
+<body>
+<!-- Bokeh blobs -->
+<div class="blob" style="width:500px;height:500px;background:rgba(255,106,159,0.07);top:-100px;left:-100px;"></div>
+<div class="blob" style="width:400px;height:400px;background:rgba(255,185,90,0.05);bottom:10%;right:-80px;"></div>
+<div class="blob" style="width:300px;height:300px;background:rgba(189,194,255,0.05);top:40%;left:50%;"></div>
+
+<!-- Header -->
+<header>
+  <div style="max-width:1400px;margin:0 auto;padding:1.25rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
+    <a href="index.html" style="display:flex;align-items:center;gap:0.5rem;text-decoration:none;color:var(--muted);font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;font-family:'Plus Jakarta Sans',sans-serif;">
+      <span class="material-symbols-outlined" style="font-size:16px">arrow_back</span>
+      Global Archive
+    </a>
+    <div style="text-align:center;">
+      <div style="font-family:'Epilogue',sans-serif;font-weight:900;font-style:italic;font-size:1.5rem;text-transform:uppercase;color:var(--pink);text-shadow:0 0 30px rgba(255,106,159,0.4);letter-spacing:-0.01em;">Dive Bar Glow</div>
+      <div style="font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted);">Late-night neon sessions</div>
+    </div>
+    <div style="display:flex;align-items:center;gap:1rem;">
+      <div style="text-align:right;">
+        <div style="font-family:'Epilogue',sans-serif;font-weight:900;font-size:1.8rem;color:var(--pink);line-height:1;" id="count-display">—</div>
+        <div style="font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);">Albums</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Closing Time Strip -->
+<div id="closing-strip">
+  <span id="strip-text" data-text="">LAST CALL IN&nbsp;<strong>—</strong></span>
+</div>
+
+<!-- Controls -->
+<div id="controls-bar" style="max-width:1400px;margin:0 auto;padding:0.75rem 1.5rem;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:1rem;flex-wrap:wrap;position:relative;z-index:10;">
+  <span class="tag-pill">dive-bar</span>
+  <input id="search" type="text" placeholder="Search artist or album…" style="background:var(--surface-hi);border:1px solid var(--border);color:var(--on-surface);padding:0.4rem 0.75rem;font-size:0.8rem;font-family:'Plus Jakarta Sans',sans-serif;outline:none;flex:1;max-width:320px;" oninput="renderAlbums()"/>
+  <div style="margin-left:auto;display:flex;gap:0.5rem;align-items:center;">
+    <label style="font-size:0.7rem;color:var(--muted);letter-spacing:0.1em;text-transform:uppercase;">Sort</label>
+    <select id="sort" onchange="renderAlbums()" style="background:var(--surface-hi);border:1px solid var(--border);color:var(--on-surface);padding:0.35rem 0.5rem;font-size:0.75rem;font-family:'Plus Jakarta Sans',sans-serif;outline:none;">
+      <option value="artist">Artist A→Z</option>
+      <option value="year-desc">Year (newest)</option>
+      <option value="year-asc">Year (oldest)</option>
+      <option value="album">Album A→Z</option>
+    </select>
+  </div>
+</div>
+
+<!-- Grid -->
+<main style="max-width:1400px;margin:0 auto;padding:2rem 1.5rem;position:relative;z-index:10;">
+  <div id="album-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1px;border:1px solid var(--border);">
+  </div>
+  <div id="empty-msg" style="display:none;padding:4rem;text-align:center;color:var(--muted);font-size:0.9rem;font-style:italic;">No albums found.</div>
+</main>
+
+<script src="data.js"></script>
+<script src="basket.js"></script>
+<script>
+const TAG = 'dive-bar';
+let albums = MUSIC_LIBRARY.filter(a => a.tag === TAG);
+
+function sorted(arr) {
+  const s = document.getElementById('sort').value;
+  const q = (document.getElementById('search').value || '').toLowerCase();
+  let res = q ? arr.filter(a => a.artist.toLowerCase().includes(q) || a.album.toLowerCase().includes(q)) : arr;
+  if (s === 'artist') res = [...res].sort((a,b) => a.artist.localeCompare(b.artist));
+  else if (s === 'year-desc') res = [...res].sort((a,b) => (b.year||0)-(a.year||0));
+  else if (s === 'year-asc') res = [...res].sort((a,b) => (a.year||0)-(b.year||0));
+  else if (s === 'album') res = [...res].sort((a,b) => a.album.localeCompare(b.album));
+  return res;
+}
+
+function escAttr(s) {
+  return String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+}
+
+function makeCard(a) {
+  const div = document.createElement('div');
+  div.className = 'album-card';
+  div.dataset.id = a.id;
+  const tracks = a.tracks || [];
+  const trackHTML = tracks.length
+    ? tracks.map(t => `<div class="track-row"><span class="track-num">${String(t.number).padStart(2,'0')}</span><span class="track-title">${t.title}</span><span class="track-dur">${t.duration||''}</span></div>`).join('')
+    : '<p class="no-tracks">Track data unavailable</p>';
+  const inBasket = typeof basketIsBagged === 'function' && basketIsBagged(a.id);
+  const albumData = escAttr(JSON.stringify({ id: a.id, artist: a.artist, album: a.album, year: a.year || '' }));
+  div.innerHTML = `
+    <div class="card-body">
+      <div class="artist">${a.artist}</div>
+      <div class="album-title">${a.album}</div>
+      <div class="meta">
+        <span>${a.year||'—'}</span>
+        <span>·</span>
+        <span>${a.genre||'—'}</span>
+        <span>·</span>
+        <span>${a.format||'—'}</span>
+      </div>
+      <button class="expand-btn" onclick="toggleCard(this.closest('.album-card'))">
+        <span class="material-symbols-outlined arrow" style="font-size:14px">expand_more</span>
+        ${tracks.length} track${tracks.length!==1?'s':''}
+      </button>
+      <button class="crate-btn${inBasket ? ' crate-btn--in' : ''}" onclick="basketToggle(${albumData})" data-id="${escAttr(a.id)}">${inBasket ? '✓ In crate' : '+ Crate'}</button>
+    </div>
+    <div class="tracklist">${trackHTML}</div>
+  `;
+  return div;
+}
+
+function toggleCard(card) {
+  card.classList.toggle('open');
+}
+
+function renderAlbums() {
+  const grid = document.getElementById('album-grid');
+  const empty = document.getElementById('empty-msg');
+  const res = sorted(albums);
+  document.getElementById('count-display').textContent = res.length;
+  grid.innerHTML = '';
+  if (!res.length) { empty.style.display='block'; return; }
+  empty.style.display = 'none';
+  res.forEach(a => grid.appendChild(makeCard(a)));
+}
+
+renderAlbums();
+</script>
+
+<script>
+/* ── Closing Time Countdown ──────────────────── */
+const strip     = document.getElementById('closing-strip');
+const stripText = document.getElementById('strip-text');
+
+let scrambleInterval = null;
+let jitterTimeout    = null;
+let currentState     = null;
+let lastMinute       = null;
+
+const OPEN_H  = 10, OPEN_M  = 30; // 10:30 AM
+const CLOSE_H = 1,  CLOSE_M = 30; // 1:30 AM
+
+function isOpen(now) {
+  const mins      = now.getHours() * 60 + now.getMinutes();
+  const openMins  = OPEN_H  * 60 + OPEN_M;  // 630
+  const closeMins = CLOSE_H * 60 + CLOSE_M; // 90
+  return mins >= openMins || mins < closeMins;
+}
+
+function minsUntilClose(now) {
+  const mins      = now.getHours() * 60 + now.getMinutes();
+  const closeMins = CLOSE_H * 60 + CLOSE_M;
+  if (mins < closeMins) return closeMins - mins;
+  return (24 * 60 - mins) + closeMins;
+}
+
+function formatCountdown(totalMins) {
+  if (totalMins >= 60) {
+    const h = Math.floor(totalMins / 60);
+    const m = totalMins % 60;
+    return m === 0 ? `${h}h` : `${h}h ${m}m`;
+  }
+  return `${totalMins}m`;
+}
+
+const GLITCH_CHARS = '!@#$%^&*<>?/\\|{}[]~`';
+function scramble(str) {
+  return str.split('').map(c =>
+    c === ' ' ? c : GLITCH_CHARS[Math.floor(Math.random() * GLITCH_CHARS.length)]
+  ).join('');
+}
+
+function startGlitch() {
+  let tick = 0;
+  scrambleInterval = setInterval(() => {
+    tick++;
+    if (tick % 25 === 0) {
+      stripText.innerHTML = 'CLOSED';
+      stripText.dataset.text = 'CLOSED';
+    } else {
+      const s = scramble('CLOSED');
+      stripText.innerHTML = s;
+      stripText.dataset.text = s;
+    }
+  }, 80);
+
+  function scheduleJitter() {
+    jitterTimeout = setTimeout(() => {
+      const deg = (Math.random() * 4 - 2).toFixed(2);
+      stripText.style.transform = `skewX(${deg}deg)`;
+      scheduleJitter();
+    }, Math.random() * 150 + 50);
+  }
+  scheduleJitter();
+}
+
+function stopGlitch() {
+  clearInterval(scrambleInterval);
+  clearTimeout(jitterTimeout);
+  scrambleInterval = null;
+  jitterTimeout    = null;
+  stripText.style.transform = '';
+}
+
+function tick() {
+  const now   = new Date();
+  const open  = isOpen(now);
+  const state = open ? 'open' : 'closed';
+
+  if (state !== currentState) {
+    if (open) {
+      stopGlitch();
+      stripText.dataset.text = '';
+      strip.classList.remove('closed');
+      document.body.classList.add('bar-open');
+    } else {
+      strip.classList.add('closed');
+      document.body.classList.remove('bar-open');
+      stripText.innerHTML = 'CLOSED';
+      stripText.dataset.text = 'CLOSED';
+      startGlitch();
+    }
+    currentState = state;
+    lastMinute = null;
+  }
+
+  if (open) {
+    const mins = minsUntilClose(now);
+    if (mins !== lastMinute) {
+      lastMinute = mins;
+      stripText.innerHTML = `LAST CALL IN&nbsp;<strong>${formatCountdown(mins)}</strong>`;
+    }
+  }
+}
+
+tick();
+setInterval(tick, 1000);
+</script>
+</body>
+</html>

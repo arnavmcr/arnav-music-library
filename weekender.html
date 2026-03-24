@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Weekender | Analog Archivist</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;1,300;1,400;1,700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  :root {
+    --orange: #ff833f;
+    --orange-deep: #fd6c00;
+    --lavender: #e4b5ff;
+    --yellow: #ffe483;
+    --surface: #0e0e0e;
+    --surface-hi: #1a1a1a;
+    --on-surface: #f0f0f0;
+    --muted: #888;
+    --border: #2a2a2a;
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--surface); color: var(--on-surface); font-family: 'Manrope', sans-serif; min-height: 100vh; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; display: inline-block; vertical-align: middle; }
+
+  header { border-bottom: 1px solid var(--border); background: rgba(14,14,14,0.9); backdrop-filter: blur(8px); position: relative; z-index: 10; }
+
+  .album-card {
+    background: var(--surface-hi);
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: border-color 0.2s;
+    position: relative; overflow: hidden;
+  }
+  .album-card::after {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, var(--orange), var(--orange-deep));
+    transform: scaleX(0); transform-origin: left;
+    transition: transform 0.25s ease;
+  }
+  .album-card:hover::after, .album-card.open::after { transform: scaleX(1); }
+  .album-card:hover { border-color: var(--orange); }
+  .card-body { padding: 1.5rem; }
+
+  .card-number {
+    font-family: 'Newsreader', serif; font-style: italic; font-weight: 300;
+    font-size: 3.5rem; color: rgba(255,131,63,0.15); line-height: 1;
+    position: absolute; right: 1rem; top: 0.5rem; pointer-events: none;
+    user-select: none;
+  }
+  .artist {
+    font-family: 'Newsreader', serif;
+    font-weight: 700; font-style: italic;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    color: var(--on-surface); line-height: 1.1;
+  }
+  .album-title {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300; font-size: 0.85rem;
+    color: var(--lavender); margin-top: 0.3rem;
+  }
+  .meta {
+    font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--muted); margin-top: 0.75rem;
+    display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;
+  }
+  .year-badge {
+    background: linear-gradient(90deg, var(--orange), var(--orange-deep));
+    color: #fff; font-size: 0.6rem; font-weight: 700;
+    letter-spacing: 0.08em; padding: 2px 6px; display: inline-block;
+  }
+  .expand-btn {
+    display: flex; align-items: center; gap: 4px;
+    font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--orange); cursor: pointer; border: none; background: none;
+    padding: 0; margin-top: 0.9rem; font-family: 'Manrope', sans-serif; font-weight: 700;
+  }
+  .expand-btn .arrow { transition: transform 0.2s; }
+  .album-card.open .expand-btn .arrow { transform: rotate(180deg); }
+
+  .tracklist {
+    display: none; background: #111;
+    border-top: 1px solid var(--border); padding: 1rem 1.5rem;
+  }
+  .album-card.open .tracklist { display: block; }
+  .track-row {
+    display: flex; gap: 1rem; align-items: baseline;
+    padding: 0.3rem 0; border-bottom: 1px solid rgba(42,42,42,0.8);
+    font-size: 0.8rem;
+  }
+  .track-row:last-child { border-bottom: none; }
+  .track-num { color: var(--orange); font-weight: 700; min-width: 1.8rem; font-family: 'Newsreader', serif; font-style: italic; }
+  .track-title { color: var(--on-surface); flex: 1; font-weight: 300; }
+  .track-dur { color: var(--muted); font-size: 0.7rem; }
+  .no-tracks { color: var(--muted); font-size: 0.8rem; font-style: italic; }
+
+  /* ── Day Selector ──────────────────────────────── */
+  /* Redefine --orange / --orange-deep per day so all existing accent usage shifts */
+  [data-day="sat"] { --orange: #c990f5; --orange-deep: #b060e8; }
+  [data-day="sun"] { --orange: #ffd000; --orange-deep: #e8b800; }
+
+  #day-selector {
+    display: flex; align-items: center; gap: 4px;
+    margin-top: 8px; flex-wrap: wrap; justify-content: center;
+  }
+
+  .day-pill {
+    padding: 2px 10px; height: 22px;
+    border: 1px solid var(--border); background: transparent;
+    color: var(--muted); font-size: 0.58rem; letter-spacing: 0.12em; text-transform: uppercase;
+    font-family: 'Manrope', sans-serif; font-weight: 700;
+    cursor: pointer; line-height: 1;
+    transition: border-color 0.2s, background 0.2s, color 0.2s;
+  }
+  .day-pill:hover { border-color: var(--on-surface); color: var(--on-surface); }
+  /* Per-day active tints — fixed colours so inactive-day pills stay distinct in all views */
+  .day-pill[data-d="all"].active  { border-color: #888;    color: var(--on-surface); background: rgba(136,136,136,0.12); }
+  .day-pill[data-d="fri"].active  { border-color: #ff833f; color: var(--on-surface); background: rgba(255,131,63,0.14); }
+  .day-pill[data-d="sat"].active  { border-color: #c990f5; color: var(--on-surface); background: rgba(201,144,245,0.14); }
+  .day-pill[data-d="sun"].active  { border-color: #ffd000; color: var(--on-surface); background: rgba(255,208,0,0.14); }
+
+  .shuffle-btn {
+    padding: 2px 8px; height: 22px; margin-left: 4px;
+    border: 1px solid var(--border); background: transparent;
+    color: var(--muted); font-size: 0.58rem; letter-spacing: 0.1em; text-transform: uppercase;
+    font-family: 'Manrope', sans-serif; font-weight: 700;
+    cursor: pointer; line-height: 1;
+    display: inline-flex; align-items: center; gap: 3px;
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .shuffle-btn:hover { border-color: var(--on-surface); color: var(--on-surface); }
+
+  /* Day badge shown in each card's meta row */
+  .day-badge {
+    font-size: 0.55rem; font-weight: 700; letter-spacing: 0.1em;
+    padding: 1px 5px; display: inline-block;
+    border: 1px solid; line-height: 1.4;
+  }
+  .day-badge.fri { color: #ff833f; border-color: rgba(255,131,63,0.5); background: rgba(255,131,63,0.08); }
+  .day-badge.sat { color: #c990f5; border-color: rgba(201,144,245,0.5); background: rgba(201,144,245,0.08); }
+  .day-badge.sun { color: #ffd000; border-color: rgba(255,208,0,0.5);   background: rgba(255,208,0,0.08); }
+</style>
+</head>
+<body>
+<header>
+  <div style="max-width:1400px;margin:0 auto;padding:1.25rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
+    <a href="index.html" style="display:flex;align-items:center;gap:0.5rem;text-decoration:none;color:var(--muted);font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;font-family:'Manrope',sans-serif;">
+      <span class="material-symbols-outlined" style="font-size:16px">arrow_back</span>
+      Global Archive
+    </a>
+    <div style="text-align:center;">
+      <div style="font-family:'Newsreader',serif;font-style:italic;font-weight:700;font-size:1.5rem;color:var(--orange);letter-spacing:-0.01em;">The Weekender</div>
+      <div style="font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted);">Chromatic Pulse Archive</div>
+      <div id="day-selector">
+        <button class="day-pill active" data-d="all">All</button>
+        <button class="day-pill" data-d="fri">Fri</button>
+        <button class="day-pill" data-d="sat">Sat</button>
+        <button class="day-pill" data-d="sun">Sun</button>
+        <button class="shuffle-btn" id="shuffle-btn">
+          <span class="material-symbols-outlined" style="font-size:12px">shuffle</span>
+          Shuffle
+        </button>
+      </div>
+    </div>
+    <div style="text-align:right;">
+      <div style="font-family:'Newsreader',serif;font-style:italic;font-weight:700;font-size:1.8rem;color:var(--orange);line-height:1;" id="count-display">—</div>
+      <div style="font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);">Albums</div>
+    </div>
+  </div>
+</header>
+
+<div style="max-width:1400px;margin:0 auto;padding:0.75rem 1.5rem;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:1rem;flex-wrap:wrap;position:relative;z-index:10;">
+  <span style="font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--orange);border:1px solid var(--orange);padding:2px 8px;background:rgba(255,131,63,0.08);">weekender</span>
+  <input id="search" type="text" placeholder="Search artist or album…" style="background:var(--surface-hi);border:1px solid var(--border);color:var(--on-surface);padding:0.4rem 0.75rem;font-size:0.8rem;font-family:'Manrope',sans-serif;outline:none;flex:1;max-width:320px;" oninput="renderAlbums()"/>
+  <div style="margin-left:auto;display:flex;gap:0.5rem;align-items:center;">
+    <label style="font-size:0.7rem;color:var(--muted);letter-spacing:0.1em;text-transform:uppercase;">Sort</label>
+    <select id="sort" onchange="renderAlbums()" style="background:var(--surface-hi);border:1px solid var(--border);color:var(--on-surface);padding:0.35rem 0.5rem;font-size:0.75rem;font-family:'Manrope',sans-serif;outline:none;">
+      <option value="artist">Artist A→Z</option>
+      <option value="year-desc">Year (newest)</option>
+      <option value="year-asc">Year (oldest)</option>
+      <option value="album">Album A→Z</option>
+    </select>
+  </div>
+</div>
+
+<main style="max-width:1400px;margin:0 auto;padding:2rem 1.5rem;position:relative;z-index:10;">
+  <div id="album-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);">
+  </div>
+  <div id="empty-msg" style="display:none;padding:4rem;text-align:center;color:var(--muted);font-size:0.9rem;font-style:italic;">No albums found.</div>
+</main>
+
+<script src="data.js"></script>
+<script src="basket.js"></script>
+<script>
+const TAG = 'weekender';
+let albums = MUSIC_LIBRARY.filter(a => a.tag === TAG);
+let cardIndex = 0;
+
+const LS_DAYS  = 'dig_weekender_days';
+const DAY_LIST = ['fri', 'sat', 'sun'];
+let dayAssignments = {};   // { albumKey: 'fri'|'sat'|'sun' }
+let activeDay = null;      // null = ALL
+
+function albumKey(a) { return a.artist + '|||' + a.album; }
+
+function loadOrInitAssignments() {
+  try {
+    const saved = localStorage.getItem(LS_DAYS);
+    if (saved) dayAssignments = JSON.parse(saved);
+  } catch(e) {}
+  // Assign any album that has no saved day yet
+  albums.forEach(a => {
+    const k = albumKey(a);
+    if (!dayAssignments[k]) {
+      dayAssignments[k] = DAY_LIST[Math.floor(Math.random() * 3)];
+    }
+  });
+  try { localStorage.setItem(LS_DAYS, JSON.stringify(dayAssignments)); } catch(e) {}
+}
+
+function shuffleDays() {
+  albums.forEach(a => {
+    dayAssignments[albumKey(a)] = DAY_LIST[Math.floor(Math.random() * 3)];
+  });
+  try { localStorage.setItem(LS_DAYS, JSON.stringify(dayAssignments)); } catch(e) {}
+  renderAlbums();
+}
+
+function setActiveDay(day) {
+  activeDay = (day === 'all') ? null : day;
+  if (activeDay) {
+    document.documentElement.setAttribute('data-day', activeDay);
+  } else {
+    document.documentElement.removeAttribute('data-day');
+  }
+  document.querySelectorAll('.day-pill').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.d === day);
+  });
+  renderAlbums();
+}
+
+function initDaySelector() {
+  loadOrInitAssignments();
+  document.querySelectorAll('.day-pill').forEach(btn => {
+    btn.addEventListener('click', () => setActiveDay(btn.dataset.d));
+  });
+  document.getElementById('shuffle-btn').addEventListener('click', shuffleDays);
+}
+
+function sorted(arr) {
+  const s = document.getElementById('sort').value;
+  const q = (document.getElementById('search').value || '').toLowerCase();
+  let res = q ? arr.filter(a => a.artist.toLowerCase().includes(q) || a.album.toLowerCase().includes(q)) : arr;
+  if (activeDay) res = res.filter(a => dayAssignments[albumKey(a)] === activeDay);
+  if (s === 'artist') res = [...res].sort((a,b) => a.artist.localeCompare(b.artist));
+  else if (s === 'year-desc') res = [...res].sort((a,b) => (b.year||0)-(a.year||0));
+  else if (s === 'year-asc') res = [...res].sort((a,b) => (a.year||0)-(b.year||0));
+  else if (s === 'album') res = [...res].sort((a,b) => a.album.localeCompare(b.album));
+  return res;
+}
+
+function escAttr(s) {
+  return String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+}
+
+function makeCard(a) {
+  const div = document.createElement('div');
+  div.className = 'album-card';
+  div.dataset.id = a.id;
+  div.style.background = 'var(--surface-hi)';
+  const tracks = a.tracks || [];
+  const day = dayAssignments[albumKey(a)] || 'fri';
+  const trackHTML = tracks.length
+    ? tracks.map(t => `<div class="track-row"><span class="track-num">${String(t.number).padStart(2,'0')}</span><span class="track-title">${t.title}</span><span class="track-dur">${t.duration||''}</span></div>`).join('')
+    : '<p class="no-tracks">Track data unavailable</p>';
+  const inBasket = typeof basketIsBagged === 'function' && basketIsBagged(a.id);
+  const albumData = escAttr(JSON.stringify({ id: a.id, artist: a.artist, album: a.album, year: a.year || '' }));
+  div.innerHTML = `
+    <div class="card-body">
+      <div class="artist">${a.artist}</div>
+      <div class="album-title">${a.album}</div>
+      <div class="meta">
+        <span class="year-badge">${a.year||'—'}</span>
+        <span>${a.genre||'—'}</span>
+        <span>·</span>
+        <span>${a.format||'—'}</span>
+        <span class="day-badge ${day}">${day.toUpperCase()}</span>
+      </div>
+      <button class="expand-btn" onclick="toggleCard(this.closest('.album-card'))">
+        <span class="material-symbols-outlined arrow" style="font-size:14px">expand_more</span>
+        ${tracks.length} track${tracks.length!==1?'s':''}
+      </button>
+      <button class="crate-btn${inBasket ? ' crate-btn--in' : ''}" onclick="basketToggle(${albumData})" data-id="${escAttr(a.id)}">${inBasket ? '✓ In crate' : '+ Crate'}</button>
+    </div>
+    <div class="tracklist">${trackHTML}</div>
+  `;
+  return div;
+}
+
+function toggleCard(card) { card.classList.toggle('open'); }
+
+function renderAlbums() {
+  const grid = document.getElementById('album-grid');
+  const empty = document.getElementById('empty-msg');
+  const res = sorted(albums);
+  document.getElementById('count-display').textContent = res.length;
+  grid.innerHTML = '';
+  if (!res.length) { empty.style.display='block'; return; }
+  empty.style.display = 'none';
+  res.forEach(a => grid.appendChild(makeCard(a)));
+}
+
+initDaySelector();
+renderAlbums();
+</script>
+</body>
+</html>

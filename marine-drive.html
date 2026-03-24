@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Marine Drive | Analog Archivist</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Homemade+Apple&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  :root {
+    --teal: #3a6b77;
+    --teal-light: #b9ebf8;
+    --brown: #7a603a;
+    --rust: #8b574b;
+    --surface: #fffcf7;
+    --surface-hi: #f5f0e8;
+    --on-surface: #1a2a2e;
+    --muted: #7a8c8f;
+    --border: #d4c9b8;
+    --grain-opacity: 0.35;
+    --header-bg: rgba(255,252,247,0.9);
+    --controls-bg: rgba(255,252,247,0.95);
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--surface); color: var(--on-surface); font-family: 'Plus Jakarta Sans', sans-serif; min-height: 100vh; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; display: inline-block; vertical-align: middle; }
+
+  .film-grain {
+    position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    background-size: 200px; opacity: var(--grain-opacity); transition: opacity 0.6s ease;
+  }
+
+  header { border-bottom: 1px solid var(--border); background: var(--header-bg); backdrop-filter: blur(8px); position: relative; z-index: 10; transition: background 0.5s ease, border-color 0.4s ease; }
+
+  .album-card {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    cursor: pointer;
+    transition: background 0.2s;
+    position: relative;
+  }
+  .album-card::before {
+    content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
+    background: var(--teal); transform: scaleY(0); transform-origin: bottom;
+    transition: transform 0.2s ease;
+  }
+  .album-card:hover::before, .album-card.open::before { transform: scaleY(1); }
+  .album-card:hover { background: var(--surface-hi); }
+  .card-body { padding: 1.75rem 1.75rem 1.75rem 2rem; }
+  .artist {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700; font-style: italic;
+    font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+    color: var(--teal); line-height: 1.1;
+  }
+  .album-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 300; font-size: 0.9rem;
+    color: var(--on-surface); margin-top: 0.3rem; letter-spacing: 0.02em;
+  }
+  .meta {
+    font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--muted); margin-top: 0.75rem;
+    display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;
+  }
+  .expand-btn {
+    display: flex; align-items: center; gap: 4px;
+    font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--brown); cursor: pointer; border: none; background: none;
+    padding: 0; margin-top: 0.9rem; font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+  }
+  .expand-btn .arrow { transition: transform 0.2s; }
+  .album-card.open .expand-btn .arrow { transform: rotate(180deg); }
+
+  .tracklist {
+    display: none; background: var(--surface-hi);
+    border-top: 1px solid var(--border); padding: 1rem 2rem;
+  }
+  .album-card.open .tracklist { display: block; }
+  .track-row {
+    display: flex; gap: 1rem; align-items: baseline;
+    padding: 0.3rem 0; border-bottom: 1px solid rgba(212,201,184,0.5);
+    font-size: 0.8rem;
+  }
+  .track-row:last-child { border-bottom: none; }
+  .track-num { color: var(--teal); font-weight: 600; min-width: 1.8rem; font-family: 'Playfair Display', serif; }
+  .track-title { color: var(--on-surface); flex: 1; }
+  .track-dur { color: var(--muted); font-size: 0.7rem; }
+  .no-tracks { color: var(--muted); font-size: 0.8rem; font-style: italic; }
+
+  .script-accent { font-family: 'Homemade Apple', cursive; font-size: 1.1rem; color: var(--rust); }
+
+  /* === Weather Mood === */
+  [data-mood="overcast"] {
+    --surface: #f2f0ed; --surface-hi: #e6e3de;
+    --on-surface: #2a2d30; --muted: #8a8e91; --border: #c8c4bc;
+    --teal: #5a6b70; --teal-light: #c5d5da; --brown: #7a7a6a;
+    --grain-opacity: 0.45;
+    --header-bg: rgba(242,240,237,0.9); --controls-bg: rgba(242,240,237,0.95);
+  }
+  [data-mood="rain"] {
+    --surface: #edf0f3; --surface-hi: #dde2e8;
+    --on-surface: #1c2530; --muted: #6a7a85; --border: #b4c0cc;
+    --teal: #2e5c6e; --teal-light: #a8d0e0; --brown: #5a6a78;
+    --grain-opacity: 0.55;
+    --header-bg: rgba(237,240,243,0.9); --controls-bg: rgba(237,240,243,0.95);
+  }
+  [data-mood="night"] {
+    --surface: #1a1e22; --surface-hi: #252a30;
+    --on-surface: #d4cfc8; --muted: #7a8088; --border: #353d45;
+    --teal: #5a9aaa; --teal-light: #2e4a58; --brown: #9a8a70;
+    --grain-opacity: 0.60;
+    --header-bg: rgba(26,30,34,0.92); --controls-bg: rgba(26,30,34,0.96);
+  }
+  body, .album-card, header {
+    transition: background-color 0.5s ease, background 0.5s ease, color 0.5s ease, border-color 0.4s ease;
+  }
+  #weather-selector { display: inline-flex; gap: 5px; margin-top: 7px; }
+  .wx-btn {
+    padding: 2px 7px; height: 22px;
+    border: 1px solid var(--border); background: transparent;
+    color: var(--muted); font-size: 0.58rem; letter-spacing: 0.1em; text-transform: uppercase;
+    font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600;
+    cursor: pointer; line-height: 1;
+    transition: border-color 0.2s, background 0.2s, color 0.2s;
+  }
+  .wx-btn:hover { border-color: var(--teal); color: var(--on-surface); }
+  .wx-btn.active { border-color: var(--teal); background: var(--teal-light); color: var(--on-surface); }
+</style>
+</head>
+<body>
+<canvas id="rain-canvas" style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;opacity:0;z-index:5;transition:opacity 0.6s ease;"></canvas>
+<div class="film-grain"></div>
+
+<header>
+  <div style="max-width:1400px;margin:0 auto;padding:1.25rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
+    <a href="index.html" style="display:flex;align-items:center;gap:0.5rem;text-decoration:none;color:var(--muted);font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;font-family:'Plus Jakarta Sans',sans-serif;">
+      <span class="material-symbols-outlined" style="font-size:16px">arrow_back</span>
+      Global Archive
+    </a>
+    <div style="text-align:center;">
+      <div class="script-accent">Marine Drive</div>
+      <div style="font-family:'Playfair Display',serif;font-size:0.75rem;font-style:italic;color:var(--muted);">Collection View</div>
+      <div id="weather-selector">
+        <button class="wx-btn active" data-mood="sun">SUN</button>
+        <button class="wx-btn" data-mood="overcast">OVER</button>
+        <button class="wx-btn" data-mood="rain">RAIN</button>
+        <button class="wx-btn" data-mood="night">NIGHT</button>
+      </div>
+    </div>
+    <div style="text-align:right;">
+      <div style="font-family:'Playfair Display',serif;font-weight:700;font-style:italic;font-size:1.8rem;color:var(--teal);line-height:1;" id="count-display">—</div>
+      <div style="font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);">Albums</div>
+    </div>
+  </div>
+</header>
+
+<div style="max-width:1400px;margin:0 auto;padding:0.75rem 1.5rem;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:1rem;flex-wrap:wrap;position:relative;z-index:10;background:var(--controls-bg);transition:background 0.5s ease,border-color 0.4s ease;">
+  <span style="font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--teal);border:1px solid var(--teal);padding:2px 8px;">marine-drive</span>
+  <input id="search" type="text" placeholder="Search artist or album…" style="background:var(--surface-hi);border:1px solid var(--border);color:var(--on-surface);padding:0.4rem 0.75rem;font-size:0.8rem;font-family:'Plus Jakarta Sans',sans-serif;outline:none;flex:1;max-width:320px;" oninput="renderAlbums()"/>
+  <div style="margin-left:auto;display:flex;gap:0.5rem;align-items:center;">
+    <label style="font-size:0.7rem;color:var(--muted);letter-spacing:0.1em;text-transform:uppercase;">Sort</label>
+    <select id="sort" onchange="renderAlbums()" style="background:var(--surface-hi);border:1px solid var(--border);color:var(--on-surface);padding:0.35rem 0.5rem;font-size:0.75rem;font-family:'Plus Jakarta Sans',sans-serif;outline:none;">
+      <option value="artist">Artist A→Z</option>
+      <option value="year-desc">Year (newest)</option>
+      <option value="year-asc">Year (oldest)</option>
+      <option value="album">Album A→Z</option>
+    </select>
+  </div>
+</div>
+
+<main style="max-width:1400px;margin:0 auto;padding:2rem 1.5rem;position:relative;z-index:10;">
+  <div id="album-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));border-top:1px solid var(--border);border-left:1px solid var(--border);">
+  </div>
+  <div id="empty-msg" style="display:none;padding:4rem;text-align:center;color:var(--muted);font-size:0.9rem;font-style:italic;">No albums found.</div>
+</main>
+
+<script src="data.js"></script>
+<script src="basket.js"></script>
+<script>
+const TAG = 'marine-drive';
+let albums = MUSIC_LIBRARY.filter(a => a.tag === TAG);
+
+function sorted(arr) {
+  const s = document.getElementById('sort').value;
+  const q = (document.getElementById('search').value || '').toLowerCase();
+  let res = q ? arr.filter(a => a.artist.toLowerCase().includes(q) || a.album.toLowerCase().includes(q)) : arr;
+  if (s === 'artist') res = [...res].sort((a,b) => a.artist.localeCompare(b.artist));
+  else if (s === 'year-desc') res = [...res].sort((a,b) => (b.year||0)-(a.year||0));
+  else if (s === 'year-asc') res = [...res].sort((a,b) => (a.year||0)-(b.year||0));
+  else if (s === 'album') res = [...res].sort((a,b) => a.album.localeCompare(b.album));
+  return res;
+}
+
+function escAttr(s) {
+  return String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+}
+
+function makeCard(a) {
+  const div = document.createElement('div');
+  div.className = 'album-card';
+  div.dataset.id = a.id;
+  const tracks = a.tracks || [];
+  const trackHTML = tracks.length
+    ? tracks.map(t => `<div class="track-row"><span class="track-num">${String(t.number).padStart(2,'0')}</span><span class="track-title">${t.title}</span><span class="track-dur">${t.duration||''}</span></div>`).join('')
+    : '<p class="no-tracks">Track data unavailable</p>';
+  const inBasket = typeof basketIsBagged === 'function' && basketIsBagged(a.id);
+  const albumData = escAttr(JSON.stringify({ id: a.id, artist: a.artist, album: a.album, year: a.year || '' }));
+  div.innerHTML = `
+    <div class="card-body">
+      <div class="artist">${a.artist}</div>
+      <div class="album-title">${a.album}</div>
+      <div class="meta">
+        <span>${a.year||'—'}</span>
+        <span>·</span>
+        <span>${a.genre||'—'}</span>
+        <span>·</span>
+        <span>${a.format||'—'}</span>
+      </div>
+      <button class="expand-btn" onclick="toggleCard(this.closest('.album-card'))">
+        <span class="material-symbols-outlined arrow" style="font-size:14px">expand_more</span>
+        ${tracks.length} track${tracks.length!==1?'s':''}
+      </button>
+      <button class="crate-btn${inBasket ? ' crate-btn--in' : ''}" onclick="basketToggle(${albumData})" data-id="${escAttr(a.id)}">${inBasket ? '✓ In crate' : '+ Crate'}</button>
+    </div>
+    <div class="tracklist">${trackHTML}</div>
+  `;
+  return div;
+}
+
+function toggleCard(card) { card.classList.toggle('open'); }
+
+function renderAlbums() {
+  const grid = document.getElementById('album-grid');
+  const empty = document.getElementById('empty-msg');
+  const res = sorted(albums);
+  document.getElementById('count-display').textContent = res.length;
+  grid.innerHTML = '';
+  if (!res.length) { empty.style.display='block'; return; }
+  empty.style.display = 'none';
+  res.forEach(a => grid.appendChild(makeCard(a)));
+}
+
+renderAlbums();
+</script>
+
+<script>
+(function() {
+  const LS_KEY = 'dig_weather_mood';
+  const MOODS = ['sun', 'overcast', 'rain', 'night'];
+
+  const canvas = document.getElementById('rain-canvas');
+  const ctx = canvas.getContext('2d');
+  let drops = [];
+  let rafHandle = null;
+  let currentMood = 'sun';
+
+  function initDrops() {
+    drops = [];
+    const count = Math.max(80, Math.floor(canvas.width / 7));
+    for (let i = 0; i < count; i++) {
+      drops.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        speed: 4 + Math.random() * 6,
+        length: 15 + Math.random() * 20,
+        opacity: 0.06 + Math.random() * 0.12,
+      });
+    }
+  }
+
+  function drawRain() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    const sinA = Math.sin(8 * Math.PI / 180);
+    const cosA = Math.cos(8 * Math.PI / 180);
+    drops.forEach(d => {
+      ctx.beginPath();
+      ctx.strokeStyle = 'rgba(140,160,175,' + d.opacity + ')';
+      ctx.lineWidth = 1;
+      ctx.moveTo(d.x, d.y);
+      ctx.lineTo(d.x + sinA * d.length, d.y + cosA * d.length);
+      ctx.stroke();
+      d.x += sinA * d.speed;
+      d.y += cosA * d.speed;
+      if (d.y > canvas.height) { d.x = Math.random() * canvas.width; d.y = -d.length; }
+      if (d.x > canvas.width)  { d.x = -d.length; d.y = Math.random() * canvas.height; }
+    });
+    rafHandle = requestAnimationFrame(drawRain);
+  }
+
+  function startRain() {
+    canvas.width  = window.innerWidth;
+    canvas.height = window.innerHeight;
+    initDrops();
+    canvas.style.opacity = '1';
+    if (!rafHandle) drawRain();
+  }
+
+  function stopRain() {
+    canvas.style.opacity = '0';
+    if (rafHandle) { cancelAnimationFrame(rafHandle); rafHandle = null; }
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  }
+
+  function setMood(mood) {
+    if (!MOODS.includes(mood)) mood = 'sun';
+    currentMood = mood;
+    document.documentElement.setAttribute('data-mood', mood);
+    document.querySelectorAll('.wx-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.mood === mood);
+    });
+    if (mood === 'rain') { startRain(); } else { stopRain(); }
+    try { localStorage.setItem(LS_KEY, mood); } catch(e) {}
+  }
+
+  function init() {
+    let saved = 'sun';
+    try { saved = localStorage.getItem(LS_KEY) || 'sun'; } catch(e) {}
+    document.querySelectorAll('.wx-btn').forEach(btn => {
+      btn.addEventListener('click', () => setMood(btn.dataset.mood));
+    });
+    window.addEventListener('resize', () => {
+      if (currentMood === 'rain') {
+        canvas.width  = window.innerWidth;
+        canvas.height = window.innerHeight;
+        initDrops();
+      }
+    });
+    setMood(saved);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+</body>
+</html>

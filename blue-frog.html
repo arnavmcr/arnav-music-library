@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Blue Frog | Analog Archivist</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  :root {
+    --cyan: #81ecff;
+    --cyan-dim: #00c8e8;
+    --purple: #a58cff;
+    --blue-light: #d3e3ff;
+    --surface: #0e0e0e;
+    --surface-hi: #141414;
+    --surface-glass: rgba(255,255,255,0.04);
+    --on-surface: #f0f0f8;
+    --muted: #666680;
+    --border: #1e1e2a;
+    --border-accent: rgba(129,236,255,0.2);
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--surface); color: var(--on-surface);
+    font-family: 'Manrope', sans-serif; min-height: 100vh;
+    position: relative;
+  }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; display: inline-block; vertical-align: middle; }
+
+  /* Radial glow bg */
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    transition: opacity 0.5s;
+    background:
+      radial-gradient(ellipse 60% 50% at 20% 20%, rgba(129,236,255,0.04) 0%, transparent 60%),
+      radial-gradient(ellipse 50% 60% at 80% 80%, rgba(165,140,255,0.04) 0%, transparent 60%);
+  }
+
+  /* ─── Venue Capacity: mode colour overrides ─── */
+  body.mode-headline {
+    --cyan: #f5c518;
+    --cyan-dim: #d4a017;
+    --purple: #e09a00;
+    --border-accent: rgba(245,197,24,0.22);
+  }
+  body.mode-headline::before {
+    background:
+      radial-gradient(ellipse 60% 50% at 20% 20%, rgba(245,197,24,0.05) 0%, transparent 60%),
+      radial-gradient(ellipse 50% 60% at 80% 80%, rgba(224,154,0,0.04) 0%, transparent 60%);
+  }
+  body.mode-opener {
+    --cyan: #c084fc;
+    --cyan-dim: #a855f7;
+    --purple: #9333ea;
+    --border-accent: rgba(192,132,252,0.22);
+  }
+  body.mode-opener::before {
+    background:
+      radial-gradient(ellipse 60% 50% at 20% 20%, rgba(192,132,252,0.05) 0%, transparent 60%),
+      radial-gradient(ellipse 50% 60% at 80% 80%, rgba(147,51,234,0.04) 0%, transparent 60%);
+  }
+
+  header {
+    border-bottom: 1px solid var(--border-accent);
+    background: rgba(14,14,14,0.85); backdrop-filter: blur(16px);
+    position: relative; z-index: 10;
+    transition: border-color 0.4s;
+  }
+
+  .album-card {
+    background: var(--surface-glass);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--border);
+    border-left: 4px solid transparent;
+    cursor: pointer;
+    transition: border-color 0.35s, box-shadow 0.2s, background 0.2s;
+    position: relative;
+  }
+  .album-card[data-pos="headline"] { border-left-color: rgba(245,197,24,0.45); }
+  .album-card[data-pos="support"]  { border-left-color: rgba(129,236,255,0.4); }
+  .album-card[data-pos="opener"]   { border-left-color: rgba(192,132,252,0.45); }
+  .album-card:hover { background: rgba(129,236,255,0.04); box-shadow: 0 4px 32px rgba(129,236,255,0.06); }
+  .album-card[data-pos="headline"]:hover { background: rgba(245,197,24,0.03); box-shadow: 0 4px 32px rgba(245,197,24,0.08); }
+  .album-card[data-pos="opener"]:hover   { background: rgba(192,132,252,0.03); box-shadow: 0 4px 32px rgba(192,132,252,0.08); }
+  .album-card.open[data-pos="headline"] { border-left-color: #f5c518; }
+  .album-card.open[data-pos="support"]  { border-left-color: #81ecff; }
+  .album-card.open[data-pos="opener"]   { border-left-color: #c084fc; }
+
+  .card-body { padding: 1.5rem 1.5rem 1.5rem 1.25rem; }
+  .artist {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    font-size: clamp(1rem, 2.2vw, 1.45rem);
+    color: var(--on-surface); line-height: 1.1;
+    letter-spacing: -0.02em;
+    transition: font-size 0.35s;
+  }
+  body.mode-headline .artist { font-size: clamp(1.1rem, 2.5vw, 1.65rem); }
+  .album-title {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300; font-size: 0.85rem;
+    color: var(--blue-light); margin-top: 0.3rem; opacity: 0.8;
+    transition: font-size 0.35s;
+  }
+  body.mode-headline .album-title { font-size: 0.95rem; }
+  .meta {
+    font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.12em;
+    color: var(--muted); margin-top: 0.75rem;
+    display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;
+  }
+  .genre-chip {
+    font-size: 0.58rem; letter-spacing: 0.1em; text-transform: uppercase;
+    padding: 1px 6px; border: 1px solid var(--border-accent); color: var(--cyan);
+    display: inline-block; transition: color 0.35s, border-color 0.35s;
+  }
+  .expand-btn {
+    display: flex; align-items: center; gap: 4px;
+    font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--cyan-dim); cursor: pointer; border: none; background: none;
+    padding: 0; margin-top: 0.9rem; font-family: 'Manrope', sans-serif; font-weight: 700;
+    transition: color 0.35s;
+  }
+  .expand-btn .arrow { transition: transform 0.2s; }
+  .album-card.open .expand-btn .arrow { transform: rotate(180deg); }
+  .tracklist {
+    display: none; background: rgba(0,0,0,0.4);
+    border-top: 1px solid var(--border-accent); padding: 0.85rem 1.5rem;
+    transition: border-color 0.35s;
+  }
+  .album-card.open .tracklist { display: block; }
+  .track-row {
+    display: flex; gap: 1rem; align-items: baseline;
+    padding: 0.3rem 0; border-bottom: 1px solid rgba(30,30,42,0.8);
+    font-size: 0.78rem;
+  }
+  .track-row:last-child { border-bottom: none; }
+  .track-num { color: var(--cyan); font-weight: 700; min-width: 1.8rem; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.65rem; transition: color 0.35s; }
+  .track-title { color: var(--on-surface); flex: 1; font-weight: 300; }
+  .track-dur { color: var(--muted); font-size: 0.68rem; font-variant-numeric: tabular-nums; }
+  .no-tracks { color: var(--muted); font-size: 0.78rem; font-style: italic; }
+
+  /* ─── Stage position badge ─── */
+  .stage-badge {
+    font-size: 0.5rem; letter-spacing: 0.18em; text-transform: uppercase;
+    font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800;
+    padding: 2px 7px; display: inline-block; flex-shrink: 0; align-self: flex-start;
+    margin-top: 2px;
+  }
+  .stage-headline { color: #f5c518; border: 1px solid rgba(245,197,24,0.35); background: rgba(245,197,24,0.08); }
+  .stage-support  { color: #81ecff; border: 1px solid rgba(129,236,255,0.22); background: rgba(129,236,255,0.06); }
+  .stage-opener   { color: #c084fc; border: 1px solid rgba(192,132,252,0.22); background: rgba(192,132,252,0.06); }
+
+  /* ─── Mode toggle bar ─── */
+  .mode-btn {
+    font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase;
+    font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700;
+    padding: 0.32rem 0.85rem; border: 1px solid var(--border);
+    background: rgba(255,255,255,0.03); color: var(--muted);
+    cursor: pointer; transition: color 0.2s, border-color 0.2s, background 0.2s;
+    white-space: nowrap;
+  }
+  .mode-btn:hover { color: var(--on-surface); border-color: rgba(255,255,255,0.15); }
+  .mode-btn.active-all      { color: var(--on-surface); border-color: rgba(255,255,255,0.25); background: rgba(255,255,255,0.07); }
+  .mode-btn.active-headline { color: #f5c518; border-color: rgba(245,197,24,0.5); background: rgba(245,197,24,0.08); }
+  .mode-btn.active-support  { color: #81ecff; border-color: rgba(129,236,255,0.4); background: rgba(129,236,255,0.06); }
+  .mode-btn.active-opener   { color: #c084fc; border-color: rgba(192,132,252,0.4); background: rgba(192,132,252,0.06); }
+
+  /* ─── Headline mode: larger grid ─── */
+  body.mode-headline #album-grid {
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  }
+</style>
+</head>
+<body>
+<header>
+  <div style="max-width:1400px;margin:0 auto;padding:1.25rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
+    <a href="index.html" style="display:flex;align-items:center;gap:0.5rem;text-decoration:none;color:var(--muted);font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;font-family:'Manrope',sans-serif;">
+      <span class="material-symbols-outlined" style="font-size:15px">arrow_back</span>
+      Global Archive
+    </a>
+    <div style="text-align:center;">
+      <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.4rem;letter-spacing:-0.02em;background:linear-gradient(90deg,var(--cyan),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Blue Frog</div>
+      <div style="font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted);">The Sonic Architect Archive</div>
+    </div>
+    <div style="text-align:right;">
+      <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.8rem;color:var(--cyan);line-height:1;" id="count-display">—</div>
+      <div style="font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);">Albums</div>
+    </div>
+  </div>
+</header>
+
+<div style="max-width:1400px;margin:0 auto;padding:0.7rem 1.5rem;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:1rem;flex-wrap:wrap;position:relative;z-index:10;background:rgba(14,14,14,0.8);backdrop-filter:blur(8px);">
+  <span style="font-size:0.58rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--cyan);border:1px solid var(--border-accent);padding:2px 8px;background:rgba(129,236,255,0.06);">blue-frog</span>
+  <input id="search" type="text" placeholder="Search artist or album…" style="background:rgba(255,255,255,0.04);border:1px solid var(--border);color:var(--on-surface);padding:0.4rem 0.75rem;font-size:0.8rem;font-family:'Manrope',sans-serif;outline:none;flex:1;max-width:320px;" oninput="renderAlbums()"/>
+  <div style="margin-left:auto;display:flex;gap:0.5rem;align-items:center;">
+    <label style="font-size:0.68rem;color:var(--muted);letter-spacing:0.1em;text-transform:uppercase;">Sort</label>
+    <select id="sort" onchange="renderAlbums()" style="background:rgba(255,255,255,0.04);border:1px solid var(--border);color:var(--on-surface);padding:0.35rem 0.5rem;font-size:0.75rem;font-family:'Manrope',sans-serif;outline:none;">
+      <option value="artist">Artist A→Z</option>
+      <option value="year-desc">Year (newest)</option>
+      <option value="year-asc">Year (oldest)</option>
+      <option value="album">Album A→Z</option>
+    </select>
+  </div>
+</div>
+
+<div style="max-width:1400px;margin:0 auto;padding:0.55rem 1.5rem;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap;position:relative;z-index:10;background:rgba(14,14,14,0.75);backdrop-filter:blur(8px);">
+  <span style="font-size:0.58rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);margin-right:0.25rem;font-family:'Plus Jakarta Sans',sans-serif;">Set</span>
+  <button class="mode-btn active-all" data-mode="all"      onclick="setMode('all')">Full Set</button>
+  <button class="mode-btn"            data-mode="headline" onclick="setMode('headline')">▲ Headline</button>
+  <button class="mode-btn"            data-mode="support"  onclick="setMode('support')">◆ Support</button>
+  <button class="mode-btn"            data-mode="opener"   onclick="setMode('opener')">▾ Opener</button>
+  <span id="mode-count" style="margin-left:auto;font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);font-family:'Plus Jakarta Sans',sans-serif;"></span>
+</div>
+
+<main style="max-width:1400px;margin:0 auto;padding:2rem 1.5rem;position:relative;z-index:1;">
+  <div id="album-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:8px;">
+  </div>
+  <div id="empty-msg" style="display:none;padding:4rem;text-align:center;color:var(--muted);font-size:0.9rem;">No albums found.</div>
+</main>
+
+<script src="data.js"></script>
+<script src="basket.js"></script>
+<script>
+const TAG = 'blue-frog';
+let albums = MUSIC_LIBRARY.filter(a => a.tag === TAG);
+let positionMap = {};
+let currentMode = 'all';
+
+const POS_LABELS = { headline: 'Headline', support: 'Support', opener: 'Opener' };
+
+function assignPositions() {
+  const key = 'blue_frog_positions_v1';
+  const stored = localStorage.getItem(key);
+  if (stored) { positionMap = JSON.parse(stored); return; }
+  const shuffled = [...albums].sort(() => Math.random() - 0.5);
+  const n = shuffled.length;
+  const hCount = Math.round(n * 0.20);
+  const sCount = Math.round(n * 0.40);
+  shuffled.forEach((a, i) => {
+    if (i < hCount)            positionMap[a.id] = 'headline';
+    else if (i < hCount+sCount) positionMap[a.id] = 'support';
+    else                        positionMap[a.id] = 'opener';
+  });
+  localStorage.setItem(key, JSON.stringify(positionMap));
+}
+
+function setMode(mode) {
+  currentMode = mode;
+  document.body.classList.remove('mode-headline', 'mode-support', 'mode-opener');
+  if (mode !== 'all') document.body.classList.add('mode-' + mode);
+  document.querySelectorAll('.mode-btn').forEach(btn => {
+    btn.className = 'mode-btn' + (btn.dataset.mode === mode ? ' active-' + mode : '');
+  });
+  renderAlbums();
+}
+
+function sorted(arr) {
+  const s = document.getElementById('sort').value;
+  const q = (document.getElementById('search').value || '').toLowerCase();
+  let res = q ? arr.filter(a => a.artist.toLowerCase().includes(q) || a.album.toLowerCase().includes(q)) : arr;
+  if (currentMode !== 'all') res = res.filter(a => positionMap[a.id] === currentMode);
+  if (s === 'artist')    res = [...res].sort((a,b) => a.artist.localeCompare(b.artist));
+  else if (s === 'year-desc') res = [...res].sort((a,b) => (b.year||0)-(a.year||0));
+  else if (s === 'year-asc')  res = [...res].sort((a,b) => (a.year||0)-(b.year||0));
+  else if (s === 'album')     res = [...res].sort((a,b) => a.album.localeCompare(b.album));
+  return res;
+}
+
+function escAttr(s) {
+  return String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+}
+
+function makeCard(a) {
+  const div = document.createElement('div');
+  div.className = 'album-card';
+  div.dataset.id = a.id;
+  const pos = positionMap[a.id] || 'opener';
+  div.dataset.pos = pos;
+  const tracks = a.tracks || [];
+  const trackHTML = tracks.length
+    ? tracks.map(t => `<div class="track-row"><span class="track-num">${String(t.number).padStart(2,'0')}</span><span class="track-title">${t.title}</span><span class="track-dur">${t.duration||''}</span></div>`).join('')
+    : '<p class="no-tracks">Track data unavailable</p>';
+  const inBasket = typeof basketIsBagged === 'function' && basketIsBagged(a.id);
+  const albumData = escAttr(JSON.stringify({ id: a.id, artist: a.artist, album: a.album, year: a.year || '' }));
+  div.innerHTML = `
+    <div class="card-body">
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:0.75rem;">
+        <div style="flex:1;min-width:0;">
+          <div class="artist">${a.artist}</div>
+          <div class="album-title">${a.album}</div>
+        </div>
+        <span class="stage-badge stage-${pos}">${POS_LABELS[pos]}</span>
+      </div>
+      <div class="meta">
+        <span>${a.year||'—'}</span>
+        <span>·</span>
+        <span class="genre-chip">${a.genre||'—'}</span>
+        <span>·</span>
+        <span>${a.format||'—'}</span>
+      </div>
+      <button class="expand-btn" onclick="toggleCard(this.closest('.album-card'))">
+        <span class="material-symbols-outlined arrow" style="font-size:14px">expand_more</span>
+        ${tracks.length} track${tracks.length!==1?'s':''}
+      </button>
+      <button class="crate-btn${inBasket ? ' crate-btn--in' : ''}" onclick="basketToggle(${albumData})" data-id="${escAttr(a.id)}">${inBasket ? '✓ In crate' : '+ Crate'}</button>
+    </div>
+    <div class="tracklist">${trackHTML}</div>
+  `;
+  return div;
+}
+
+function toggleCard(card) { card.classList.toggle('open'); }
+
+function renderAlbums() {
+  const grid = document.getElementById('album-grid');
+  const empty = document.getElementById('empty-msg');
+  const res = sorted(albums);
+  document.getElementById('count-display').textContent = res.length;
+  const modeCount = document.getElementById('mode-count');
+  modeCount.textContent = currentMode !== 'all' ? res.length + ' on the bill' : '';
+  grid.innerHTML = '';
+  if (!res.length) { empty.style.display='block'; return; }
+  empty.style.display = 'none';
+  res.forEach(a => grid.appendChild(makeCard(a)));
+}
+
+assignPositions();
+renderAlbums();
+</script>
+</body>
+</html>

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Study: Deep Focus | Analog Archivist</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  :root {
+    --black: #000000;
+    --gray-dark: #3b3b3c;
+    --gray-mid: #5f5e5e;
+    --gray-light: #b0b0b0;
+    --surface: #f9f9f9;
+    --surface-hi: #efefef;
+    --on-surface: #111;
+    --border: #d0d0d0;
+  }
+  * { box-sizing: border-box; border-radius: 0 !important; }
+  body {
+    background: var(--surface); color: var(--on-surface);
+    font-family: 'Inter', sans-serif; min-height: 100vh;
+  }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; display: inline-block; vertical-align: middle; }
+
+  /* Technical grid overlay */
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    background-image:
+      linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  header { border-bottom: 2px solid var(--black); background: var(--surface); position: relative; z-index: 10; }
+
+  .album-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: background 0.15s;
+    position: relative;
+  }
+  .album-card:hover { background: var(--surface-hi); }
+  .album-card.open { background: var(--surface-hi); border-color: var(--black); }
+  .card-body { padding: 1.25rem; }
+  .artist {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: clamp(0.95rem, 2vw, 1.35rem);
+    color: var(--black); line-height: 1.15;
+    text-transform: uppercase; letter-spacing: -0.01em;
+  }
+  .album-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300; font-size: 0.83rem;
+    color: var(--gray-dark); margin-top: 0.2rem;
+  }
+  .meta {
+    font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.12em;
+    color: var(--gray-mid); margin-top: 0.7rem;
+    display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .expand-btn {
+    display: flex; align-items: center; gap: 4px;
+    font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--gray-dark); cursor: pointer; border: none; background: none;
+    padding: 0; margin-top: 0.85rem; font-family: 'JetBrains Mono', monospace; font-weight: 500;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s;
+  }
+  .expand-btn:hover { border-bottom-color: var(--black); }
+  .expand-btn .arrow { transition: transform 0.2s; }
+  .album-card.open .expand-btn .arrow { transform: rotate(180deg); }
+  .tracklist {
+    display: none; background: var(--surface);
+    border-top: 1px solid var(--border); padding: 0.75rem 1.25rem;
+  }
+  .album-card.open .tracklist { display: block; }
+  .track-row {
+    display: flex; gap: 1rem; align-items: baseline;
+    padding: 0.28rem 0; border-bottom: 1px solid var(--border);
+    font-size: 0.75rem; font-family: 'JetBrains Mono', monospace;
+  }
+  .track-row:last-child { border-bottom: none; }
+  .track-num { color: var(--gray-mid); font-weight: 500; min-width: 2rem; }
+  .track-title { color: var(--black); flex: 1; font-weight: 300; font-family: 'Inter', sans-serif; }
+  .track-dur { color: var(--gray-light); font-size: 0.68rem; font-variant-numeric: tabular-nums; }
+  .no-tracks { color: var(--gray-mid); font-size: 0.78rem; font-style: italic; font-family: 'Inter', sans-serif; }
+
+  /* ── Pomodoro Widget ─────────────────────────────────────────── */
+  .pomo-widget {
+    position: fixed; top: 1rem; right: 1rem; z-index: 100;
+    background: var(--surface); border: 2px solid var(--border);
+    padding: 18px 20px;
+    display: flex; flex-direction: column; align-items: center; gap: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    transition: border-color 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  .pomo-widget.state-focus { border-color: var(--black); }
+
+  .pomo-ring { position: relative; width: 96px; height: 96px; overflow: visible; }
+  .pomo-ring svg { transform: rotate(-90deg); display: block; }
+
+  .pomo-time {
+    font-size: 18px; font-weight: 500; color: var(--black);
+    letter-spacing: -0.02em; font-variant-numeric: tabular-nums;
+    transition: color 0.2s;
+  }
+  .pomo-widget.state-paused .pomo-time { color: var(--gray-mid); }
+  .pomo-widget.state-break  .pomo-time { color: var(--gray-mid); }
+
+  .pomo-label {
+    font-size: 8px; text-transform: uppercase; letter-spacing: 0.18em;
+    color: var(--gray-light);
+  }
+  .pomo-ring-inner {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 1px;
+  }
+
+  .pomo-btns { display: flex; gap: 5px; }
+  .pomo-btn {
+    border: 1px solid var(--border); background: none;
+    color: var(--gray-mid);
+    font-size: 8px; letter-spacing: 0.14em; text-transform: uppercase;
+    padding: 4px 9px; font-family: 'JetBrains Mono', monospace;
+    cursor: pointer;
+  }
+  .pomo-btn.primary {
+    border-color: var(--black); background: var(--black); color: #fff;
+  }
+  .pomo-btn.outline {
+    border-color: var(--black); background: none; color: var(--black);
+  }
+  .pomo-btn.outline-mid {
+    border-color: var(--gray-mid); background: none; color: var(--gray-mid);
+  }
+  .pomo-btn:hover { border-color: var(--black); color: var(--black); }
+
+  .pomo-dots { display: flex; gap: 3px; }
+  .pomo-dot {
+    width: 5px; height: 5px; border-radius: 50% !important;
+    background: var(--border); transition: background 0.3s;
+  }
+  .pomo-dot.done     { background: var(--black); }
+  .pomo-dot.in-break { background: var(--gray-mid); }
+
+  /* Break dim overlay */
+  @keyframes pomoFadeIn  { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes pomoFadeOut { from { opacity: 1; } to { opacity: 0; } }
+
+  body.break-mode::after {
+    content: ''; position: fixed; inset: 0;
+    background: rgba(0,0,0,0.05); pointer-events: none; z-index: 50;
+    animation: pomoFadeIn 1s ease forwards;
+  }
+  body.removing-break-mode::after {
+    content: ''; position: fixed; inset: 0;
+    background: rgba(0,0,0,0.05); pointer-events: none; z-index: 50;
+    animation: pomoFadeOut 0.5s ease forwards;
+  }
+</style>
+</head>
+<body>
+<header>
+  <div style="max-width:1400px;margin:0 auto;padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
+    <a href="index.html" style="display:flex;align-items:center;gap:0.5rem;text-decoration:none;color:var(--gray-mid);font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;font-family:'JetBrains Mono',monospace;">
+      <span class="material-symbols-outlined" style="font-size:15px">arrow_back</span>
+      Global Archive
+    </a>
+    <div style="text-align:center;">
+      <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--black);">Study</div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gray-mid);">Deep Focus // Grayscale Archive</div>
+    </div>
+    <div style="text-align:right;">
+      <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.8rem;color:var(--black);line-height:1;" id="count-display">—</div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gray-mid);">Albums</div>
+    </div>
+  </div>
+</header>
+
+<div style="max-width:1400px;margin:0 auto;padding:0.65rem 1.5rem;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:1rem;flex-wrap:wrap;position:relative;z-index:10;background:var(--surface);">
+  <span style="font-family:'JetBrains Mono',monospace;font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--black);border:1px solid var(--black);padding:2px 8px;">studying</span>
+  <input id="search" type="text" placeholder="Search artist or album…" style="background:var(--surface-hi);border:1px solid var(--border);color:var(--on-surface);padding:0.4rem 0.75rem;font-size:0.78rem;font-family:'Inter',sans-serif;outline:none;flex:1;max-width:320px;" oninput="renderAlbums()"/>
+  <div style="margin-left:auto;display:flex;gap:0.5rem;align-items:center;">
+    <label style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;color:var(--gray-mid);letter-spacing:0.1em;text-transform:uppercase;">Sort</label>
+    <select id="sort" onchange="renderAlbums()" style="background:var(--surface-hi);border:1px solid var(--border);color:var(--on-surface);padding:0.35rem 0.5rem;font-size:0.75rem;font-family:'Inter',sans-serif;outline:none;">
+      <option value="artist">Artist A→Z</option>
+      <option value="year-desc">Year (newest)</option>
+      <option value="year-asc">Year (oldest)</option>
+      <option value="album">Album A→Z</option>
+    </select>
+  </div>
+</div>
+
+<main style="max-width:1400px;margin:0 auto;padding:2rem 1.5rem;position:relative;z-index:10;">
+  <div id="album-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:0;border-top:1px solid var(--border);border-left:1px solid var(--border);">
+  </div>
+  <div id="empty-msg" style="display:none;padding:4rem;text-align:center;color:var(--gray-mid);font-size:0.9rem;font-family:'JetBrains Mono',monospace;">// No albums found.</div>
+</main>
+
+<script src="data.js"></script>
+<script src="basket.js"></script>
+<script>
+const TAG = 'studying';
+let albums = MUSIC_LIBRARY.filter(a => a.tag === TAG);
+
+function sorted(arr) {
+  const s = document.getElementById('sort').value;
+  const q = (document.getElementById('search').value || '').toLowerCase();
+  let res = q ? arr.filter(a => a.artist.toLowerCase().includes(q) || a.album.toLowerCase().includes(q)) : arr;
+  if (s === 'artist') res = [...res].sort((a,b) => a.artist.localeCompare(b.artist));
+  else if (s === 'year-desc') res = [...res].sort((a,b) => (b.year||0)-(a.year||0));
+  else if (s === 'year-asc') res = [...res].sort((a,b) => (a.year||0)-(b.year||0));
+  else if (s === 'album') res = [...res].sort((a,b) => a.album.localeCompare(b.album));
+  return res;
+}
+
+function escAttr(s) {
+  return String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+}
+
+function makeCard(a) {
+  const div = document.createElement('div');
+  div.className = 'album-card';
+  div.dataset.id = a.id;
+  div.style.borderRight = '1px solid var(--border)';
+  div.style.borderBottom = '1px solid var(--border)';
+  const tracks = a.tracks || [];
+  const trackHTML = tracks.length
+    ? tracks.map(t => `<div class="track-row"><span class="track-num">${String(t.number).padStart(2,'0')}</span><span class="track-title">${t.title}</span><span class="track-dur">${t.duration||''}</span></div>`).join('')
+    : '<p class="no-tracks">// Track data unavailable</p>';
+  const inBasket = typeof basketIsBagged === 'function' && basketIsBagged(a.id);
+  const albumData = escAttr(JSON.stringify({ id: a.id, artist: a.artist, album: a.album, year: a.year || '' }));
+  div.innerHTML = `
+    <div class="card-body">
+      <div class="artist">${a.artist}</div>
+      <div class="album-title">${a.album}</div>
+      <div class="meta">
+        <span>${a.year||'—'}</span>
+        <span> / </span>
+        <span>${a.genre||'—'}</span>
+        <span> / </span>
+        <span>${a.format||'—'}</span>
+      </div>
+      <button class="expand-btn" onclick="toggleCard(this.closest('.album-card'))">
+        <span class="material-symbols-outlined arrow" style="font-size:14px">expand_more</span>
+        ${tracks.length} tracks
+      </button>
+      <button class="crate-btn${inBasket ? ' crate-btn--in' : ''}" onclick="basketToggle(${albumData})" data-id="${escAttr(a.id)}">${inBasket ? '✓ In crate' : '+ Crate'}</button>
+    </div>
+    <div class="tracklist">${trackHTML}</div>
+  `;
+  return div;
+}
+
+function toggleCard(card) { card.classList.toggle('open'); }
+
+function renderAlbums() {
+  const grid = document.getElementById('album-grid');
+  const empty = document.getElementById('empty-msg');
+  const res = sorted(albums);
+  document.getElementById('count-display').textContent = res.length;
+  grid.innerHTML = '';
+  if (!res.length) { empty.style.display='block'; return; }
+  empty.style.display = 'none';
+  res.forEach(a => grid.appendChild(makeCard(a)));
+}
+
+renderAlbums();
+</script>
+
+<!-- ── Pomodoro Widget ──────────────────────────────────────── -->
+<div id="pomo-widget" class="pomo-widget state-idle">
+  <div class="pomo-ring">
+    <svg viewBox="0 0 96 96" width="96" height="96" aria-hidden="true">
+      <!-- base track -->
+      <circle cx="48" cy="48" r="38" fill="none" stroke="#e0e0e0" stroke-width="3"/>
+      <!-- solid progress arc (focus/break) -->
+      <circle id="pomo-arc-solid" cx="48" cy="48" r="38" fill="none"
+        stroke="var(--black)" stroke-width="3" stroke-linecap="square"
+        stroke-dasharray="238.76" stroke-dashoffset="0"/>
+      <!-- dashed overlay (paused only) -->
+      <circle id="pomo-arc-dashed" cx="48" cy="48" r="38" fill="none"
+        stroke="var(--gray-mid)" stroke-width="3" stroke-linecap="square"
+        stroke-dasharray="8 5" stroke-dashoffset="0" opacity="0"/>
+    </svg>
+    <div class="pomo-ring-inner">
+      <span class="pomo-time" id="pomo-time">25:00</span>
+      <span class="pomo-label" id="pomo-label">idle</span>
+    </div>
+  </div>
+  <div class="pomo-btns">
+    <button type="button" class="pomo-btn primary" id="pomo-btn-primary" onclick="pomodoro.primaryAction()">start</button>
+    <button type="button" class="pomo-btn" id="pomo-btn-reset" onclick="pomodoro.reset()">reset</button>
+  </div>
+  <div class="pomo-dots" id="pomo-dots">
+    <div class="pomo-dot" data-idx="0"></div>
+    <div class="pomo-dot" data-idx="1"></div>
+    <div class="pomo-dot" data-idx="2"></div>
+    <div class="pomo-dot" data-idx="3"></div>
+  </div>
+</div>
+<script>
+(function() {
+  'use strict';
+
+  // ── Constants ──────────────────────────────────────────────────
+  const CIRC   = 238.76;
+  const DURATIONS = { focus: 1500, short: 300, long: 900 };
+
+  // ── Pure helpers ───────────────────────────────────────────────
+  function formatTime(secs) {
+    const m = Math.floor(secs / 60);
+    const s = secs % 60;
+    return String(m).padStart(2,'0') + ':' + String(s).padStart(2,'0');
+  }
+
+  function arcOffset(remaining, total) {
+    if (!total) return 0;
+    return (1 - remaining / total) * CIRC;
+  }
+
+  function resetCycleIfDone() {
+    if (sessionsCompleted >= 4) sessionsCompleted = 0;
+  }
+
+  // Quick sanity assertions (run once on load, visible in DevTools console)
+  console.assert(formatTime(0)    === '00:00', 'formatTime(0)');
+  console.assert(formatTime(1500) === '25:00', 'formatTime(1500)');
+  console.assert(formatTime(65)   === '01:05', 'formatTime(65)');
+  console.assert(arcOffset(1500, 1500).toFixed(2) === '0.00',  'arc full');
+  console.assert(arcOffset(0,    1500).toFixed(2) === '238.76','arc empty');
+  console.assert(arcOffset(750,  1500).toFixed(2) === '119.38','arc half');
+
+  // ── DOM refs ───────────────────────────────────────────────────
+  const widget     = document.getElementById('pomo-widget');
+  const timeEl     = document.getElementById('pomo-time');
+  const labelEl    = document.getElementById('pomo-label');
+  const primaryBtn = document.getElementById('pomo-btn-primary');
+  const resetBtn   = document.getElementById('pomo-btn-reset');
+  const arcSolid   = document.getElementById('pomo-arc-solid');
+  const arcDashed  = document.getElementById('pomo-arc-dashed');
+  const dots       = Array.from(document.querySelectorAll('.pomo-dot'));
+
+  // ── State ──────────────────────────────────────────────────────
+  let state             = 'idle';   // 'idle' | 'focus' | 'paused' | 'break'
+  let remaining         = DURATIONS.focus;
+  let currentTotal      = DURATIONS.focus;
+  let sessionsCompleted = 0;
+  let intervalId        = null;
+
+  // ── Render ─────────────────────────────────────────────────────
+  function render() {
+    // Time display
+    timeEl.textContent = formatTime(remaining);
+
+    // Arc
+    const offset = (state === 'idle') ? 0 : arcOffset(remaining, currentTotal);
+    arcSolid.setAttribute('stroke-dashoffset', offset);
+    arcDashed.setAttribute('stroke-dashoffset', offset);
+
+    // Arc colour and visibility
+    if (state === 'paused') {
+      arcSolid.setAttribute('opacity', '0');
+      arcDashed.setAttribute('opacity', '1');
+      arcDashed.setAttribute('stroke', 'var(--gray-mid)');
+    } else if (state === 'break') {
+      arcSolid.setAttribute('opacity', '1');
+      arcDashed.setAttribute('opacity', '0');
+      arcSolid.setAttribute('stroke', 'var(--gray-mid)');
+      arcSolid.setAttribute('stroke-dasharray', CIRC);
+    } else if (state === 'focus') {
+      arcSolid.setAttribute('opacity', '1');
+      arcDashed.setAttribute('opacity', '0');
+      arcSolid.setAttribute('stroke', 'var(--black)');
+      arcSolid.setAttribute('stroke-dasharray', CIRC);
+    } else {
+      // idle: hide both arcs
+      arcSolid.setAttribute('opacity', '0');
+      arcDashed.setAttribute('opacity', '0');
+    }
+
+    // Label
+    const labels = { idle: 'idle', focus: 'focus', paused: 'paused', break: 'rest' };
+    labelEl.textContent = labels[state];
+
+    // Widget state class
+    widget.className = 'pomo-widget state-' + state;
+
+    // Buttons
+    if (state === 'idle') {
+      primaryBtn.textContent = 'start';
+      primaryBtn.className = 'pomo-btn primary';
+      resetBtn.style.opacity = '0.4';
+    } else if (state === 'focus') {
+      primaryBtn.textContent = 'pause';
+      primaryBtn.className = 'pomo-btn outline';
+      resetBtn.style.opacity = '1';
+    } else if (state === 'paused') {
+      primaryBtn.textContent = 'resume';
+      primaryBtn.className = 'pomo-btn primary';
+      resetBtn.style.opacity = '1';
+    } else if (state === 'break') {
+      primaryBtn.textContent = 'skip';
+      primaryBtn.className = 'pomo-btn outline-mid';
+      resetBtn.style.opacity = '0.6';
+    }
+
+    // Dots
+    dots.forEach((dot, i) => {
+      dot.className = 'pomo-dot';
+      if (i < sessionsCompleted) dot.classList.add('done');
+      // During a break, the just-completed session dot shows in-break colour
+      if (state === 'break' && i === sessionsCompleted - 1) {
+        dot.classList.remove('done');
+        dot.classList.add('in-break');
+      }
+    });
+  }
+
+  // ── Tick ───────────────────────────────────────────────────────
+  function tick() {
+    remaining -= 1;
+    if (remaining <= 0) {
+      remaining = 0;
+      render();
+      onPhaseComplete();
+      return;
+    }
+    render();
+    save();
+  }
+
+  function onPhaseComplete() {
+    clearInterval(intervalId);
+    intervalId = null;
+
+    if (state === 'focus') {
+      sessionsCompleted += 1;
+      const isLongBreak = sessionsCompleted >= 4;
+      currentTotal = isLongBreak ? DURATIONS.long : DURATIONS.short;
+      remaining    = currentTotal;
+      state        = 'break';
+      applyBreakMode(true);
+
+    } else if (state === 'break') {
+      // Break complete: dot turns black
+      // If long break (sessionsCompleted === 4), start new cycle
+      resetCycleIfDone();
+      applyBreakMode(false);
+      currentTotal = DURATIONS.focus;
+      remaining    = currentTotal;
+      state        = 'focus';
+    }
+
+    render();
+    save();
+    intervalId = setInterval(tick, 1000);
+  }
+
+  // ── Break dim ──────────────────────────────────────────────────
+  let removeBreakTimeout = null;
+
+  function applyBreakMode(on) {
+    if (removeBreakTimeout) {
+      clearTimeout(removeBreakTimeout);
+      removeBreakTimeout = null;
+    }
+    document.body.classList.remove('break-mode', 'removing-break-mode');
+    if (on) {
+      document.body.classList.add('break-mode');
+    } else {
+      document.body.classList.add('removing-break-mode');
+      removeBreakTimeout = setTimeout(() => {
+        document.body.classList.remove('removing-break-mode');
+        removeBreakTimeout = null;
+      }, 500);
+    }
+  }
+
+  // ── Actions ────────────────────────────────────────────────────
+  window.pomodoro = {
+    primaryAction() {
+      if (state === 'idle' || state === 'paused') {
+        state = 'focus';
+        intervalId = setInterval(tick, 1000);
+        render();
+        save();
+      } else if (state === 'focus') {
+        clearInterval(intervalId);
+        intervalId = null;
+        state = 'paused';
+        render();
+        save();
+      } else if (state === 'break') {
+        // skip: advance to next focus session
+        clearInterval(intervalId);
+        intervalId = null;
+        // break dot turns black (break complete)
+        applyBreakMode(false);
+        resetCycleIfDone();
+        currentTotal = DURATIONS.focus;
+        remaining    = currentTotal;
+        state        = 'focus';
+        intervalId   = setInterval(tick, 1000);
+        render();
+        save();
+      }
+    },
+
+    reset() {
+      clearInterval(intervalId);
+      intervalId = null;
+      const wasInBreak = document.body.classList.contains('break-mode') || state === 'break';
+      if (wasInBreak) applyBreakMode(false);
+      state             = 'idle';
+      remaining         = DURATIONS.focus;
+      currentTotal      = DURATIONS.focus;
+      sessionsCompleted = 0;
+      render();
+      save();
+    }
+  };
+
+  // ── Persistence ────────────────────────────────────────────────
+  const LS_KEY = 'dig_pomodoro';
+
+  function save() {
+    try {
+      localStorage.setItem(LS_KEY, JSON.stringify({
+        state,
+        remaining,
+        sessionsCompleted,
+        savedAt: Date.now()
+      }));
+    } catch(e) { /* localStorage unavailable — degrade silently */ }
+  }
+
+  function loadSaved() {
+    try {
+      const raw = localStorage.getItem(LS_KEY);
+      if (!raw) return;
+      const d = JSON.parse(raw);
+      const validStates = ['idle', 'focus', 'paused', 'break'];
+      if (!validStates.includes(d.state))       return;
+      if (!Number.isFinite(d.remaining)   || d.remaining < 0)                           return;
+      if (!Number.isInteger(d.sessionsCompleted)
+          || d.sessionsCompleted < 0 || d.sessionsCompleted > 4)                        return;
+      if (!Number.isFinite(d.savedAt)     || d.savedAt <= 0)                            return;
+
+      // Apply elapsed time for running states
+      let r = Math.round(d.remaining);
+      if (d.state === 'focus' || d.state === 'break') {
+        const elapsed = Math.floor((Date.now() - d.savedAt) / 1000);
+        r = r - elapsed;
+      }
+
+      if (r <= 0) {
+        // Phase completed while away — advance to next phase without auto-starting
+        if (d.state === 'focus') {
+          // Focus expired → show break ready (not running)
+          const sc = d.sessionsCompleted + 1;
+          sessionsCompleted = Math.min(sc, 4);
+          const isLong = sessionsCompleted >= 4;
+          currentTotal = isLong ? DURATIONS.long : DURATIONS.short;
+          remaining    = currentTotal;
+          state        = 'break';
+          applyBreakMode(true);
+        } else {
+          // Break expired → show idle for new focus phase
+          const sc = d.sessionsCompleted >= 4 ? 0 : d.sessionsCompleted;
+          sessionsCompleted = sc;
+          applyBreakMode(false);
+          state        = 'idle';
+          remaining    = DURATIONS.focus;
+          currentTotal = DURATIONS.focus;
+        }
+        return;
+      }
+
+      state             = d.state;
+      remaining         = r;
+      sessionsCompleted = d.sessionsCompleted;
+
+      // Set currentTotal based on restored state
+      if (d.state === 'idle')   currentTotal = DURATIONS.focus;
+      if (d.state === 'focus')  currentTotal = DURATIONS.focus;
+      if (d.state === 'paused') currentTotal = DURATIONS.focus;
+      if (d.state === 'break') {
+        currentTotal = (d.sessionsCompleted >= 4) ? DURATIONS.long : DURATIONS.short;
+      }
+
+      // Resume running states
+      if (d.state === 'focus' || d.state === 'break') {
+        if (d.state === 'focus') applyBreakMode(false);
+        if (d.state === 'break') applyBreakMode(true);
+        intervalId = setInterval(tick, 1000);
+      }
+
+    } catch(e) { /* malformed JSON — degrade silently to idle */ }
+  }
+
+  // Init
+  loadSaved();
+  render();
+})();
+</script>
+</body>
+</html>
