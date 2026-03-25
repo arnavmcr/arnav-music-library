@@ -53609,7 +53609,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
-    "date_added": "",
+    "date_added": "2026-03-25",
     "tracks": [
       {
         "number": "01",
@@ -53691,6 +53691,11 @@ const MUSIC_LIBRARY = [
     "date_added": "",
     "tracks": [
       {
+        "number": "New Horse",
+        "title": "2026-03-25",
+        "duration": "01"
+      },
+      {
         "number": "Trade It",
         "title": "MP3",
         "duration": "02"
@@ -53747,7 +53752,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
-    "date_added": "",
+    "date_added": "2026-03-25",
     "tracks": [
       {
         "number": "01",
@@ -53811,7 +53816,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
-    "date_added": "",
+    "date_added": "2026-03-25",
     "tracks": [
       {
         "number": "01",
@@ -53845,7 +53850,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "",
-    "date_added": "",
+    "date_added": "2026-03-25",
     "tracks": [
       {
         "number": "01",
@@ -53914,7 +53919,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
-    "date_added": "",
+    "date_added": "2026-03-25",
     "tracks": [
       {
         "number": "01",
@@ -53993,7 +53998,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "",
-    "date_added": "",
+    "date_added": "2026-03-25",
     "tracks": [
       {
         "number": "01",
@@ -54067,7 +54072,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "",
-    "date_added": "",
+    "date_added": "2026-03-25",
     "tracks": [
       {
         "number": "1",
@@ -54151,7 +54156,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
-    "date_added": "",
+    "date_added": "2026-03-25",
     "tracks": [
       {
         "number": "03",
@@ -54170,7 +54175,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "",
-    "date_added": "",
+    "date_added": "2026-03-25",
     "tracks": [
       {
         "number": "1",
@@ -54229,7 +54234,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
-    "date_added": "",
+    "date_added": "2026-03-25",
     "tracks": [
       {
         "number": "1",
@@ -54248,7 +54253,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "",
-    "date_added": "",
+    "date_added": "2026-03-25",
     "tracks": [
       {
         "number": "01",
@@ -54312,7 +54317,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "",
-    "date_added": "",
+    "date_added": "2026-03-25",
     "tracks": [
       {
         "number": "1",
@@ -54371,7 +54376,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "",
-    "date_added": "",
+    "date_added": "2026-03-25",
     "tracks": [
       {
         "number": "01",
@@ -54445,7 +54450,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "",
-    "date_added": "",
+    "date_added": "2026-03-25",
     "tracks": [
       {
         "number": "01",
@@ -54509,7 +54514,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "",
-    "date_added": "",
+    "date_added": "2026-03-25",
     "tracks": [
       {
         "number": "1",
@@ -54588,7 +54593,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
-    "date_added": "",
+    "date_added": "2026-03-25",
     "tracks": [
       {
         "number": "1",
