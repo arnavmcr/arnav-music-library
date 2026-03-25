@@ -10,6 +10,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -28,6 +29,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -46,6 +48,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -119,6 +122,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -142,6 +146,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -160,6 +165,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -243,6 +249,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -261,6 +268,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -324,6 +332,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -397,6 +406,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -470,6 +480,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -488,6 +499,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -506,6 +518,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -564,6 +577,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -592,6 +606,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -670,6 +685,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -698,6 +714,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -761,6 +778,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -789,6 +807,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "AZ)",
@@ -832,6 +851,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -855,6 +875,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -898,6 +919,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -946,6 +968,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -1014,6 +1037,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -1032,6 +1056,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -1105,6 +1130,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -1173,6 +1199,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -1246,6 +1273,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -1264,6 +1292,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -1282,6 +1311,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -1300,6 +1330,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -1353,6 +1384,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -1421,6 +1453,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -1439,6 +1472,7 @@ const MUSIC_LIBRARY = [
     "format": "Mainstream Rock",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "Hey Honey - I'm Packin' You In!",
@@ -1527,6 +1561,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -1595,6 +1630,7 @@ const MUSIC_LIBRARY = [
     "format": "M4A",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -1618,6 +1654,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -1671,6 +1708,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -1689,6 +1727,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -1707,6 +1746,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -1725,6 +1765,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -1743,6 +1784,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -1761,6 +1803,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -1814,6 +1857,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -1832,6 +1876,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -1910,6 +1955,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -1958,6 +2004,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -2031,6 +2078,7 @@ const MUSIC_LIBRARY = [
     "format": "Punk",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "2",
@@ -2049,6 +2097,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -2122,6 +2171,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -2205,6 +2255,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -2278,6 +2329,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -2326,6 +2378,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -2374,6 +2427,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -2447,6 +2501,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -2510,6 +2565,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -2573,6 +2629,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -2681,6 +2738,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -2699,6 +2757,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -2727,6 +2786,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -2745,6 +2805,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -2763,6 +2824,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -2781,6 +2843,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -2854,6 +2917,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -2877,6 +2941,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -2910,6 +2975,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -2978,6 +3044,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -2996,6 +3063,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -3014,6 +3082,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -3032,6 +3101,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -3125,6 +3195,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -3143,6 +3214,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -3216,6 +3288,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -3289,6 +3362,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -3352,6 +3426,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -3370,6 +3445,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -3393,6 +3469,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -3466,6 +3543,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -3499,6 +3577,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -3517,6 +3596,7 @@ const MUSIC_LIBRARY = [
     "format": "M4A",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -3550,6 +3630,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -3573,6 +3654,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -3626,6 +3708,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -3699,6 +3782,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -3717,6 +3801,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -3750,6 +3835,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -3768,6 +3854,7 @@ const MUSIC_LIBRARY = [
     "format": "M4A",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -3806,6 +3893,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -3884,6 +3972,7 @@ const MUSIC_LIBRARY = [
     "format": "M4A",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -3952,6 +4041,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -4025,6 +4115,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -4108,6 +4199,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -4131,6 +4223,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -4204,6 +4297,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -4272,6 +4366,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -4350,6 +4445,7 @@ const MUSIC_LIBRARY = [
     "format": "Indie Rock / Brit Pop",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "Mardy Bum",
@@ -4373,6 +4469,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -4401,6 +4498,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "studying",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -4444,6 +4542,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -4517,6 +4616,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -4535,6 +4635,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -4553,6 +4654,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -4571,6 +4673,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -4589,6 +4692,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -4607,6 +4711,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -4625,6 +4730,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -4643,6 +4749,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -4661,6 +4768,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "Y",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -4679,6 +4787,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -4737,6 +4846,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -4775,6 +4885,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -4793,6 +4904,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -4876,6 +4988,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -4949,6 +5062,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -4967,6 +5081,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -4985,6 +5100,7 @@ const MUSIC_LIBRARY = [
     "format": "2005",
     "youtube": "Hip-Hop",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "2",
@@ -5003,6 +5119,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -5021,6 +5138,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -5039,6 +5157,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -5057,6 +5176,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -5075,6 +5195,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -5093,6 +5214,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -5156,6 +5278,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -5219,6 +5342,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -5257,6 +5381,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -5275,6 +5400,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -5338,6 +5464,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -5356,6 +5483,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -5374,6 +5502,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -5437,6 +5566,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -5460,6 +5590,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -5483,6 +5614,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -5506,6 +5638,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -5524,6 +5657,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -5612,6 +5746,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "Y",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -5630,6 +5765,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -5648,6 +5784,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -5671,10 +5808,11 @@ const MUSIC_LIBRARY = [
     "format": "Tanvi",
     "youtube": "Bhargavi",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
-        "number": "MP3",
-        "title": "Hindi Soundtrack",
+        "number": "1",
+        "title": "MP3",
         "duration": ""
       },
       {
@@ -5694,10 +5832,11 @@ const MUSIC_LIBRARY = [
     "format": "Bhargavi",
     "youtube": "Anupama",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
-        "number": "MP3",
-        "title": "Hindi Soundtrack",
+        "number": "1",
+        "title": "MP3",
         "duration": ""
       }
     ]
@@ -5712,6 +5851,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -5730,6 +5870,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -5748,6 +5889,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -5766,6 +5908,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -5784,6 +5927,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -5802,6 +5946,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -5850,6 +5995,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -5883,6 +6029,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -5911,6 +6058,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -5979,6 +6127,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -5997,6 +6146,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "Torture Their Young",
@@ -6030,6 +6180,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -6103,6 +6254,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -6236,6 +6388,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -6359,6 +6512,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -6402,6 +6556,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -6485,6 +6640,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -6568,6 +6724,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -6586,6 +6743,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -6604,6 +6762,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -6622,6 +6781,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -6640,6 +6800,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -6708,6 +6869,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -6791,6 +6953,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -6814,6 +6977,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -6877,6 +7041,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -6955,6 +7120,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -6993,6 +7159,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -7011,6 +7178,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -7029,6 +7197,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -7047,6 +7216,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -7065,6 +7235,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -7083,6 +7254,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -7171,6 +7343,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -7189,6 +7362,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -7257,6 +7431,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -7340,6 +7515,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -7398,6 +7574,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -7416,6 +7593,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -7434,6 +7612,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -7452,6 +7631,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -7470,6 +7650,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -7488,6 +7669,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -7506,6 +7688,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -7579,6 +7762,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -7622,6 +7806,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -7640,6 +7825,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -7678,6 +7864,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -7696,6 +7883,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -7789,6 +7977,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -7892,6 +8081,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -7930,6 +8120,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -8018,6 +8209,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -8111,6 +8303,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -8169,6 +8362,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -8187,6 +8381,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -8255,6 +8450,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -8328,6 +8524,7 @@ const MUSIC_LIBRARY = [
     "format": "Other",
     "youtube": "Unknown",
     "tag": "",
+    "date_added": "",
     "tracks": []
   },
   {
@@ -8340,6 +8537,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -8363,6 +8561,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -8381,6 +8580,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -8399,6 +8599,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -8417,6 +8618,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -8435,6 +8637,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -8513,6 +8716,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -8641,6 +8845,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -8694,6 +8899,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "Say Hello",
@@ -8792,6 +8998,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -8860,6 +9067,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "Be Happy",
@@ -8883,6 +9091,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -8901,6 +9110,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -8919,6 +9129,7 @@ const MUSIC_LIBRARY = [
     "format": "Folk",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "2",
@@ -8937,6 +9148,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -9025,6 +9237,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -9078,6 +9291,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -9096,6 +9310,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -9129,6 +9344,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -9207,6 +9423,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -9225,6 +9442,7 @@ const MUSIC_LIBRARY = [
     "format": "M4A",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -9293,6 +9511,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -9311,6 +9530,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -9329,6 +9549,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -9357,6 +9578,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -9375,6 +9597,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -9393,6 +9616,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -9411,6 +9635,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "studying",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -9469,6 +9694,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -9487,6 +9713,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -9575,6 +9802,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -9643,6 +9871,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "studying",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -9726,6 +9955,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -9764,10 +9994,11 @@ const MUSIC_LIBRARY = [
     "format": "Metal",
     "youtube": "Metal",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
-        "number": "https://coverartarchive.org/release/f1265a95-4b27-4954-8c65-8ebf3e012051/front-250",
-        "title": "f1265a95-4b27-4954-8c65-8ebf3e012051",
+        "number": "1",
+        "title": "https://coverartarchive.org/release/f1265a95-4b27-4954-8c65-8ebf3e012051/front-250",
         "duration": "Anthem"
       }
     ]
@@ -9782,6 +10013,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -9815,6 +10047,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -9833,6 +10066,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -9851,6 +10085,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -9869,6 +10104,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -9922,6 +10158,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -9985,6 +10222,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "don't you lose heart",
@@ -10008,6 +10246,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -10026,6 +10265,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -10109,6 +10349,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -10187,6 +10428,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -10245,6 +10487,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -10298,6 +10541,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -10356,6 +10600,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -10439,6 +10684,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -10457,6 +10703,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -10520,6 +10767,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -10538,6 +10786,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -10556,6 +10805,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -10574,6 +10824,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -10592,6 +10843,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -10665,6 +10917,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -10723,6 +10976,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -10801,6 +11055,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -10869,6 +11124,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -10947,6 +11203,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -10965,6 +11222,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -10983,6 +11241,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -11001,6 +11260,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -11019,6 +11279,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -11037,6 +11298,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -11055,6 +11317,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -11073,6 +11336,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "Y",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -11091,6 +11355,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -11109,6 +11374,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -11127,6 +11393,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -11200,6 +11467,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -11218,6 +11486,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -11251,6 +11520,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -11269,6 +11539,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -11307,6 +11578,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -11325,6 +11597,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -11398,6 +11671,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -11416,6 +11690,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -11434,6 +11709,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -11452,6 +11728,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -11470,12 +11747,8 @@ const MUSIC_LIBRARY = [
     "format": "Punk Rock",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
-      {
-        "number": "We R Who We R",
-        "title": "https://coverartarchive.org/release/9ee07e6a-0fbf-448e-9f79-68887cbb8f6a/front-250",
-        "duration": ""
-      },
       {
         "number": "2",
         "title": "MP3",
@@ -11493,6 +11766,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -11561,6 +11835,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -11579,6 +11854,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -11642,6 +11918,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -11660,6 +11937,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -11678,6 +11956,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -11746,6 +12025,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -11819,6 +12099,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -11877,6 +12158,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -11895,6 +12177,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -11953,6 +12236,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -11971,6 +12255,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -12034,6 +12319,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -12112,6 +12398,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -12185,6 +12472,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -12203,6 +12491,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -12221,6 +12510,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -12239,6 +12529,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -12257,6 +12548,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -12275,6 +12567,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -12293,6 +12586,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -12361,6 +12655,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -12424,6 +12719,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -12442,6 +12738,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -12460,6 +12757,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -12478,12 +12776,8 @@ const MUSIC_LIBRARY = [
     "format": "Folk",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
-      {
-        "number": "Just A Song Before I Go",
-        "title": "https://coverartarchive.org/release/50a963f5-ea89-4a33-a874-9a170be2e565/front-250",
-        "duration": ""
-      },
       {
         "number": "2",
         "title": "MP3",
@@ -12501,6 +12795,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -12519,6 +12814,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -12607,6 +12903,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -12695,6 +12992,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -12713,6 +13011,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -12746,6 +13045,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -12764,6 +13064,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -12782,6 +13083,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -12800,6 +13102,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "yet known",
@@ -12853,12 +13156,8 @@ const MUSIC_LIBRARY = [
     "format": "2003",
     "youtube": "Emo",
     "tag": "",
+    "date_added": "",
     "tracks": [
-      {
-        "number": "1",
-        "title": "dive-bar",
-        "duration": ""
-      },
       {
         "number": "2",
         "title": "243.6",
@@ -12911,6 +13210,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -12994,6 +13294,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13032,6 +13333,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13050,6 +13352,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13118,6 +13421,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13161,6 +13465,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13234,6 +13539,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13252,6 +13558,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13270,6 +13577,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13288,6 +13596,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13306,6 +13615,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13324,6 +13634,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13342,6 +13653,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13360,6 +13672,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13378,6 +13691,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13396,6 +13710,7 @@ const MUSIC_LIBRARY = [
     "format": "1998",
     "youtube": "Alternative",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "2",
@@ -13414,6 +13729,7 @@ const MUSIC_LIBRARY = [
     "format": "Alternative Rock",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "2",
@@ -13432,6 +13748,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "Is Not Chicago (Live - 1/25/97)",
@@ -13455,6 +13772,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13473,6 +13791,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13521,6 +13840,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13539,6 +13859,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13577,6 +13898,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13595,6 +13917,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13613,6 +13936,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13631,6 +13955,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13649,6 +13974,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13762,6 +14088,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13780,6 +14107,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13803,6 +14131,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13821,6 +14150,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13839,6 +14169,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13857,6 +14188,7 @@ const MUSIC_LIBRARY = [
     "format": "Alternative Rock",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "2",
@@ -13875,6 +14207,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13898,6 +14231,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13931,6 +14265,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13949,6 +14284,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13967,6 +14303,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -13985,6 +14322,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14003,6 +14341,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14021,6 +14360,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14044,6 +14384,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14077,6 +14418,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14095,6 +14437,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14113,6 +14456,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14131,6 +14475,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14149,6 +14494,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14167,6 +14513,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14240,6 +14587,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14258,6 +14606,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14326,6 +14675,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14344,6 +14694,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14362,6 +14713,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14430,6 +14782,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14493,6 +14846,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14511,6 +14865,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14529,6 +14884,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14547,6 +14903,7 @@ const MUSIC_LIBRARY = [
     "format": "Hip-Hop",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "2",
@@ -14565,6 +14922,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14593,6 +14951,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14611,6 +14970,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14644,6 +15004,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14682,6 +15043,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14715,6 +15077,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14758,6 +15121,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14831,6 +15195,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14849,6 +15214,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14867,6 +15233,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14885,6 +15252,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "Y",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14903,6 +15271,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14921,6 +15290,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -14979,6 +15349,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -15042,6 +15413,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -15060,6 +15432,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "Y",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -15078,6 +15451,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -15096,6 +15470,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -15179,6 +15554,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -15297,6 +15673,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -15405,6 +15782,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -15423,6 +15801,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -15496,6 +15875,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -15514,6 +15894,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -15532,6 +15913,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -15550,6 +15932,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -15568,6 +15951,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -15586,6 +15970,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -15684,6 +16069,7 @@ const MUSIC_LIBRARY = [
     "format": "M4A",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -15767,6 +16153,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -15785,6 +16172,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -15803,6 +16191,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -15846,6 +16235,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -15864,6 +16254,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -15882,6 +16273,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "Y",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "2",
@@ -15900,6 +16292,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -15918,6 +16311,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -15986,6 +16380,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -16009,6 +16404,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -16037,6 +16433,7 @@ const MUSIC_LIBRARY = [
     "format": "29th August 2009",
     "youtube": "2009",
     "tag": "",
+    "date_added": "",
     "tracks": []
   },
   {
@@ -16049,6 +16446,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -16142,6 +16540,7 @@ const MUSIC_LIBRARY = [
     "format": "Post-Hardcore",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "The Feast [Live]",
@@ -16195,6 +16594,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -16243,6 +16643,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -16281,6 +16682,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -16304,6 +16706,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -16342,6 +16745,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -16360,6 +16764,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -16388,6 +16793,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -16416,6 +16822,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -16459,6 +16866,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -16492,6 +16900,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -16520,6 +16929,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -16548,6 +16958,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -16581,6 +16992,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -16659,6 +17071,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -16722,6 +17135,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -16800,6 +17214,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -16818,6 +17233,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -16836,6 +17252,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -16869,12 +17286,8 @@ const MUSIC_LIBRARY = [
     "format": "Electronic",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
-      {
-        "number": "We Can Breathe In Space",
-        "title": "https://coverartarchive.org/release/156265d9-8bf3-4828-af1a-a574fcb328e1/front-250",
-        "duration": "They Just Don't Want Us To Escape"
-      },
       {
         "number": "4",
         "title": "316.6",
@@ -16892,6 +17305,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -16910,6 +17324,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -16963,6 +17378,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -17006,6 +17422,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -17024,6 +17441,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -17042,6 +17460,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -17060,6 +17479,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -17078,6 +17498,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -17096,6 +17517,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -17114,6 +17536,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -17132,6 +17555,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -17180,6 +17604,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -17198,6 +17623,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -17216,6 +17642,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -17234,6 +17661,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -17252,6 +17680,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -17305,6 +17734,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -17323,6 +17753,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -17481,6 +17912,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -17569,6 +18001,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -17587,6 +18020,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -17655,6 +18089,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -17748,6 +18183,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -17806,6 +18242,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -17874,6 +18311,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -17932,6 +18370,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -17950,6 +18389,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -17968,6 +18408,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -17986,6 +18427,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18054,6 +18496,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18072,6 +18515,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18110,6 +18554,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18128,6 +18573,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18146,6 +18592,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18164,6 +18611,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18182,6 +18630,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18200,6 +18649,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18218,6 +18668,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18241,6 +18692,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18259,6 +18711,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "Bad Lads (Kumail's Bootleg Remix)",
@@ -18307,6 +18760,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18325,6 +18779,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18348,6 +18803,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18371,6 +18827,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18389,6 +18846,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18417,6 +18875,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18435,6 +18894,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18453,6 +18913,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18471,6 +18932,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18489,6 +18951,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18507,6 +18970,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18525,6 +18989,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18543,6 +19008,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18561,6 +19027,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18579,6 +19046,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18597,6 +19065,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18615,6 +19084,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18638,6 +19108,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18656,6 +19127,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18674,6 +19146,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18692,6 +19165,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18730,6 +19204,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18748,6 +19223,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18766,6 +19242,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18799,6 +19276,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18817,6 +19295,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18850,6 +19329,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18888,6 +19368,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18906,6 +19387,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18979,6 +19461,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -18997,6 +19480,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -19015,6 +19499,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -19033,6 +19518,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -19051,6 +19537,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -19129,6 +19616,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -19147,6 +19635,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -19230,6 +19719,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -19248,6 +19738,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -19266,6 +19757,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -19334,6 +19826,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -19412,6 +19905,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -19430,6 +19924,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -19448,6 +19943,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -19466,6 +19962,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -19544,6 +20041,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -19587,6 +20085,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -19705,6 +20204,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -19793,6 +20293,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -19896,6 +20397,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -19914,6 +20416,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -19932,6 +20435,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -19950,6 +20454,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -20043,6 +20548,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -20121,6 +20627,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -20204,6 +20711,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -20277,6 +20785,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -20295,16 +20804,12 @@ const MUSIC_LIBRARY = [
     "format": "SKEPTA",
     "youtube": "[GRIME UK FROM SWAY",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
-        "number": "SKEPTA — Loose Tracks]",
-        "title": "KANO",
-        "duration": "2007"
-      },
-      {
-        "number": "2",
-        "title": "MP3",
-        "duration": ""
+        "number": "2007",
+        "title": "SKEPTA — Loose Tracks]",
+        "duration": "Hip-Hop"
       },
       {
         "number": "Riko",
@@ -20323,12 +20828,8 @@ const MUSIC_LIBRARY = [
     "format": "SKEPTA",
     "youtube": "Boy Better Know",
     "tag": "",
+    "date_added": "",
     "tracks": [
-      {
-        "number": "1",
-        "title": "MP3",
-        "duration": ""
-      },
       {
         "number": "2",
         "title": "boy better know",
@@ -20351,12 +20852,8 @@ const MUSIC_LIBRARY = [
     "format": "SKEPTA",
     "youtube": "Crazy Vibes",
     "tag": "",
+    "date_added": "",
     "tracks": [
-      {
-        "number": "1",
-        "title": "MP3",
-        "duration": ""
-      },
       {
         "number": "2",
         "title": "Young Offender-Crazy Vibes",
@@ -20374,12 +20871,8 @@ const MUSIC_LIBRARY = [
     "format": "SKEPTA",
     "youtube": "GaRaGe",
     "tag": "",
+    "date_added": "",
     "tracks": [
-      {
-        "number": "1",
-        "title": "MP3",
-        "duration": ""
-      },
       {
         "number": "2",
         "title": "Shystie Feat. Kano &  Bruza - One Wish Remix",
@@ -20397,12 +20890,8 @@ const MUSIC_LIBRARY = [
     "format": "SKEPTA",
     "youtube": "Grime Compilation",
     "tag": "",
+    "date_added": "",
     "tracks": [
-      {
-        "number": "1",
-        "title": "MP3",
-        "duration": ""
-      },
       {
         "number": "Skepta",
         "title": "Lady Sovereign",
@@ -20430,12 +20919,8 @@ const MUSIC_LIBRARY = [
     "format": "SKEPTA",
     "youtube": "Home Sweet Home",
     "tag": "",
+    "date_added": "",
     "tracks": [
-      {
-        "number": "1",
-        "title": "MP3",
-        "duration": ""
-      },
       {
         "number": "2",
         "title": "Kano - Brown Eyes",
@@ -20458,6 +20943,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -20476,12 +20962,8 @@ const MUSIC_LIBRARY = [
     "format": "R&B",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
-      {
-        "number": "Just The Two Of Us",
-        "title": "https://coverartarchive.org/release/5a871d66-59fb-4e6b-9f64-16a8ab2e112e/front-250",
-        "duration": ""
-      },
       {
         "number": "2",
         "title": "MP3",
@@ -20499,6 +20981,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "Y",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -20517,6 +21000,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -20610,6 +21094,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -20688,6 +21173,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -20706,6 +21192,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -20724,6 +21211,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -20762,6 +21250,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -20780,6 +21269,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -20798,6 +21288,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -20816,6 +21307,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -20834,6 +21326,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -20892,6 +21385,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -20955,6 +21449,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -20973,6 +21468,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -20991,6 +21487,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -21009,6 +21506,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -21027,6 +21525,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -21045,6 +21544,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -21068,6 +21568,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -21091,6 +21592,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -21109,6 +21611,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -21127,6 +21630,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -21145,6 +21649,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -21163,6 +21668,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -21181,6 +21687,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -21199,6 +21706,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "Y",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -21217,6 +21725,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -21235,6 +21744,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -21253,6 +21763,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -21331,6 +21842,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -21349,6 +21861,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -21427,6 +21940,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -21500,6 +22014,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -21568,6 +22083,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -21586,6 +22102,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -21644,6 +22161,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -21682,6 +22200,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -21720,6 +22239,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -21738,6 +22258,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -21811,6 +22332,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -21884,6 +22406,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -21952,6 +22475,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "American Mouth",
@@ -21975,6 +22499,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -21993,6 +22518,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -22051,6 +22577,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -22069,6 +22596,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -22087,6 +22615,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -22105,6 +22634,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -22123,6 +22653,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -22141,6 +22672,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -22159,6 +22691,7 @@ const MUSIC_LIBRARY = [
     "format": "M4A",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -22227,6 +22760,7 @@ const MUSIC_LIBRARY = [
     "format": "M4A",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -22300,6 +22834,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -22318,6 +22853,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -22336,6 +22872,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -22379,6 +22916,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -22397,6 +22935,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -22475,6 +23014,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -22598,6 +23138,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -22616,6 +23157,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -22634,6 +23176,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -22737,6 +23280,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -22810,6 +23354,7 @@ const MUSIC_LIBRARY = [
     "format": "Folk",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "Welcome to My Morning",
@@ -22883,6 +23428,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -22901,6 +23447,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -22919,6 +23466,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -22942,6 +23490,7 @@ const MUSIC_LIBRARY = [
     "format": "Rock",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "I Need You To Turn To",
@@ -23025,6 +23574,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -23093,6 +23643,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -23161,6 +23712,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -23214,6 +23766,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -23287,6 +23840,7 @@ const MUSIC_LIBRARY = [
     "format": "APE",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -23305,6 +23859,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -23323,6 +23878,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -23416,6 +23972,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -23434,6 +23991,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -23467,6 +24025,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -23485,6 +24044,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -23503,6 +24063,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -23576,6 +24137,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -23664,6 +24226,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -23742,6 +24305,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -23870,6 +24434,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -23888,6 +24453,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "The-Dream",
@@ -23936,6 +24502,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -23954,6 +24521,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -24037,6 +24605,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -24110,6 +24679,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -24178,6 +24748,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "studying",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -24256,6 +24827,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -24274,6 +24846,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -24292,6 +24865,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -24365,6 +24939,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -24543,6 +25118,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -24626,6 +25202,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -24719,6 +25296,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -24737,6 +25315,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -24755,6 +25334,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -24818,6 +25398,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -24946,6 +25527,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -24964,6 +25546,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -24982,6 +25565,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25000,6 +25584,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25078,6 +25663,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25096,6 +25682,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25119,6 +25706,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25137,6 +25725,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25155,6 +25744,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25173,6 +25763,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "Y",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25191,6 +25782,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25209,6 +25801,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25237,6 +25830,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25255,6 +25849,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25273,6 +25868,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25291,6 +25887,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25344,6 +25941,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25362,6 +25960,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25385,6 +25984,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25403,6 +26003,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25421,6 +26022,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25439,6 +26041,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25457,6 +26060,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25495,6 +26099,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25513,6 +26118,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25551,6 +26157,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25569,6 +26176,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25587,6 +26195,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25605,6 +26214,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25658,6 +26268,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25676,6 +26287,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25694,6 +26306,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25712,6 +26325,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25730,6 +26344,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25803,6 +26418,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25821,6 +26437,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25839,6 +26456,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25857,6 +26475,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25930,6 +26549,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25953,6 +26573,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -25976,6 +26597,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -26059,6 +26681,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -26097,6 +26720,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -26150,6 +26774,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -26223,6 +26848,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -26256,6 +26882,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -26369,6 +26996,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -26402,6 +27030,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -26475,6 +27104,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -26498,6 +27128,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -26516,6 +27147,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -26539,6 +27171,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -26557,6 +27190,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -26575,6 +27209,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -26593,6 +27228,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -26611,6 +27247,7 @@ const MUSIC_LIBRARY = [
     "format": "M4A",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -26649,6 +27286,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -26667,6 +27305,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -26685,6 +27324,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -26703,6 +27343,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -26721,6 +27362,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -26739,6 +27381,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "studying",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -26812,6 +27455,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -26830,6 +27474,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -26868,6 +27513,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -26886,6 +27532,7 @@ const MUSIC_LIBRARY = [
     "format": "Alternative Rock",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "Wait",
@@ -26909,6 +27556,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -26927,6 +27575,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -26960,6 +27609,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -26978,6 +27628,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -26996,6 +27647,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -27094,6 +27746,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -27112,6 +27765,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "studying",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -27155,6 +27809,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -27173,6 +27828,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -27221,6 +27877,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -27239,6 +27896,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -27317,6 +27975,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -27365,6 +28024,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -27413,6 +28073,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -27431,6 +28092,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -27449,6 +28111,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -27467,6 +28130,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -27485,6 +28149,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -27503,6 +28168,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -27591,6 +28257,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -27609,6 +28276,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -27627,6 +28295,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -27645,6 +28314,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -27718,6 +28388,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -27781,6 +28452,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -27854,6 +28526,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "studying",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -27917,6 +28590,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -27970,6 +28644,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -28013,6 +28688,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -28091,6 +28767,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -28144,6 +28821,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -28177,6 +28855,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -28205,6 +28884,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -28273,6 +28953,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -28326,6 +29007,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -28344,12 +29026,8 @@ const MUSIC_LIBRARY = [
     "format": "Alternative Rock",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
-      {
-        "number": "Kids (Soulwax Remix) High Quality Full Track",
-        "title": "https://coverartarchive.org/release/07ccbd2a-0b68-4233-8776-198d88285116/front-250",
-        "duration": ""
-      },
       {
         "number": "2",
         "title": "MP3",
@@ -28367,6 +29045,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -28430,6 +29109,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -28448,6 +29128,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -28551,6 +29232,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -28569,6 +29251,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -28632,6 +29315,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -28650,6 +29334,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -28668,6 +29353,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -28691,6 +29377,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -28709,6 +29396,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -28727,6 +29415,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -28745,6 +29434,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -28763,6 +29453,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -28781,6 +29472,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -28809,6 +29501,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -28827,6 +29520,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -28855,6 +29549,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -28928,6 +29623,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "studying",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -28951,6 +29647,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -28999,6 +29696,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -29047,6 +29745,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -29130,6 +29829,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -29163,6 +29863,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -29221,6 +29922,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -29239,6 +29941,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -29267,6 +29970,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -29330,6 +30034,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -29373,12 +30078,8 @@ const MUSIC_LIBRARY = [
     "format": "Post-Rock",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
-      {
-        "number": "Star Wars",
-        "title": "https://coverartarchive.org/release/cc893bef-dadd-46a1-b263-e1428e664f1d/front-250",
-        "duration": ""
-      },
       {
         "number": "Tuner (7' version)",
         "title": "MP3",
@@ -29401,6 +30102,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -29459,6 +30161,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "I'm Dead",
@@ -29502,6 +30205,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -29530,6 +30234,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -29553,6 +30258,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -29581,6 +30287,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -29634,6 +30341,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -29692,12 +30400,8 @@ const MUSIC_LIBRARY = [
     "format": "Post-Rock",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
-      {
-        "number": "Black Spider",
-        "title": "https://coverartarchive.org/release/2907803f-f1d5-41c3-a0ae-dcc1a0db3ae8/front-250",
-        "duration": ""
-      },
       {
         "number": "Terrific Speech 2",
         "title": "MP3",
@@ -29765,6 +30469,7 @@ const MUSIC_LIBRARY = [
     "format": "Soundtrack",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "2",
@@ -29783,6 +30488,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -29841,6 +30547,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -29859,6 +30566,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -29887,6 +30595,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -29990,6 +30699,7 @@ const MUSIC_LIBRARY = [
     "format": "Classical",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "Symphony No. 40 in G Minor KV 550 - Andante con moto",
@@ -30043,6 +30753,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -30061,6 +30772,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -30124,6 +30836,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -30192,6 +30905,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -30250,6 +30964,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -30323,6 +31038,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -30346,6 +31062,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -30429,6 +31146,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -30502,6 +31220,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -30570,6 +31289,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -30638,6 +31358,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -30681,6 +31402,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -30744,6 +31466,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -30762,6 +31485,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -30780,6 +31504,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -30828,6 +31553,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -30916,6 +31642,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -30944,6 +31671,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -30962,6 +31690,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -31015,6 +31744,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -31048,6 +31778,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -31146,6 +31877,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -31179,6 +31911,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -31212,6 +31945,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -31230,6 +31964,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -31248,6 +31983,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -31326,6 +32062,7 @@ const MUSIC_LIBRARY = [
     "format": "Rock",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "Honey",
@@ -31344,6 +32081,7 @@ const MUSIC_LIBRARY = [
     "format": "M4A",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -31362,6 +32100,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -31445,6 +32184,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -31513,6 +32253,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "Y",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -31531,6 +32272,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "We Go Without",
@@ -31564,6 +32306,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "studying",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -31622,6 +32365,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -31640,6 +32384,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -31658,6 +32403,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -31676,6 +32422,7 @@ const MUSIC_LIBRARY = [
     "format": "M4A",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -31694,6 +32441,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -31737,6 +32485,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -31805,6 +32554,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -31843,6 +32593,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "No)",
@@ -31886,6 +32637,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -31984,6 +32736,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -32002,6 +32755,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -32020,6 +32774,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -32048,6 +32803,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -32071,6 +32827,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -32089,6 +32846,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -32107,6 +32865,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -32170,6 +32929,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -32198,6 +32958,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -32261,6 +33022,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -32324,6 +33086,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -32342,6 +33105,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -32360,6 +33124,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -32378,6 +33143,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -32446,6 +33212,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -32514,6 +33281,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -32532,6 +33300,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -32580,6 +33349,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -32648,6 +33418,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -32721,6 +33492,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -32759,6 +33531,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -32782,6 +33555,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -32835,6 +33609,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -32873,6 +33648,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -32891,6 +33667,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "Y",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -32909,6 +33686,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -32927,6 +33705,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -33035,6 +33814,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -33093,6 +33873,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -33126,6 +33907,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -33194,6 +33976,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -33262,6 +34045,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -33325,6 +34109,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -33343,6 +34128,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -33421,6 +34207,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -33439,6 +34226,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -33462,6 +34250,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -33530,6 +34319,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -33548,6 +34338,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -33576,6 +34367,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "Y",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -33594,6 +34386,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -33692,6 +34485,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -33710,6 +34504,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -33728,6 +34523,7 @@ const MUSIC_LIBRARY = [
     "format": "M4A",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -33816,6 +34612,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -33864,6 +34661,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -33882,6 +34680,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -33965,6 +34764,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -34003,6 +34803,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -34041,6 +34842,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -34084,6 +34886,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -34112,6 +34915,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -34150,6 +34954,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -34173,6 +34978,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -34241,6 +35047,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -34314,6 +35121,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -34357,6 +35165,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -34395,6 +35204,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -34458,6 +35268,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -34481,6 +35292,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -34519,6 +35331,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -34557,6 +35370,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -34605,6 +35419,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -34623,6 +35438,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -34681,6 +35497,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "studying",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -34754,6 +35571,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -34772,6 +35590,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -34835,6 +35654,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -34858,6 +35678,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -34921,6 +35742,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -34994,6 +35816,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -35057,6 +35880,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -35075,6 +35899,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -35138,6 +35963,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -35196,6 +36022,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -35249,6 +36076,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -35267,6 +36095,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -35290,6 +36119,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -35353,6 +36183,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -35436,6 +36267,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -35454,6 +36286,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -35472,6 +36305,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -35495,6 +36329,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -35513,6 +36348,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "For a Pessimist",
@@ -35546,6 +36382,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -35569,6 +36406,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -35592,6 +36430,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -35690,6 +36529,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "I'm Pretty Optimistic",
@@ -35743,6 +36583,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -35786,6 +36627,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -35819,6 +36661,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -35877,6 +36720,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -35895,6 +36739,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -36008,6 +36853,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -36026,6 +36872,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -36124,6 +36971,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -36157,6 +37005,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -36225,6 +37074,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -36328,6 +37178,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -36416,6 +37267,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -36474,6 +37326,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -36507,6 +37360,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -36550,6 +37404,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -36723,6 +37578,7 @@ const MUSIC_LIBRARY = [
     "format": "M4A",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -36741,6 +37597,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -36809,6 +37666,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -36892,6 +37750,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -36960,6 +37819,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -37023,6 +37883,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -37146,6 +38007,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -37189,6 +38051,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -37232,6 +38095,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -37250,6 +38114,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -37303,6 +38168,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -37356,6 +38222,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -37374,6 +38241,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -37392,6 +38260,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -37410,6 +38279,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -37463,6 +38333,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -37486,6 +38357,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -37504,6 +38376,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -37592,6 +38465,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -37610,6 +38484,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -37628,6 +38503,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -37686,6 +38562,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -37724,6 +38601,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -37742,6 +38620,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -37785,6 +38664,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -37843,6 +38723,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -37911,6 +38792,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -37989,6 +38871,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -38062,6 +38945,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "Eugene",
@@ -38095,6 +38979,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -38168,6 +39053,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "Y",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -38186,6 +39072,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "Afrojack & Nayer)",
@@ -38209,6 +39096,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -38227,6 +39115,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -38245,6 +39134,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -38263,6 +39153,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -38286,6 +39177,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -38319,6 +39211,7 @@ const MUSIC_LIBRARY = [
     "format": "2005",
     "youtube": "Progressive",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "2",
@@ -38402,6 +39295,7 @@ const MUSIC_LIBRARY = [
     "format": "Progressive",
     "youtube": "Progressive Rock",
     "tag": "",
+    "date_added": "",
     "tracks": []
   },
   {
@@ -38414,6 +39308,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -38487,6 +39382,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -38505,6 +39401,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -38583,6 +39480,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -38601,6 +39499,7 @@ const MUSIC_LIBRARY = [
     "format": "Electronic",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "Girls (feat. The Ping Pong Bitches)",
@@ -38674,6 +39573,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -38692,6 +39592,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -38710,6 +39611,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -38728,6 +39630,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -38761,6 +39664,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -38779,6 +39683,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -38797,6 +39702,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -38870,6 +39776,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -38948,6 +39855,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "But I Feel Like A Millionaire",
@@ -39036,6 +39944,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -39064,6 +39973,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -39082,6 +39992,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -39100,6 +40011,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -39158,6 +40070,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -39226,6 +40139,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -39244,6 +40158,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -39262,6 +40177,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -39325,6 +40241,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -39343,6 +40260,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -39406,6 +40324,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -39479,6 +40398,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -39517,13 +40437,8 @@ const MUSIC_LIBRARY = [
     "format": "Metal",
     "youtube": "MP3",
     "tag": "",
-    "tracks": [
-      {
-        "number": "Reise",
-        "title": "https://coverartarchive.org/release/0fd60fe1-85fb-4e75-98fc-8b2e33f47007/front-250",
-        "duration": "Reise"
-      }
-    ]
+    "date_added": "",
+    "tracks": []
   },
   {
     "id": "rank-1armin-van-buurenkush-the-best-of-armin-only",
@@ -39535,6 +40450,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -39553,6 +40469,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -39571,6 +40488,7 @@ const MUSIC_LIBRARY = [
     "format": "Hindi Soundtrack",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "2",
@@ -39589,6 +40507,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -39612,6 +40531,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -39645,6 +40565,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -39743,6 +40664,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -39836,6 +40758,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -39924,6 +40847,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -40012,6 +40936,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -40030,6 +40955,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -40108,6 +41034,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -40126,6 +41053,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -40144,6 +41072,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -40162,6 +41091,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -40180,6 +41110,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -40198,12 +41129,8 @@ const MUSIC_LIBRARY = [
     "format": "Pop",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
-      {
-        "number": "We Found Love",
-        "title": "https://coverartarchive.org/release/252004fd-0edf-4764-9423-98536b1fb712/front-250",
-        "duration": ""
-      },
       {
         "number": "2",
         "title": "MP3",
@@ -40221,6 +41148,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -40239,6 +41167,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -40257,6 +41186,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -40275,6 +41205,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -40358,6 +41289,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -40381,6 +41313,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -40429,6 +41362,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -40517,6 +41451,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -40595,6 +41530,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -40678,6 +41614,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -40696,6 +41633,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -40714,6 +41652,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -40732,6 +41671,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -40750,6 +41690,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -40768,6 +41709,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -40816,6 +41758,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -40834,6 +41777,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -40892,6 +41836,7 @@ const MUSIC_LIBRARY = [
     "format": "Other",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "2",
@@ -40910,6 +41855,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -40928,6 +41874,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -40946,6 +41893,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -40964,6 +41912,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -40982,6 +41931,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -41000,6 +41950,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -41028,6 +41979,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -41046,6 +41998,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -41079,6 +42032,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -41097,6 +42051,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -41180,6 +42135,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -41263,6 +42219,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -41281,6 +42238,7 @@ const MUSIC_LIBRARY = [
     "format": "M4A",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -41364,6 +42322,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -41382,6 +42341,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -41400,6 +42360,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -41418,6 +42379,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -41481,6 +42443,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -41569,6 +42532,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -41587,6 +42551,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -41605,6 +42570,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -41673,12 +42639,8 @@ const MUSIC_LIBRARY = [
     "format": "Punk Rock",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
-      {
-        "number": "Buddy",
-        "title": "https://coverartarchive.org/release/326f3314-437d-4adf-9a4e-e29c8f41bee9/front-250",
-        "duration": ""
-      },
       {
         "number": "Bookie Love Song",
         "title": "MP3",
@@ -41706,6 +42668,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -41724,6 +42687,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -41742,6 +42706,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -41790,6 +42755,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -41808,6 +42774,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -41856,6 +42823,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -41909,6 +42877,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -41977,6 +42946,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -42045,6 +43015,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -42098,6 +43069,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -42161,6 +43133,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -42234,6 +43207,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -42317,6 +43291,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -42395,6 +43370,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -42413,6 +43389,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -42431,6 +43408,7 @@ const MUSIC_LIBRARY = [
     "format": "Folk",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "Graceland  (englisch)",
@@ -42479,6 +43457,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -42502,6 +43481,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -42565,6 +43545,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -42583,6 +43564,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -42606,6 +43588,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -42679,6 +43662,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -42697,6 +43681,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -42715,6 +43700,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -42733,6 +43719,7 @@ const MUSIC_LIBRARY = [
     "format": "M4A",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -42751,6 +43738,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -42814,6 +43802,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -42877,6 +43866,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -42895,6 +43885,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -42983,6 +43974,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -43036,6 +44028,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -43069,6 +44062,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -43097,6 +44091,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "Y",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "Education",
@@ -43120,6 +44115,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -43138,6 +44134,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -43156,6 +44153,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -43174,6 +44172,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -43192,6 +44191,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -43210,6 +44210,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -43228,6 +44229,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -43246,6 +44248,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "Irene / Flashdance... What A Feeling",
@@ -43299,6 +44302,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "Y",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -43317,6 +44321,7 @@ const MUSIC_LIBRARY = [
     "format": "M4A",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -43335,6 +44340,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -43368,6 +44374,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -43461,6 +44468,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -43479,6 +44487,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -43552,6 +44561,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -43615,6 +44625,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -43673,6 +44684,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -43691,6 +44703,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -43709,6 +44722,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "Y",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -43727,6 +44741,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -43745,6 +44760,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -43763,6 +44779,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -43781,6 +44798,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -43884,6 +44902,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -43932,6 +44951,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -44020,6 +45040,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -44068,6 +45089,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -44136,6 +45158,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -44194,6 +45217,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -44277,6 +45301,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -44295,6 +45320,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -44358,6 +45384,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -44376,6 +45403,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -44394,6 +45422,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -44412,6 +45441,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -44445,6 +45475,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -44478,6 +45509,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -44516,6 +45548,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -44554,6 +45587,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -44597,6 +45631,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -44685,6 +45720,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -44703,6 +45739,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "Y",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -44721,6 +45758,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -44739,6 +45777,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "for the Fatherless in Ypsilanti",
@@ -44762,6 +45801,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -44800,6 +45840,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -44818,6 +45859,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -44836,6 +45878,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "All at Once",
@@ -44899,6 +45942,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -44947,6 +45991,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -44965,6 +46010,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -44983,6 +46029,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -45001,6 +46048,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -45019,6 +46067,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -45037,6 +46086,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -45055,6 +46105,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -45078,6 +46129,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -45096,6 +46148,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -45114,6 +46167,7 @@ const MUSIC_LIBRARY = [
     "format": "Uk Hip Hop",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "2",
@@ -45132,6 +46186,7 @@ const MUSIC_LIBRARY = [
     "format": "2005",
     "youtube": "Hip-Hop",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "2",
@@ -45150,6 +46205,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -45228,6 +46284,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -45306,6 +46363,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -45389,6 +46447,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -45407,6 +46466,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -45490,6 +46550,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -45563,6 +46624,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -45581,6 +46643,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -45599,6 +46662,7 @@ const MUSIC_LIBRARY = [
     "format": "M4A",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -45707,6 +46771,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -45725,6 +46790,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -45763,6 +46829,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -45816,6 +46883,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -45834,6 +46902,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -45892,6 +46961,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -45920,6 +46990,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "studying",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -45983,6 +47054,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -46041,6 +47113,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -46059,6 +47132,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -46077,6 +47151,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -46130,6 +47205,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -46158,6 +47234,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -46221,6 +47298,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -46294,6 +47372,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -46347,6 +47426,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -46405,6 +47485,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -46423,6 +47504,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -46441,6 +47523,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -46514,6 +47597,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -46567,6 +47651,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -46585,6 +47670,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -46603,6 +47689,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -46621,6 +47708,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -46684,6 +47772,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -46702,6 +47791,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -46720,6 +47810,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -46738,6 +47829,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -46756,6 +47848,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -46774,6 +47867,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -46792,6 +47886,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -46815,6 +47910,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -46833,6 +47929,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -46876,6 +47973,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -46894,6 +47992,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -46912,6 +48011,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -46930,6 +48030,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -46998,6 +48099,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -47031,6 +48133,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -47084,6 +48187,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -47117,6 +48221,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -47140,6 +48245,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -47163,6 +48269,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -47186,6 +48293,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -47209,6 +48317,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "Y",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -47227,6 +48336,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -47280,6 +48390,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -47348,6 +48459,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -47411,6 +48523,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -47499,6 +48612,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "dive-bar",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -47572,6 +48686,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -47590,6 +48705,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "Y",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -47608,6 +48724,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "Y",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -47646,6 +48763,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -47664,6 +48782,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -47737,6 +48856,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -47755,6 +48875,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -47773,6 +48894,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -47846,6 +48968,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -47864,6 +48987,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -47917,6 +49041,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "Y",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -47935,6 +49060,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -47953,6 +49079,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -47971,6 +49098,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -48039,6 +49167,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -48057,6 +49186,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -48125,6 +49255,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -48163,6 +49294,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -48216,6 +49348,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -48234,6 +49367,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "Y",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -48252,6 +49386,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -48320,6 +49455,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -48338,6 +49474,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "Y",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -48356,6 +49493,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -48419,6 +49557,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -48477,6 +49616,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -48555,6 +49695,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -48618,6 +49759,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -48636,6 +49778,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -48654,6 +49797,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -48717,6 +49861,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -48735,6 +49880,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -48758,6 +49904,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -48791,6 +49938,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -48809,6 +49957,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -48882,6 +50031,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -48900,6 +50050,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -48918,6 +50069,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -48936,6 +50088,7 @@ const MUSIC_LIBRARY = [
     "format": "Progressive Metal",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "Jambi",
@@ -48964,6 +50117,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -49042,6 +50196,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -49085,6 +50240,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -49113,6 +50269,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -49176,6 +50333,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -49264,6 +50422,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -49282,6 +50441,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -49325,6 +50485,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -49343,6 +50504,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -49361,6 +50523,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -49379,6 +50542,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -49397,6 +50561,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -49415,6 +50580,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -49433,6 +50599,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -49471,6 +50638,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -49489,6 +50657,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -49542,6 +50711,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -49560,6 +50730,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -49623,6 +50794,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -49701,6 +50873,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -49769,6 +50942,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -49787,6 +50961,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -49855,6 +51030,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -49873,6 +51049,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -49931,6 +51108,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -49949,6 +51127,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -49967,6 +51146,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -49985,6 +51165,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -50008,6 +51189,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "studying",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -50026,6 +51208,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -50044,6 +51227,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -50102,6 +51286,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -50175,6 +51360,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -50283,6 +51469,7 @@ const MUSIC_LIBRARY = [
     "format": "Alternative Rock",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "August Burns Red - Wrecking Ball",
@@ -50336,6 +51523,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "Alé",
@@ -50359,6 +51547,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -50512,6 +51701,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -50530,6 +51720,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -50583,6 +51774,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -50601,6 +51793,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -50619,6 +51812,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -50637,6 +51831,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "studying",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -50710,6 +51905,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -50728,6 +51924,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -50746,6 +51943,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -50764,6 +51962,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "trek",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -50817,6 +52016,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "Y",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -50835,6 +52035,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -50853,6 +52054,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -50871,6 +52073,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -50889,10 +52092,11 @@ const MUSIC_LIBRARY = [
     "format": "Shifty Rydoz",
     "youtube": "Skepta",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
-        "number": "2004",
-        "title": "grime",
+        "number": "Hip-Hop",
+        "title": "2004",
         "duration": "Hip-Hop"
       },
       {
@@ -50922,6 +52126,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "I Love Your Way",
@@ -50945,6 +52150,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -50963,6 +52169,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -50981,6 +52188,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -50999,12 +52207,8 @@ const MUSIC_LIBRARY = [
     "format": "Electronic",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
-      {
-        "number": "Last Friday Night (T.G.I.F.)",
-        "title": "https://coverartarchive.org/release/9ee07e6a-0fbf-448e-9f79-68887cbb8f6a/front-250",
-        "duration": ""
-      },
       {
         "number": "2",
         "title": "MP3",
@@ -51022,6 +52226,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -51155,6 +52360,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -51248,6 +52454,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -51306,6 +52513,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -51324,6 +52532,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -51407,6 +52616,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -51495,6 +52705,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -51558,6 +52769,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -51661,6 +52873,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -51734,6 +52947,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -51817,6 +53031,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "band-practice",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -51840,6 +53055,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -51878,6 +53094,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -51946,6 +53163,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -51999,6 +53217,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -52017,6 +53236,7 @@ const MUSIC_LIBRARY = [
     "format": "M4A",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -52100,6 +53320,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -52118,6 +53339,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -52141,6 +53363,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "marine-drive",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -52159,6 +53382,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "weekender",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -52177,6 +53401,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -52210,6 +53435,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "blue-frog",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -52278,6 +53504,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "studying",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -52296,6 +53523,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -52314,6 +53542,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -52332,6 +53561,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -52350,6 +53580,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -52378,6 +53609,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "01",
@@ -52456,6 +53688,7 @@ const MUSIC_LIBRARY = [
     "format": "Indie-Rock",
     "youtube": "MP3",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "Trade It",
@@ -52514,6 +53747,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "01",
@@ -52577,6 +53811,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "01",
@@ -52610,6 +53845,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "01",
@@ -52678,6 +53914,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "01",
@@ -52756,6 +53993,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "01",
@@ -52829,6 +54067,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -52912,6 +54151,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "03",
@@ -52930,6 +54170,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -52988,6 +54229,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -53006,6 +54248,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "01",
@@ -53069,6 +54312,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -53127,6 +54371,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "01",
@@ -53200,6 +54445,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "01",
@@ -53263,6 +54509,7 @@ const MUSIC_LIBRARY = [
     "format": "FLAC",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",
@@ -53341,6 +54588,7 @@ const MUSIC_LIBRARY = [
     "format": "MP3",
     "youtube": "",
     "tag": "",
+    "date_added": "",
     "tracks": [
       {
         "number": "1",

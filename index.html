@@ -71,6 +71,74 @@ tailwind.config = {
     background-image: radial-gradient(circle, #8c500015 1px, transparent 1px);
     background-size: 12px 12px;
   }
+  .recently-added-strip {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+  .recently-added-strip::-webkit-scrollbar {
+    display: none;
+  }
+  .ra-card {
+    flex: 0 0 220px;
+    min-width: 220px;
+    position: relative;
+    border: 1.5px solid #d8c3b1;
+    padding: 12px 12px 12px 18px;
+    background: #fcf9f8;
+    overflow: hidden;
+  }
+  .ra-card .ra-accent {
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 6px;
+  }
+  .ra-card .ra-new {
+    position: absolute;
+    top: 8px; right: 8px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #8c5000;
+    border: 1px solid #8c5000;
+    padding: 2px 5px;
+    line-height: 1;
+  }
+  .ra-card .ra-artist {
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #1c1b1b;
+    margin-top: 4px;
+    padding-right: 36px; /* clear NEW stamp */
+  }
+  .ra-card .ra-album {
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #1c1b1b;
+    margin-top: 2px;
+  }
+  .ra-card .ra-year {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11px;
+    color: #534437;
+    margin-top: 6px;
+    letter-spacing: 0.05em;
+  }
 </style>
 </head>
 <body class="min-h-screen relative">
@@ -93,6 +161,14 @@ tailwind.config = {
     </div>
   </div>
 </header>
+
+<!-- Recently Added -->
+<section id="recently-added" class="relative z-10 border-t border-b border-outline-variant" style="background:#f0eded; display:none;">
+  <div class="max-w-7xl mx-auto px-6 py-4">
+    <p id="recently-added-header" class="font-label text-xs tracking-[0.25em] uppercase text-on-surface-variant mb-3" style="border-left: 3px solid #e8963e; padding-left: 4px;"></p>
+    <div id="recently-added-strip" class="recently-added-strip"></div>
+  </div>
+</section>
 
 <!-- Filter bar -->
 <div class="relative z-10 border-b border-outline-variant bg-surface-container-low px-6 py-3 flex items-center gap-3 flex-wrap">
@@ -131,6 +207,43 @@ for (const a of MUSIC_LIBRARY) {
   counts[k] = (counts[k] || 0) + 1;
   total++;
 }
+
+// Recently Added shelf
+(function() {
+  const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+
+  const maxDate = MUSIC_LIBRARY.reduce(
+    (max, a) => (a.date_added > max ? a.date_added : max), ''
+  );
+  if (!maxDate) return; // all legacy — keep section hidden
+
+  const recentAlbums = MUSIC_LIBRARY.filter(a => a.date_added === maxDate);
+  const section = document.getElementById('recently-added');
+  const header  = document.getElementById('recently-added-header');
+  const strip   = document.getElementById('recently-added-strip');
+
+  const [yyyy, mm, dd] = maxDate.split('-');
+  const dateLabel = `${dd}/${mm}/${yyyy}`;
+  header.textContent = `Recently Added · ${recentAlbums.length} album${recentAlbums.length === 1 ? '' : 's'} · ${dateLabel}`;
+
+  recentAlbums.forEach(album => {
+    const crate  = CRATES.find(c => c.tag === album.tag);
+    const accent = crate ? crate.accent : '#8c5000';
+
+    const card = document.createElement('div');
+    card.className = 'ra-card';
+    card.innerHTML = `
+      <div class="ra-accent" style="background:${accent}"></div>
+      <span class="ra-new">New</span>
+      <div class="ra-artist">${esc(album.artist)}</div>
+      <div class="ra-album">${esc(album.album)}</div>
+      <div class="ra-year">${esc(album.year || '—')}</div>
+    `;
+    strip.appendChild(card);
+  });
+
+  section.style.display = '';
+})();
 
 document.getElementById('total-count').textContent = total.toLocaleString();
 
