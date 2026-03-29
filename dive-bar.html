@@ -220,6 +220,18 @@
 </style>
 </head>
 <body>
+
+<!-- Portfolio nav -->
+<nav style="position:sticky;top:0;z-index:100;background:rgba(252,249,248,0.97);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid #d8c3b1;padding:0 1.5rem;height:36px;display:flex;align-items:center;gap:1.25rem;">
+  <a href="/" style="font-family:'Epilogue',sans-serif;font-weight:900;font-style:italic;font-size:0.72rem;letter-spacing:-0.02em;color:#1c1b1b;text-decoration:none;white-space:nowrap;">OH MESSY LIFE</a>
+  <div style="width:1px;height:1.25rem;background:#d8c3b1;flex-shrink:0;"></div>
+  <div style="display:flex;gap:1.25rem;align-items:center;">
+    <a href="/writing" style="font-family:'Space Grotesk',sans-serif;font-size:0.58rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;color:#534437;text-decoration:none;opacity:0.6;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'">Writing</a>
+    <a href="/record" style="font-family:'Space Grotesk',sans-serif;font-size:0.58rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;color:#534437;text-decoration:none;opacity:0.6;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'">Record</a>
+    <a href="/music" style="font-family:'Space Grotesk',sans-serif;font-size:0.58rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;color:#8c5000;text-decoration:none;border-bottom:1.5px solid #8c5000;padding-bottom:1px;">Signal</a>
+  </div>
+</nav>
+
 <!-- Bokeh blobs -->
 <div class="blob" style="width:500px;height:500px;background:rgba(255,106,159,0.07);top:-100px;left:-100px;"></div>
 <div class="blob" style="width:400px;height:400px;background:rgba(255,185,90,0.05);bottom:10%;right:-80px;"></div>
@@ -341,6 +353,16 @@ function renderAlbums() {
 }
 
 renderAlbums();
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.album-card.open').forEach(c => toggleCard(c));
+  }
+  if (e.key === '/' && !['INPUT','TEXTAREA'].includes(document.activeElement.tagName)) {
+    e.preventDefault();
+    document.getElementById('search').focus();
+  }
+});
 </script>
 
 <script>
