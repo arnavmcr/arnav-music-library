@@ -12,7 +12,6 @@
   'use strict';
 
   var BASKET_KEY = 'dig_basket';
-  var MAX_BASKET = 20;
   var basket = [];
 
   // ── Persistence ─────────────────────────────────────────────────────────────
@@ -28,8 +27,7 @@
         var parsed = JSON.parse(raw);
         if (Array.isArray(parsed)) {
           basket = parsed
-            .filter(function (a) { return a && typeof a.id === 'string'; })
-            .slice(0, MAX_BASKET);
+            .filter(function (a) { return a && typeof a.id === 'string'; });
         }
       }
     } catch (_) {}
@@ -42,7 +40,6 @@
     if (idx !== -1) {
       basket.splice(idx, 1);
     } else {
-      if (basket.length >= MAX_BASKET) basket.shift();
       basket.push({
         id: album.id,
         artist: album.artist,
