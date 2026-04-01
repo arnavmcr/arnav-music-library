@@ -54646,5 +54646,261 @@ const MUSIC_LIBRARY = [
         "duration": "251"
       }
     ]
+  },
+  {
+    "id": "sigur-rós",
+    "artist": "Sigur Rós",
+    "album": "( )",
+    "year": "2002",
+    "genre": "Other",
+    "genre_raw": "",
+    "format": "FLAC",
+    "youtube": "",
+    "tag": "",
+    "date_added": "2026-04-01",
+    "tracks": [
+      {
+        "number": "01",
+        "title": "Untitled #1 (Vaka)",
+        "duration": "398"
+      },
+      {
+        "number": "02",
+        "title": "Untitled #2 (Fyrsta)",
+        "duration": "453"
+      },
+      {
+        "number": "03",
+        "title": "Untitled #3 (Samskeyti)",
+        "duration": "393"
+      },
+      {
+        "number": "04",
+        "title": "Untitled #4 (Njósnavélin)",
+        "duration": "453"
+      },
+      {
+        "number": "05",
+        "title": "Untitled #5 (Álafoss)",
+        "duration": "597"
+      },
+      {
+        "number": "06",
+        "title": "Untitled #6 (E-bow)",
+        "duration": "528"
+      },
+      {
+        "number": "07",
+        "title": "Untitled #7 (Dauðalagið)",
+        "duration": "780"
+      },
+      {
+        "number": "08",
+        "title": "Untitled #8 (Popplagið)",
+        "duration": "704"
+      }
+    ]
+  },
+  {
+    "id": "nothing-tired-of-tomorrow-deluxe-version",
+    "artist": "Nothing",
+    "album": "Tired of Tomorrow (Deluxe Version)",
+    "year": "2016",
+    "genre": "Alternative",
+    "genre_raw": "Alternative",
+    "format": "FLAC",
+    "youtube": "",
+    "tag": "",
+    "date_added": "2026-04-01",
+    "tracks": [
+      {
+        "number": "01",
+        "title": "Fever Queen",
+        "duration": "176"
+      },
+      {
+        "number": "02",
+        "title": "The Dead Are Dumb",
+        "duration": "270"
+      },
+      {
+        "number": "03",
+        "title": "Vertigo Flowers",
+        "duration": "204"
+      },
+      {
+        "number": "04",
+        "title": "A.C.D. (Abcessive Compulsive Disorder)",
+        "duration": "219"
+      },
+      {
+        "number": "05",
+        "title": "Nineteen Ninety Heaven",
+        "duration": "280"
+      },
+      {
+        "number": "06",
+        "title": "Curse of the Sun",
+        "duration": "287"
+      },
+      {
+        "number": "07",
+        "title": "Eaten by Worms",
+        "duration": "300"
+      },
+      {
+        "number": "08",
+        "title": "Everyone Is Happy",
+        "duration": "294"
+      },
+      {
+        "number": "09",
+        "title": "Our Plague",
+        "duration": "329"
+      },
+      {
+        "number": "10",
+        "title": "Tired of Tomorrow",
+        "duration": "383"
+      },
+      {
+        "number": "11",
+        "title": "The Heavenly Blue Flu (Bonus Track)",
+        "duration": "343"
+      },
+      {
+        "number": "12",
+        "title": "Tic Tac Toe (Bonus Track)",
+        "duration": "273"
+      }
+    ]
+  },
+  {
+    "id": "alvvays-antisocialites",
+    "artist": "Alvvays",
+    "album": "Antisocialites",
+    "year": "2017",
+    "genre": "Alternative",
+    "genre_raw": "Alternative",
+    "format": "FLAC",
+    "youtube": "",
+    "tag": "",
+    "date_added": "2026-04-01",
+    "tracks": [
+      {
+        "number": "01",
+        "title": "In Undertow",
+        "duration": "197"
+      },
+      {
+        "number": "02",
+        "title": "Dreams Tonite",
+        "duration": "196"
+      },
+      {
+        "number": "03",
+        "title": "Plimsoll Punks",
+        "duration": "289"
+      },
+      {
+        "number": "04",
+        "title": "Your Type",
+        "duration": "123"
+      },
+      {
+        "number": "05",
+        "title": "Not My Baby",
+        "duration": "256"
+      },
+      {
+        "number": "06",
+        "title": "Hey",
+        "duration": "168"
+      },
+      {
+        "number": "07",
+        "title": "Lollipop (Ode To Jim)",
+        "duration": "197"
+      },
+      {
+        "number": "08",
+        "title": "Already Gone",
+        "duration": "183"
+      },
+      {
+        "number": "09",
+        "title": "Saved By A Waif",
+        "duration": "179"
+      },
+      {
+        "number": "10",
+        "title": "Forget About Life",
+        "duration": "162"
+      }
+    ]
+  },
+  {
+    "id": "fazerdaze-morningside",
+    "artist": "Fazerdaze",
+    "album": "Morningside",
+    "year": "2017",
+    "genre": "Pop",
+    "genre_raw": "Pop",
+    "format": "Rock",
+    "youtube": "Alternatif et Indé",
+    "tag": "",
+    "date_added": "",
+    "tracks": [
+      {
+        "number": "FLAC",
+        "title": "856",
+        "duration": "Lucky Girl"
+      },
+      {
+        "number": "FLAC",
+        "title": "972",
+        "duration": "Misread"
+      },
+      {
+        "number": "FLAC",
+        "title": "911",
+        "duration": "Little Uneasy"
+      },
+      {
+        "number": "FLAC",
+        "title": "900",
+        "duration": "Jennifer"
+      },
+      {
+        "number": "FLAC",
+        "title": "902",
+        "duration": "Take It Slow"
+      },
+      {
+        "number": "FLAC",
+        "title": "903",
+        "duration": "Shoulders"
+      },
+      {
+        "number": "FLAC",
+        "title": "874",
+        "duration": "Friends"
+      },
+      {
+        "number": "FLAC",
+        "title": "868",
+        "duration": "Half-Figured"
+      },
+      {
+        "number": "FLAC",
+        "title": "925",
+        "duration": "Bedroom Talks"
+      },
+      {
+        "number": "FLAC",
+        "title": "771",
+        "duration": ""
+      }
+    ]
   }
 ];
